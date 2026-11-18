@@ -42,3 +42,23 @@ The initial presentations, post text and publication labels are indicative summa
 
 ## Technical requirements
 Static HTML/CSS/vanilla JavaScript and GitHub Pages. The browser's local draft cache uses key `cd_research_draft_v1` to preserve editing across versions.
+
+
+## Version 3: images and interactive geospatial visualization
+
+The homepage has a new interactive canvas-based conceptual evidence-network illustration. It is made with standard JavaScript (no external animation dependency). Pointer movement introduces gentle parallax, animated field points and evidence flows. Visitors who prefer reduced motion see a static drawing. The visualization is conceptual, not georeferenced research data.
+
+### Add photos through the dashboard
+
+1. Open `admin.html`, choose **Upload images**, select your image, and enter your GitHub username (`cdonmez16`), repository (`cenkdonmez.github.io`), branch (`main`), and a fine-grained GitHub token with Contents read/write access to this repository.
+2. Upload a JPG, PNG, WEBP or GIF under 5 MB. The image is committed into `assets/media/`. Copy its resulting path. **Uploads are public and should be images you are permitted to share.**
+3. Go to **Projects**, **Presentations**, **Posts**, or **Profile & intro** and paste that path into the image field.
+4. Save locally, then use **Publish & backup** to commit `data/content.json` to GitHub. You can alternatively download it and upload through GitHub.
+
+You may instead upload pictures into `assets/media/` through GitHub and manually enter paths like `assets/media/my-talk.jpg`. Do not put images in the repository root. The admin panel cannot automatically remove unused photo files when you delete an entry; remove those separately in GitHub.
+
+### Important about your URL
+
+The owner username is `cdonmez16`, whereas your repository is `cenkdonmez.github.io`. GitHub therefore treats it as a **project site**, with the URL `https://cdonmez16.github.io/cenkdonmez.github.io/`. To use the free root address `https://cdonmez16.github.io/`, rename the repository to `cdonmez16.github.io`. To use `https://cenkdonmez.github.io/` instead, the GitHub **account username** must be `cenkdonmez` and the repository must be `cenkdonmez.github.io` (subject to username availability and account policy). Alternatively, purchase a custom domain such as `cenkdonmez.com` and configure GitHub Pages' custom domain and DNS.
+
+All links in this package are relative, so the site works in either a user-site or project-site path. If you rename your repository, update the owner/repository values in the admin publishing panel.
