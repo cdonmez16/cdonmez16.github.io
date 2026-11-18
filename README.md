@@ -1,64 +1,28 @@
-# Cenk Dönmez — Research portfolio (v2)
+# Cenk Dönmez Research Website · V5
 
-A static academic website with an editable JSON content panel. No paid hosting, database, or build system required.
+A fully static GitHub Pages research portfolio. This update keeps the same `data/content.json` schema and adds optional attachment/image fields; it is designed not to erase existing content.
 
-## Files
-- `index.html` — homepage with portrait, research, selected talks and posts.
-- `presentations.html` — dedicated presentation directory, filterable by type.
-- `posts.html` — news and short expandable posts.
-- `cv.html` — academic CV, printable as PDF.
-- `admin.html` — content manager.
-- `data/content.json` — single shared data source for all pages.
-- `assets/style.css` — visual design; `assets/site.js` — rendering; `assets/admin.js` — editing.
+## Install over your existing site
 
-## Important: add your real photo
-There is **no fabricated portrait**. A typographic CD placeholder appears until you upload your own photo. Rename a portrait image `portrait.jpg`, upload it under GitHub's `assets/` folder, and keep the portrait path in Content Studio as `assets/portrait.jpg`. Alternatively, enter a public HTTPS image URL in Profile & intro.
+Upload/replace HTML pages in the repository root and files inside `assets/`, including **new `assets/background.js`**. The new persistent green design and animated topographic network require this new JavaScript file.
 
-## Publish on GitHub (replace the current version)
-1. Download and unzip this package.
-2. Open `https://github.com/cenkdonmez/cenkdonmez.github.io`.
-3. Upload/replace `index.html`, `cv.html`, `admin.html`, `presentations.html`, `posts.html`, and `README.md` at the **root**, committing changes.
-4. Enter `assets/` in GitHub and upload/replace all three files `style.css`, `site.js`, `admin.js`.
-5. Enter `data/` and replace `content.json`.
-6. Open `https://cenkdonmez.github.io/` and hard refresh (Cmd + Shift + R).
-7. Visit `/presentations.html`, `/posts.html`, and `/admin.html`.
+**Keep your existing `data/content.json`** if you have edited it! Do not upload the sample content file over your live file. The new optional fields are editable and will be written into your existing JSON when you publish.
 
-GitHub allows leaving any redundant files in root. The site uses the versions **inside** `assets/` and `data/`.
+## Manage content and upload a file
 
-## Edit your content with the panel
-Open `https://cenkdonmez.github.io/admin.html`, then:
-- **Profile & intro**: change biography, contact email, portrait path, CV link, institutional links.
-- **Presentations & talks**: add, edit, reorder or remove talks; enter optional presentation slide/recording URLs.
-- **Posts & news**: add announcements, dates, teaser and full text, optional links.
-- **Projects, research themes, publications, CV entries**: manage the other sections.
-- **Display settings**: hide or show homepage preview sections.
-- **Save draft**: browser-local preview only, NOT live.
-- **Publish & backup**: download updated `content.json` and upload to the existing GitHub `data/` directory, or publish with a GitHub fine-grained personal access token (Contents read/write for this repository only). Never commit a token.
+1. Open `admin.html` on your live site.
+2. In **GitHub connection**, enter owner `cdonmez16`, repository `cenkdonmez.github.io`, branch `main`, and a fine-grained GitHub personal access token with **Contents: Read and write** permission for that repository. Click **Use these settings for this tab**. Token remains only in tab memory.
+3. Go to Profile, Projects, Publications & talks, Presentations & talks, or Posts & news. Beside supported attachment or image fields, use **Choose image** or **Choose PDF / PPT / image**. Your system file chooser opens. File uploads go to `assets/media/` and the editor automatically links them to the entry.
+4. Click **Publish & backup** → **Publish content to GitHub** to commit the updated `data/content.json`. Individual uploaded files are committed immediately; the entry will not link publicly until you publish the content file.
+5. Refresh your public website after GitHub Pages redeploys.
 
-The `admin.html` page is public, not password-protected. Only GitHub account credentials/token can update the hosted content. The admin panel itself cannot upload images or PDFs: upload those files in GitHub first and paste their paths into the panel.
+Supported file types: JPG, JPEG, PNG, WEBP, GIF, PDF, PPT, PPTX; max 15 MB per file. Avoid uploading publisher PDFs that you are not permitted to redistribute. Prefer official DOI or publisher URLs for restricted papers, and link to repositories such as Zenodo for large files.
 
-## Editorial care
-The initial presentations, post text and publication labels are indicative summaries. Verify exact talk titles and bibliographic metadata before sharing widely. No personal email address has been guessed.
+All uploaded files are **public** in GitHub history and on the website. Deleting a reference from the editor does not delete the underlying uploaded file. Never commit an access token to the repository.
 
-## Technical requirements
-Static HTML/CSS/vanilla JavaScript and GitHub Pages. The browser's local draft cache uses key `cd_research_draft_v1` to preserve editing across versions.
+## Troubleshooting
 
-
-## Version 3: images and interactive geospatial visualization
-
-The homepage has a new interactive canvas-based conceptual evidence-network illustration. It is made with standard JavaScript (no external animation dependency). Pointer movement introduces gentle parallax, animated field points and evidence flows. Visitors who prefer reduced motion see a static drawing. The visualization is conceptual, not georeferenced research data.
-
-### Add photos through the dashboard
-
-1. Open `admin.html`, choose **Upload images**, select your image, and enter your GitHub username (`cdonmez16`), repository (`cenkdonmez.github.io`), branch (`main`), and a fine-grained GitHub token with Contents read/write access to this repository.
-2. Upload a JPG, PNG, WEBP or GIF under 5 MB. The image is committed into `assets/media/`. Copy its resulting path. **Uploads are public and should be images you are permitted to share.**
-3. Go to **Projects**, **Presentations**, **Posts**, or **Profile & intro** and paste that path into the image field.
-4. Save locally, then use **Publish & backup** to commit `data/content.json` to GitHub. You can alternatively download it and upload through GitHub.
-
-You may instead upload pictures into `assets/media/` through GitHub and manually enter paths like `assets/media/my-talk.jpg`. Do not put images in the repository root. The admin panel cannot automatically remove unused photo files when you delete an entry; remove those separately in GitHub.
-
-### Important about your URL
-
-The owner username is `cdonmez16`, whereas your repository is `cenkdonmez.github.io`. GitHub therefore treats it as a **project site**, with the URL `https://cdonmez16.github.io/cenkdonmez.github.io/`. To use the free root address `https://cdonmez16.github.io/`, rename the repository to `cdonmez16.github.io`. To use `https://cenkdonmez.github.io/` instead, the GitHub **account username** must be `cenkdonmez` and the repository must be `cenkdonmez.github.io` (subject to username availability and account policy). Alternatively, purchase a custom domain such as `cenkdonmez.com` and configure GitHub Pages' custom domain and DNS.
-
-All links in this package are relative, so the site works in either a user-site or project-site path. If you rename your repository, update the owner/repository values in the admin publishing panel.
+- If file buttons do not appear, check that `assets/admin.js` was replaced and hard-refresh with Cmd+Shift+R. GitHub Pages deployment may be in progress.
+- If the background does not animate, check that `assets/background.js` exists in your GitHub repository. If Reduce Motion is enabled on your computer, the background is intentionally static.
+- If an upload fails, verify token permissions, the repo name, selected file extension and 15 MB limit.
+- Do not overwrite your personalized `data/content.json` with this ZIP's example data.
