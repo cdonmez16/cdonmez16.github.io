@@ -1,0 +1,54 @@
+{
+  "profile": {
+    "name": "Cenk Dönmez",
+    "shortName": "CD.",
+    "eyebrow": "SCIENTIST · GEOSPATIAL RESEARCH · OPEN SCIENCE",
+    "headline": "Connecting landscapes, long-term evidence, and decisions.",
+    "introduction": "I work at the intersection of geospatial intelligence, agroecosystem research and scientific data infrastructures—making long-term evidence easier to discover, interpret and reuse.",
+    "about": "My research brings together GIS, remote sensing, spatial modelling and long-term field experiments to understand agricultural landscapes and make scientific evidence more useful. Alongside research, I develop data infrastructures and help coordinate international collaborations linking experiments, living labs and decision-making.",
+    "location": "Germany · Türkiye",
+    "role": "Senior Scientist, ZALF · Professor, Çukurova University",
+    "email": "",
+    "portrait": "",
+    "cvPdf": "",
+    "links": [
+      {"label":"ZALF","url":"https://www.zalf.de/"},
+      {"label":"BonaRes LTE Map","url":"https://tools.bonares.de/ltfe/"},
+      {"label":"SoilWise Catalogue","url":"https://catalogue.soilwise-he.eu/"}
+    ]
+  },
+  "focus": [
+    {"number":"01","title":"Geospatial intelligence","text":"GIS, Earth observation and spatial modelling for landscapes, soils and agricultural systems.","icon":"◎"},
+    {"number":"02","title":"Long-term field experiments","text":"Using decades of experimental evidence to understand management, variability and change.","icon":"◈"},
+    {"number":"03","title":"Research data infrastructures","text":"Making research discoverable, interoperable and reusable across institutions and networks.","icon":"⌘"},
+    {"number":"04","title":"Evidence to action","text":"Bridging field experiments, living labs and stakeholders through contextualized knowledge.","icon":"↗"}
+  ],
+  "projects": [
+    {"id":"bonares","title":"BonaRes LTE Overview Map","category":"Research infrastructure","period":"Ongoing","description":"A discoverable, curated overview of long-term field experiments, supporting experimental comparison, data reuse and international network connections.","tags":["LTEs","Metadata","GIS"],"link":"https://tools.bonares.de/ltfe/","featured":true},
+    {"id":"soilwise","title":"SoilWise","category":"European collaboration","period":"2023–2027","description":"Contributing to an interoperable knowledge infrastructure for European soil data, including the knowledge-management strategy and reuse of BonaRes resources.","tags":["FAIR data","Horizon Europe","Soil"],"link":"https://catalogue.soilwise-he.eu/","featured":true},
+    {"id":"soilte","title":"SOILTE.ai proposal","category":"Scientific coordination","period":"2026","description":"Scientific coordination of a Horizon Europe proposal linking long-term experiments, AI-ready data and decision support for soil health.","tags":["GeoAI","Coordination","LTEs"],"link":"","featured":true},
+    {"id":"lte-gaps","title":"European LTE representativeness","category":"Research","period":"2025–2026","description":"Geospatial and multivariate analysis of where experimental evidence is strong—and where environmental and thematic gaps remain.","tags":["Representativeness","Spatial analysis"],"link":"","featured":false}
+  ],
+  "outputs": [
+    {"id":"bonares-map","type":"Publication","year":"2022","title":"BonaRes long-term field experiment overview and data infrastructure","detail":"Selected research contribution · BonaRes series","url":"","featured":true},
+    {"id":"eu-lte","type":"Publication","year":"2024","title":"Long-term agricultural experiments and their role in European soil research","detail":"Research on long-term field experiments in Europe","url":"","featured":true},
+    {"id":"morrow","type":"Talk","year":"2026","title":"Connecting long-term experiments across Europe and the United States","detail":"Invited presentation · Morrow Plots LTE Conference · University of Illinois","url":"","featured":true},
+    {"id":"eurosoil","type":"Talk","year":"2025","title":"European long-term field experiment data and spatial evidence","detail":"EUROSOIL · Sevilla","url":"","featured":false},
+    {"id":"soilwise-talk","type":"Talk","year":"2026","title":"Soil data reuse and knowledge infrastructures","detail":"EGU General Assembly · Vienna","url":"","featured":false},
+    {"id":"gis-ai","type":"Teaching","year":"2026","title":"GIS × AI: from spatial analysis to useful research workflows","detail":"Course concept · practitioner training and university teaching","url":"","featured":false}
+  ],
+  "experience": [
+    {"id":"zalf","period":"Current","title":"Senior Scientist","organization":"Leibniz Centre for Agricultural Landscape Research (ZALF)","description":"Research on geospatial assessments, long-term field experiments and research data infrastructure; scientific coordination and European project activities."},
+    {"id":"cukurova","period":"Current","title":"Professor · Landscape Architecture","organization":"Çukurova University","description":"Research and teaching in landscape planning, GIS, remote sensing and environmental assessment."},
+    {"id":"fsu","period":"Earlier","title":"DAAD Research Scholar","organization":"Friedrich Schiller University Jena","description":"Geoinformatics and spatial modelling research."}
+  ],
+  "education": [
+    {"id":"phd","period":"PhD","title":"Environmental & Landscape Planning","organization":"Remote sensing and GIS specialization","description":"Doctoral research focused on geospatial approaches in environmental and landscape planning."}
+  ],
+  "updates": [
+    {"id":"morrow-update","date":"2026-10","type":"Conference","title":"Invited talk at the Morrow Plots LTE Conference","description":"Shared European experiences in long-term experiment discoverability, data reuse and geospatial assessment at the University of Illinois.","url":""},
+    {"id":"soilte-update","date":"2026-09","type":"Project","title":"Scientific coordination of the SOILTE.ai proposal","description":"Brought together an international consortium around LTE data, AI-ready infrastructure and soil decision support.","url":""},
+    {"id":"soilwise-update","date":"2026-04","type":"Presentation","title":"SoilWise research at EGU","description":"Presented work connecting scientific data infrastructures and soil data reuse.","url":""}
+  ],
+  "settings": {"accent":"#b3e1cb","showProjects":true,"showOutputs":true,"showUpdates":true,"footerNote":"Independent academic portfolio · Views are my own."}
+}
