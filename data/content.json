@@ -66,7 +66,8 @@
         "GIS"
       ],
       "link": "https://tools.bonares.de/ltfe/",
-      "featured": true
+      "featured": true,
+      "image": ""
     },
     {
       "id": "soilwise",
@@ -80,7 +81,8 @@
         "Soil"
       ],
       "link": "https://catalogue.soilwise-he.eu/",
-      "featured": true
+      "featured": true,
+      "image": ""
     },
     {
       "id": "soilte",
@@ -94,7 +96,8 @@
         "LTEs"
       ],
       "link": "",
-      "featured": true
+      "featured": true,
+      "image": ""
     },
     {
       "id": "lte-gaps",
@@ -107,7 +110,8 @@
         "Spatial analysis"
       ],
       "link": "",
-      "featured": false
+      "featured": false,
+      "image": ""
     }
   ],
   "outputs": [
@@ -246,7 +250,8 @@
       "description": "Data discoverability, management, spatial assessment and potential for collaborative LTE analysis.",
       "slides": "",
       "video": "",
-      "featured": true
+      "featured": true,
+      "image": ""
     },
     {
       "id": "egu-2026",
@@ -259,7 +264,8 @@
       "description": "Soil data infrastructures and connections between BonaRes and SoilWise.",
       "slides": "",
       "video": "",
-      "featured": false
+      "featured": false,
+      "image": ""
     },
     {
       "id": "eurosoil-2025",
@@ -272,7 +278,8 @@
       "description": "Research on LTEs and their use for continental-scale assessments.",
       "slides": "",
       "video": "",
-      "featured": false
+      "featured": false,
+      "image": ""
     }
   ],
   "posts": [
