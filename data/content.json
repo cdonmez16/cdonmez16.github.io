@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Cenk Dönmez",
-    "shortName": "CD.",
+    "shortName": "",
     "eyebrow": "SCIENTIST · GEOSPATIAL RESEARCH · OPEN SCIENCE",
     "headline": "Researching landscapes. Connecting evidence.",
     "introduction": "I am a geospatial scientist working at the intersection of agricultural landscapes, long-term experiments and research data infrastructures. My work connects field evidence, spatial intelligence and collaborative research to support better environmental decisions.",
@@ -9,7 +9,7 @@
     "location": "Müncheberg / Berlin, Germany · Adana, Türkiye",
     "role": "Senior Scientist · ZALF  |  Professor · Çukurova University",
     "email": "",
-    "portrait": "assets/portrait.jpg",
+    "portrait": "assets/Cenk.jpg",
     "cvPdf": "",
     "links": [
       {
@@ -66,8 +66,7 @@
         "GIS"
       ],
       "link": "https://tools.bonares.de/ltfe/",
-      "featured": true,
-      "image": ""
+      "featured": true
     },
     {
       "id": "soilwise",
@@ -81,8 +80,7 @@
         "Soil"
       ],
       "link": "https://catalogue.soilwise-he.eu/",
-      "featured": true,
-      "image": ""
+      "featured": true
     },
     {
       "id": "soilte",
@@ -96,8 +94,7 @@
         "LTEs"
       ],
       "link": "",
-      "featured": true,
-      "image": ""
+      "featured": true
     },
     {
       "id": "lte-gaps",
@@ -110,8 +107,7 @@
         "Spatial analysis"
       ],
       "link": "",
-      "featured": false,
-      "image": ""
+      "featured": false
     }
   ],
   "outputs": [
@@ -250,8 +246,7 @@
       "description": "Data discoverability, management, spatial assessment and potential for collaborative LTE analysis.",
       "slides": "",
       "video": "",
-      "featured": true,
-      "image": ""
+      "featured": true
     },
     {
       "id": "egu-2026",
@@ -264,8 +259,7 @@
       "description": "Soil data infrastructures and connections between BonaRes and SoilWise.",
       "slides": "",
       "video": "",
-      "featured": false,
-      "image": ""
+      "featured": false
     },
     {
       "id": "eurosoil-2025",
@@ -278,8 +272,7 @@
       "description": "Research on LTEs and their use for continental-scale assessments.",
       "slides": "",
       "video": "",
-      "featured": false,
-      "image": ""
+      "featured": false
     }
   ],
   "posts": [
