@@ -150,3 +150,6 @@ a { color: var(--accent); }
   .view, .bar { padding-left: 18px; padding-right: 18px; }
   .subitem { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 }
+
+.checks { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+code { font-size: 13px; background: var(--ground); padding: 4px 8px; border-radius: 6px; align-self: center; }

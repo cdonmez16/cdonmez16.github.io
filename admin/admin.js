@@ -214,29 +214,48 @@
     allLabel: '“All” filter label', doiLabel: 'DOI button label', year: 'Year', authors: 'Authors', venue: 'Journal / venue',
     type: 'Type', doi: 'DOI', summary: 'Summary', course: 'Course / activity', institution: 'Institution', level: 'Level',
     event: 'Event', place: 'Place', date: 'Date', email: 'E-mail', address: 'Address', id: 'Anchor id (used in links: #id)',
-    label: 'Text', url: 'Link (web address, #section or uploaded file)', style: 'Style'
+    label: 'Text', url: 'Link (web address, #section or uploaded file)', style: 'Style',
+    nav: 'Menu items', contact: 'Contact band (bottom of every page)', page: 'Shown on page', theme: 'Research area',
+    themes: 'Research areas', methods: 'Methods (one per line)', myRole: 'My contribution', context: 'Project context',
+    evidence: 'Related work', icon: 'Icon', value: 'Highlight (number or short word)', limit: 'How many to show',
+    status: 'Status', category: 'Type', details: 'Volume, pages, other details', corresponding: 'Corresponding author',
+    file: 'File name', organization: 'Organisation', searchPlaceholder: 'Search box hint', note: 'Note under filters'
   };
   var HINTS = {
     body: 'Leave a blank line for a new paragraph. **bold** and [link text](https://…) work.',
     text: '**bold** and [link text](https://…) work.',
-    id: 'Lowercase, no spaces. Changing it changes the menu link.'
+    id: 'Lowercase, no spaces. Changing it changes links to this section.',
+    value: 'Numbers are counted for you: {articles}, {chapters}, {conferences}, {underreview}, {total}, {firstyear}, {firstconference}.',
+    evidence: 'Use [publication title](https://doi.org/…) to link. Separate several with · ',
+    myRole: 'What you did yourself. *italic* works.',
+    featured: '',
+    affiliation: 'One position per line.',
+    file: 'The HTML file of this page — do not change.'
   };
-  var TEXTAREA = ['body', 'text', 'summary', 'intro', 'description', 'address'];
+  var TEXTAREA = ['body', 'text', 'summary', 'intro', 'description', 'address', 'affiliation', 'myRole', 'context', 'evidence', 'authors'];
   var IMAGE = ['image', 'portrait', 'logo', 'cover', 'thumbnail'];
-  var STRINGLIST = ['tags', 'networks'];
-  var BUTTONLIST = ['buttons', 'links'];
-  var PUB_TYPES = ['Article', 'Review', 'Dataset', 'Report', 'Chapter', 'Book', 'Preprint', 'Software', 'Conference paper', 'Policy brief'];
-  var SECTION_TYPES = { about: 'About text', cards: 'Cards (themes)', tools: 'Tools & platforms', projects: 'Projects', publications: 'Publications', teaching: 'Teaching', talks: 'Talks', news: 'News', contact: 'Contact' };
+  var STRINGLIST = ['tags', 'networks', 'methods'];
+  var BUTTONLIST = ['buttons', 'links', 'nav'];
+  var PUB_CATEGORIES = { 'Peer-reviewed publication': 'Peer-reviewed publication', 'Book chapter': 'Book chapter', 'Conference contribution': 'Conference contribution' };
+  var PUB_STATUS = { 'Published': 'Published', 'Under review': 'Under review', 'Submitted': 'Submitted', 'In preparation': 'In preparation', '': '— (conference contribution)' };
+  var ICON_OPTIONS = { soil: 'Soil / plant', agriculture: 'Crop', assessment: 'Magnifier / assessment', planning: 'Map / planning', people: 'People', data: 'Database', globe: 'Globe' };
+  var SECTION_TYPES = { achievements: 'Achievements (highlights)', areas: 'Research areas', features: 'Featured contributions', practice: 'Research to practice', selectedPubs: 'Selected publications (homepage)', publications: 'Full publication list', about: 'Text with heading (biography)', text: 'Plain text', timeline: 'Timeline (positions, education)', cards: 'Cards', tools: 'Tools & platforms', projects: 'Projects', teaching: 'Teaching', talks: 'Talks', news: 'News & updates' };
   var TEMPLATES = {
+    achievements: { value: '', label: '', text: '', image: '', attachments: [], buttons: [] },
+    areas: { theme: '', title: '', text: '', methods: [], image: '', attachments: [], buttons: [] },
+    features: { title: '', category: '', featured: false, myRole: '', context: '', text: '', tags: [], image: '', attachments: [], buttons: [] },
+    practice: { icon: 'globe', title: '', text: '', evidence: '', image: '', attachments: [], buttons: [] },
+    timeline: { period: '', title: '', organization: '', text: '', image: '', attachments: [] },
+    pubs: { year: String(new Date().getFullYear()), authors: '', title: '', venue: '', details: '', doi: '', category: 'Peer-reviewed publication', status: 'Published', themes: [], featured: false, corresponding: false, url: '', attachments: [] },
     cards: { title: '', text: '', image: '', attachments: [], buttons: [] },
     tools: { name: '', role: '', text: '', tags: [], image: '', featured: false, attachments: [], buttons: [] },
-    projects: { title: '', category: '', period: '', text: '', image: '', attachments: [], buttons: [] },
+    projects: { title: '', category: '', period: '', role: '', text: '', image: '', attachments: [], buttons: [] },
     publications: { year: String(new Date().getFullYear()), title: '', authors: '', venue: '', type: 'Article', doi: '', summary: '', image: '', attachments: [] },
     teaching: { course: '', institution: '', period: '', level: '', text: '', image: '', attachments: [], buttons: [] },
     talks: { title: '', event: '', place: '', date: '', image: '', attachments: [], buttons: [] },
     news: { date: '', text: '', image: '', attachments: [], buttons: [] }
   };
-  var NEWEST_FIRST = ['publications', 'talks', 'news'];
+  var NEWEST_FIRST = ['pubs', 'talks', 'news'];
   function blankLike(o) {
     if (Array.isArray(o)) return [];
     if (o && typeof o === 'object') { var r = {}; Object.keys(o).forEach(function (k) { r[k] = blankLike(o[k]); }); return r; }
@@ -244,7 +263,8 @@
     return '';
   }
   function itemTitle(it) {
-    var t = it && (it.title || it.name || it.course || it.label || it.text || it.date);
+    var t = it && (it.title || it.name || it.course || (it.value ? it.value + ' ' + (it.label || '') : '') || it.label || it.text || it.date);
+    if (it && it.year && (it.title || '').length) t = it.year + ' · ' + t;
     t = String(t || '(untitled)'); return t.length > 90 ? t.slice(0, 88) + '…' : t;
   }
 
@@ -272,17 +292,34 @@
       pickFiles('', false).then(uploadMany).then(function (r) { if (r[0]) onPath(r[0].path); });
     } }, 'Upload');
   }
-  function checkField(obj, key) {
+  function checkField(obj, key, opts) {
     var inp = h('input', { type: 'checkbox', checked: obj[key] !== false && !!obj[key] || (key === 'visible' && obj[key] !== false) });
     inp.addEventListener('change', function () { obj[key] = inp.checked; markDirty(); if (key === 'visible') renderNav(); });
-    return h('label', { class: 'check field--full' }, [inp, labelFor(key)]);
+    var lab = key === 'featured' && opts && opts.sectionType === 'pubs' ? 'Show on homepage (Selected publications)' : labelFor(key);
+    return h('label', { class: 'check field--full' }, [inp, lab]);
   }
   function selectField(obj, key, options) {
     var sel = h('select', null, Object.keys(options).map(function (v) { return h('option', { value: v, text: options[v] }); }));
-    sel.value = obj[key] || Object.keys(options)[0];
+    sel.value = obj[key] != null && options.hasOwnProperty(obj[key]) ? obj[key] : Object.keys(options)[0];
     sel.addEventListener('change', function () { obj[key] = sel.value; markDirty(); });
     return h('label', { class: 'field' }, [h('span', { class: 'field__label', text: labelFor(key) }), sel]);
   }
+  function themesField(obj, key) {
+    if (!Array.isArray(obj[key])) obj[key] = [];
+    var box = h('div', { class: 'checks' });
+    (S.data.themes || []).forEach(function (t) {
+      var inp = h('input', { type: 'checkbox', checked: obj[key].indexOf(t.id) >= 0 });
+      inp.addEventListener('change', function () {
+        var i = obj[key].indexOf(t.id);
+        if (inp.checked && i < 0) obj[key].push(t.id); if (!inp.checked && i >= 0) obj[key].splice(i, 1);
+        markDirty();
+      });
+      box.appendChild(h('label', { class: 'check' }, [inp, t.label]));
+    });
+    return h('div', { class: 'field field--full' }, [h('span', { class: 'field__label', text: labelFor(key) }), box]);
+  }
+  function themeOptions() { var o = { '': '— none —' }; (S.data.themes || []).forEach(function (t) { o[t.id] = t.label; }); return o; }
+  function pageOptions() { var o = {}; Object.keys(S.data.pages || { home: {} }).forEach(function (k) { o[k] = (S.data.pages[k] && S.data.pages[k].label) || k; }); return o; }
   function stringListField(obj, key) {
     var ta = h('textarea', { rows: 3, value: (obj[key] || []).join('\n') });
     ta.addEventListener('input', function () { obj[key] = ta.value.split('\n').map(function (s) { return s.trim(); }).filter(Boolean); markDirty(); });
@@ -365,7 +402,7 @@
 
   function buttonListField(obj, key) {
     if (!Array.isArray(obj[key])) obj[key] = [];
-    var withStyle = key === 'buttons';
+    var withStyle = key === 'buttons' || key === 'nav';
     var wrap = h('div', { class: 'field field--full' });
     function draw() {
       wrap.innerHTML = '';
@@ -379,7 +416,7 @@
         var urlBox = h('div', { class: 'inline' }, [url, uploadLinkButton(function (p) { url.value = p; b.url = p; markDirty(); })]);
         var style = null;
         if (withStyle) {
-          style = h('select', { 'aria-label': 'Style' }, [h('option', { value: 'primary', text: 'Filled' }), h('option', { value: 'ghost', text: 'Outline' })]);
+          style = h('select', { 'aria-label': 'Style' }, [h('option', { value: 'primary', text: key === 'nav' ? 'Highlighted' : 'Filled' }), h('option', { value: 'ghost', text: key === 'nav' ? 'Normal' : 'Outline' })]);
           style.value = b.style === 'primary' ? 'primary' : 'ghost';
           style.addEventListener('change', function () { b.style = style.value; markDirty(); });
         }
@@ -391,27 +428,32 @@
       wrap.appendChild(list);
       wrap.appendChild(h('button', { type: 'button', class: 'btn btn--small btn--ghost adder', onclick: function () {
         obj[key].push(withStyle ? { label: '', url: '', style: 'ghost' } : { label: '', url: '' }); markDirty(); draw();
-      } }, withStyle ? '+ Add button' : '+ Add link'));
+      } }, key === 'nav' ? '+ Add menu item' : withStyle ? '+ Add button' : '+ Add link'));
     }
     draw();
     return wrap;
   }
 
-  function itemsField(owner, key, sectionType) {
+  function itemsField(owner, key, sectionType, fopts) {
+    fopts = fopts || {};
     var arr = owner[key] || (owner[key] = []);
     var wrap = h('div', { class: 'items' });
     var open = {};
     function draw() {
       wrap.innerHTML = '';
       if (!arr.length) wrap.appendChild(h('div', { class: 'empty', text: 'No items yet.' }));
+      var shown = 0;
       arr.forEach(function (it, i) {
+        if (fopts.filter && !fopts.filter(it)) return;
+        shown++;
+        if (fopts.max && shown > fopts.max) return;
         var titleEl = h('span', { class: 'item__title', text: itemTitle(it) });
         var body = h('div', { class: 'item__body' });
         var card = h('div', { class: 'item' + (open[i] ? ' is-open' : '') }, [
           h('div', { class: 'item__head', onclick: function (e) {
             if (e.target.closest('button')) return;
             open[i] = !open[i]; card.classList.toggle('is-open', !!open[i]);
-            if (open[i] && !body.childNodes.length) body.appendChild(objectEditor(it, { sectionType: sectionType, onTitle: function () { titleEl.textContent = itemTitle(it); } }));
+            if (open[i] && !body.childNodes.length) body.appendChild(objectEditor(it, { sectionType: sectionType, skip: ['ref'], onTitle: function () { titleEl.textContent = itemTitle(it); } }));
           } }, [
             h('span', { class: 'item__caret', text: '▸', 'aria-hidden': 'true' }), titleEl,
             h('button', { type: 'button', class: 'iconbtn', 'aria-label': 'Move up', title: 'Move up', onclick: function () { move(i, -1); } }, '↑'),
@@ -422,9 +464,11 @@
             } }, '×')
           ]), body
         ]);
-        if (open[i]) body.appendChild(objectEditor(it, { sectionType: sectionType, onTitle: function () { titleEl.textContent = itemTitle(it); } }));
+        if (open[i]) body.appendChild(objectEditor(it, { sectionType: sectionType, skip: ['ref'], onTitle: function () { titleEl.textContent = itemTitle(it); } }));
         wrap.appendChild(card);
       });
+      if (fopts.onCount) fopts.onCount(shown);
+      if (fopts.max && shown > fopts.max) wrap.appendChild(h('div', { class: 'empty', text: (shown - fopts.max) + ' more — narrow the search to see them.' }));
     }
     function move(i, d) {
       var j = i + d; if (j < 0 || j >= arr.length) return;
@@ -437,7 +481,9 @@
       open = {}; open[top ? 0 : arr.length - 1] = true; markDirty(); draw();
     } }, '+ Add item');
     draw();
-    return h('div', null, [wrap, addBtn]);
+    var out = h('div', null, [wrap, addBtn]);
+    out.redraw = draw;
+    return out;
   }
 
   /* Generic editor: turns any content object into a form. */
@@ -455,13 +501,18 @@
       else if (BUTTONLIST.indexOf(key) >= 0) rest.appendChild(buttonListField(obj, key));
       else if (STRINGLIST.indexOf(key) >= 0) grid.appendChild(stringListField(obj, key));
       else if (key === 'items' && Array.isArray(v)) { /* rendered by the section view */ }
+      else if (key === 'themes' && Array.isArray(v)) rest.appendChild(themesField(obj, key));
+      else if (key === 'theme') grid.appendChild(selectField(obj, key, themeOptions()));
+      else if (key === 'page') grid.appendChild(selectField(obj, key, pageOptions()));
+      else if (key === 'icon') grid.appendChild(selectField(obj, key, ICON_OPTIONS));
+      else if (key === 'status' && opts.sectionType === 'pubs') grid.appendChild(selectField(obj, key, PUB_STATUS));
+      else if (key === 'category' && opts.sectionType === 'pubs') grid.appendChild(selectField(obj, key, PUB_CATEGORIES));
       else if (Array.isArray(v)) rest.appendChild(h('div', { class: 'field field--full' }, [h('span', { class: 'field__label', text: labelFor(key) }), itemsField(obj, key, null)]));
       else if (v && typeof v === 'object') {
         rest.appendChild(h('fieldset', { class: 'panel field--full', style: { margin: 0 } }, [h('legend', { class: 'field__label', text: labelFor(key) }), objectEditor(v)]));
       }
-      else if (typeof v === 'boolean' || key === 'visible' || key === 'featured') grid.appendChild(checkField(obj, key));
+      else if (typeof v === 'boolean' || key === 'visible' || key === 'featured') grid.appendChild(checkField(obj, key, opts));
       else if (key === 'style') grid.appendChild(selectField(obj, key, { primary: 'Filled', ghost: 'Outline' }));
-      else if (key === 'type' && opts.sectionType === 'publications') grid.appendChild(textField(obj, key, { list: 'pubTypes' }));
       else grid.appendChild(textField(obj, key, isTitleKey && opts.onTitle ? { onChange: opts.onTitle } : null));
     });
     return h('div', null, [grid, rest.childNodes.length ? rest : null]);
@@ -477,11 +528,18 @@
       nav.appendChild(h('button', { type: 'button', class: 'side__link' + (S.view === id ? ' is-on' : ''), onclick: function () { setView(id); } }, [h('span', { text: label }), extra ? h('span', { class: 'muted', text: extra }) : null]));
     }
     nav.appendChild(h('div', { class: 'side__group', text: 'General' }));
-    link('overview', 'Overview'); link('site', 'Site & menu'); link('hero', 'Hero (top of page)');
-    nav.appendChild(h('div', { class: 'side__group', text: 'Sections' }));
-    (S.data.sections || []).forEach(function (s, i) { link('section:' + i, s.nav || s.title || s.id, s.visible === false ? 'hidden' : ''); });
+    link('overview', 'Overview'); link('site', 'Site, menu & contact'); link('hero', 'Homepage hero'); link('pages', 'Page headers'); link('themes', 'Research area names');
+    link('pubs', 'Publications', String((S.data.publications || []).length));
+    var pages = S.data.pages || { home: { label: 'Home' } };
+    Object.keys(pages).forEach(function (pk) {
+      var secs = [];
+      (S.data.sections || []).forEach(function (s, i) { if ((s.page || 'home') === pk) secs.push([s, i]); });
+      if (!secs.length) return;
+      nav.appendChild(h('div', { class: 'side__group', text: (pages[pk] && pages[pk].label) || pk }));
+      secs.forEach(function (p) { link('section:' + p[1], p[0].title || p[0].eyebrow || p[0].id, p[0].visible === false ? 'hidden' : ''); });
+    });
     nav.appendChild(h('div', { class: 'side__group', text: 'Manage' }));
-    link('sections', 'Add / reorder sections'); link('library', 'Media library');
+    link('sections', 'Add / move sections'); link('library', 'Media library');
   }
   function header(crumb, title) { $('crumb').textContent = crumb; $('viewTitle').textContent = title; }
   function panel(title, hint, body, actions) {
@@ -493,13 +551,12 @@
 
   function renderView() {
     var v = $('view'); v.innerHTML = '';
-    v.appendChild(h('datalist', { id: 'pubTypes' }, PUB_TYPES.map(function (t) { return h('option', { value: t }); })));
     if (S.view === 'overview') {
       header('Content Studio', 'Overview');
       var rows = (S.data.sections || []).map(function (s, i) {
         return h('div', { class: 'secrow' }, [
           h('span', { class: 'secrow__name', text: s.title || s.id }),
-          h('span', { class: 'secrow__type', text: (SECTION_TYPES[s.type] || s.type) + (Array.isArray(s.items) ? ' · ' + s.items.length + ' items' : '') }),
+          h('span', { class: 'secrow__type', text: ((S.data.pages || {})[s.page || 'home'] || {}).label + ' · ' + (SECTION_TYPES[s.type] || s.type) + (Array.isArray(s.items) ? ' · ' + s.items.length + ' items' : '') }),
           s.visible === false ? h('span', { class: 'pill pill--warn', text: 'Hidden' }) : null,
           h('button', { type: 'button', class: 'btn btn--small btn--ghost', onclick: function () { setView('section:' + i); } }, 'Edit')
         ]);
@@ -510,13 +567,68 @@
       v.appendChild(panel('Your sections', null, h('div', null, rows)));
       return;
     }
-    if (S.view === 'site') { header('General', 'Site & menu'); v.appendChild(panel('Site settings', 'Name, browser title, footer and the CV button in the top menu.', objectEditor(S.data.site))); return; }
-    if (S.view === 'hero') { header('General', 'Hero'); v.appendChild(panel('Top of the homepage', 'Headline, introduction, portrait, buttons, profile links and partner networks.', objectEditor(S.data.hero))); return; }
+    if (S.view === 'site') {
+      header('General', 'Site, menu & contact');
+      v.appendChild(panel('Site settings', 'Name, browser title and footer.', objectEditor(S.data.site)));
+      v.appendChild(panel('Top menu', 'Every menu item: its text, where it links (a page such as about.html, a section such as #contact, or an uploaded file such as your CV) and whether it is highlighted.', buttonListField(S.data, 'nav')));
+      S.data.contact = S.data.contact || {};
+      v.appendChild(panel('Contact band', 'Shown at the bottom of every page.', objectEditor(S.data.contact)));
+      return;
+    }
+    if (S.view === 'hero') { header('General', 'Homepage hero'); v.appendChild(panel('Top of the homepage', 'Headline, introduction, positions, portrait, buttons, profile links and partner networks.', objectEditor(S.data.hero))); return; }
+    if (S.view === 'pages') {
+      header('General', 'Page headers');
+      Object.keys(S.data.pages || {}).forEach(function (k) {
+        if (k === 'home') return;
+        v.appendChild(panel((S.data.pages[k].label || k) + ' — ' + (S.data.pages[k].file || ''), null, objectEditor(S.data.pages[k], { skip: ['file'] })));
+      });
+      return;
+    }
+    if (S.view === 'themes') {
+      header('General', 'Research area names');
+      var tb = h('div', { class: 'subitems' });
+      (S.data.themes || []).forEach(function (t) {
+        var inp = h('input', { type: 'text', value: t.label });
+        inp.addEventListener('input', function () { t.label = inp.value; markDirty(); });
+        tb.appendChild(h('div', { class: 'subitem', style: { gridTemplateColumns: '120px minmax(0,1fr)' } }, [h('code', { text: t.id }), inp]));
+      });
+      v.appendChild(panel('Research areas', 'These names label the publication filters and tags. The short codes link publications to areas — keep them unchanged.', tb));
+      return;
+    }
+    if (S.view === 'pubs') {
+      header('Content', 'Publications');
+      S.data.publications = S.data.publications || [];
+      var q = h('input', { type: 'search', class: 'input', placeholder: 'Search title, author, journal, year…' });
+      var cat = h('select', { class: 'input' }, [h('option', { value: '', text: 'All types' })].concat(Object.keys(PUB_CATEGORIES).map(function (c) { return h('option', { value: c, text: c }); })));
+      var st = h('select', { class: 'input' }, [h('option', { value: '', text: 'Any status' }), h('option', { value: 'Published', text: 'Published' }), h('option', { value: 'open', text: 'Under review / submitted / in prep.' }), h('option', { value: 'featured', text: 'On homepage' })]);
+      var count = h('span', { class: 'field__hint' });
+      function norm(x) { return String(x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+      var list = itemsField(S.data, 'publications', 'pubs', {
+        max: 60,
+        filter: function (p) {
+          if (cat.value && p.category !== cat.value) return false;
+          if (st.value === 'Published' && p.status !== 'Published') return false;
+          if (st.value === 'open' && (!p.status || p.status === 'Published')) return false;
+          if (st.value === 'featured' && !p.featured) return false;
+          var w = norm(q.value).split(/\s+/).filter(Boolean), hay = norm([p.title, p.authors, p.venue, p.year, p.doi].join(' '));
+          return w.every(function (x) { return hay.indexOf(x) >= 0; });
+        },
+        onCount: function (n) { count.textContent = n + ' of ' + S.data.publications.length + ' shown'; }
+      });
+      var t; q.addEventListener('input', function () { clearTimeout(t); t = setTimeout(list.redraw, 150); });
+      cat.addEventListener('change', list.redraw); st.addEventListener('change', list.redraw);
+      v.appendChild(panel('Find & edit', 'New entries are added at the top. Tick “Featured” to show a publication on the homepage. Attach PDFs under Files. Keep titles, authors and DOIs exactly as published.',
+        h('div', null, [h('div', { class: 'inline', style: { flexWrap: 'wrap', marginBottom: '12px' } }, [q, cat, st]), count])));
+      v.appendChild(panel('Publications', null, list));
+      return;
+    }
     if (S.view.indexOf('section:') === 0) {
       var i = +S.view.split(':')[1], sec = S.data.sections[i];
       if (!sec) return setView('overview');
       header('Sections › ' + (SECTION_TYPES[sec.type] || sec.type), sec.title || sec.id);
       v.appendChild(panel('Section settings', 'Heading, menu label, section image, files and buttons.', objectEditor(sec, { skip: ['type'], sectionType: sec.type })));
+      if (sec.type === 'selectedPubs') v.appendChild(panel('Which publications?', null, h('div', null, [h('p', { class: 'panel__hint', text: 'This section shows publications ticked “Featured”. Choose them under Publications.' }), h('button', { type: 'button', class: 'btn btn--ghost', onclick: function () { setView('pubs'); } }, 'Open publications')])));
+      if (sec.type === 'publications') v.appendChild(panel('Entries', null, h('div', null, [h('p', { class: 'panel__hint', text: 'This section lists every publication. Edit them under Publications.' }), h('button', { type: 'button', class: 'btn btn--ghost', onclick: function () { setView('pubs'); } }, 'Open publications')])));
       if (Array.isArray(sec.items)) {
         v.appendChild(panel('Items', 'Click an item to edit it. Each item can have its own image, files and buttons.', itemsField(sec, 'items', sec.type)));
       }
@@ -533,9 +645,12 @@
       S.data.sections.forEach(function (s, i) {
         var vis = h('input', { type: 'checkbox', checked: s.visible !== false, 'aria-label': 'Visible' });
         vis.addEventListener('change', function () { s.visible = vis.checked; markDirty(); renderNav(); });
+        var pg = h('select', { class: 'input', style: { width: 'auto' }, 'aria-label': 'Page' }, Object.keys(pageOptions()).map(function (k) { return h('option', { value: k, text: pageOptions()[k] }); }));
+        pg.value = s.page || 'home';
+        pg.addEventListener('change', function () { s.page = pg.value; markDirty(); renderNav(); });
         box.appendChild(h('div', { class: 'secrow' }, [
           h('label', { class: 'check' }, [vis, 'Show']),
-          h('span', { class: 'secrow__name', text: s.title || s.id }),
+          h('span', { class: 'secrow__name', text: s.title || s.eyebrow || s.id }), pg,
           h('span', { class: 'secrow__type', text: SECTION_TYPES[s.type] || s.type }),
           h('button', { type: 'button', class: 'iconbtn', 'aria-label': 'Move up', onclick: function () { mv(i, -1); } }, '↑'),
           h('button', { type: 'button', class: 'iconbtn', 'aria-label': 'Move down', onclick: function () { mv(i, 1); } }, '↓'),
@@ -549,19 +664,20 @@
     draw();
     var typeSel = h('select', { class: 'input', style: { maxWidth: '260px' } }, Object.keys(SECTION_TYPES).map(function (t) { return h('option', { value: t, text: SECTION_TYPES[t] }); }));
     var nameIn = h('input', { type: 'text', class: 'input', placeholder: 'Section title, e.g. Awards', style: { maxWidth: '300px' } });
+    var pageSel = h('select', { class: 'input', style: { maxWidth: '220px' } }, Object.keys(pageOptions()).map(function (k) { return h('option', { value: k, text: pageOptions()[k] }); }));
     var add = h('button', { type: 'button', class: 'btn btn--primary', onclick: function () {
       var title = nameIn.value.trim() || 'New section', t = typeSel.value;
       var id = slugify(title).replace(/\./g, '') || ('section-' + Date.now().toString(36));
       while (S.data.sections.some(function (s) { return s.id === id; })) id += '-2';
-      var sec = { id: id, type: t, nav: title, visible: true, eyebrow: title, title: title, intro: '', image: '', attachments: [], buttons: [] };
-      if (t === 'about') sec.body = '';
-      else if (t === 'contact') { sec.email = ''; sec.address = ''; }
-      else sec.items = [];
+      var sec = { id: id, page: pageSel.value, type: t, visible: true, eyebrow: title, title: title, intro: '', image: '', attachments: [], buttons: [] };
+      if (t === 'about' || t === 'text') sec.body = '';
+      else if (t === 'selectedPubs') sec.limit = '8';
+      else if (t !== 'publications') sec.items = [];
       S.data.sections.push(sec); markDirty(); setView('section:' + (S.data.sections.length - 1));
     } }, 'Add section');
     return h('div', null, [
-      panel('Order & visibility', 'The website shows sections in this order. Untick “Show” to hide a section without deleting it.', box),
-      panel('Add a new section', 'For example Awards, Supervision, Software or Media coverage. Pick the layout that fits.', h('div', { class: 'inline', style: { flexWrap: 'wrap' } }, [nameIn, typeSel, add]))
+      panel('Order, page & visibility', 'Sections appear on their page in this order. Move a section to another page with the page menu. Untick “Show” to hide it without deleting it.', box),
+      panel('Add a new section', 'For example Awards, Supervision, Software or Media coverage. Pick the layout that fits.', h('div', { class: 'inline', style: { flexWrap: 'wrap' } }, [nameIn, typeSel, pageSel, add]))
     ]);
   }
 
@@ -632,7 +748,10 @@
   }
   function preview() {
     saveDraft();
-    window.open('../index.html?preview=draft', '_blank');
+    var file = 'index.html';
+    if (S.view.indexOf('section:') === 0) { var sec = S.data.sections[+S.view.split(':')[1]]; var pg = sec && (S.data.pages || {})[sec.page || 'home']; if (pg && pg.file) file = pg.file; }
+    if (S.view === 'pubs') file = 'publications.html';
+    window.open('../' + file + '?preview=draft', '_blank');
   }
 
   /* =========================================================
@@ -641,6 +760,8 @@
   function start(data) {
     S.data = data;
     S.data.site = S.data.site || {}; S.data.hero = S.data.hero || {}; S.data.sections = S.data.sections || [];
+    S.data.publications = S.data.publications || []; S.data.nav = S.data.nav || []; S.data.themes = S.data.themes || [];
+    S.data.pages = S.data.pages || { home: { label: 'Home', file: 'index.html' } };
     S.saved = JSON.stringify(data, null, 2) + '\n';
     $('login').hidden = true; $('app').hidden = false;
     $('repoLabel').textContent = C.owner + '/' + C.repo + ' · ' + C.branch;
