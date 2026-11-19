@@ -1054,24 +1054,6 @@
     },
     {
       "year": "2026",
-      "authors": "Borelli P., Donmez C., et al.",
-      "title": "Global observations reveal patterns in soil degradation across agricultural landscapes",
-      "venue": "Nature Communications",
-      "details": "",
-      "doi": "",
-      "category": "Peer-reviewed publication",
-      "status": "Under review",
-      "themes": [
-        "landscape"
-      ],
-      "featured": false,
-      "corresponding": false,
-      "url": "",
-      "attachments": [],
-      "ref": "review-1"
-    },
-    {
-      "year": "",
       "authors": "Donmez C., et al.",
       "title": "Long-term field experiments and living labs need a shared knowledge pathway",
       "venue": "Nature Sustainability",
@@ -1241,25 +1223,6 @@
       "ref": "journal-5"
     },
     {
-      "year": "2026",
-      "authors": "Giurgiu R.M., Řezník T., Wang B., Fensel A., Snopková D., Donmez C., Knapen R., Demenois J., De Man W.L., Berkvens N., Frayret C.B., Egmond F., Cesarini L., Panagos P.",
-      "title": "The Hidden Attrition of EU Soil Research Outputs",
-      "venue": "Frontiers in Soil Science",
-      "details": "",
-      "doi": "",
-      "category": "Peer-reviewed publication",
-      "status": "Under review",
-      "themes": [
-        "data",
-        "participatory"
-      ],
-      "featured": false,
-      "corresponding": false,
-      "url": "",
-      "attachments": [],
-      "ref": "journal-6"
-    },
-    {
       "year": "2025",
       "authors": "Kapur S., Akca E., Kadir S., Donmez C., et al.",
       "title": "Pedogenic evidence sheds light on the post-Roman pedo-sedimentological and human history of Tarsus, the Roman capital of CE 60, Cilicia, Mersin, Türkiye",
@@ -1370,44 +1333,6 @@
       "url": "",
       "attachments": [],
       "ref": "journal-12"
-    },
-    {
-      "year": "2025",
-      "authors": "Hamidov A., Kasymov U., Paul C., Mayar A., Donmez C., Webber H.",
-      "title": "Assessment of rebound effects in irrigated agriculture of Uzbekistan",
-      "venue": "International Journal of Water Resources Development",
-      "details": "",
-      "doi": "",
-      "category": "Peer-reviewed publication",
-      "status": "Under review",
-      "themes": [
-        "landscape",
-        "participatory"
-      ],
-      "featured": false,
-      "corresponding": false,
-      "url": "",
-      "attachments": [],
-      "ref": "journal-13"
-    },
-    {
-      "year": "2025",
-      "authors": "Yeler O., Satir O., Donmez C., Sargin B., Karaca S.",
-      "title": "Mapping agricultural suitability through multi-criteria decision making: a case study for apple cultivation in the Eastern Turkiye",
-      "venue": "Environmental and Sustainability Indicators",
-      "details": "",
-      "doi": "",
-      "category": "Peer-reviewed publication",
-      "status": "Under review",
-      "themes": [
-        "geoai",
-        "landscape"
-      ],
-      "featured": false,
-      "corresponding": true,
-      "url": "",
-      "attachments": [],
-      "ref": "journal-14"
     },
     {
       "year": "2024",
