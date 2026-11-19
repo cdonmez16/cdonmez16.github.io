@@ -54,7 +54,7 @@
     }
   ],
   "hero": {
-    "eyebrow": "Geospatial science · Environmental assessment · Research infrastructures",
+    "eyebrow": "",
     "title": "Geospatial Intelligence for Sustainable Landscapes and Agricultural Systems",
     "text": "I am a geospatial scientist working at the intersection of agricultural landscapes, long-term experiments and research data infrastructures. My work connects field evidence, spatial intelligence and collaborative research to support better environmental decisions.",
     "affiliation": "Senior Scientist · Leibniz Centre for Agricultural Landscape Research (ZALF), Germany\nProfessor · Landscape Architecture, Çukurova University, Türkiye",
@@ -84,10 +84,6 @@
       {
         "label": "ZALF",
         "url": "https://www.zalf.de/"
-      },
-      {
-        "label": "BonaRes LTE Map",
-        "url": "https://tools.bonares.de/ltfe/"
       },
       {
         "label": "GitHub",
