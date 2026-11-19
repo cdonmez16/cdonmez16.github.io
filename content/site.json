@@ -5,28 +5,61 @@
     "description": "Research on long-term agricultural experiments, geospatial intelligence, GeoAI and FAIR data infrastructures.",
     "footerNote": "Built for clear science and lasting collaboration",
     "copyright": "© 2026 Cenk Dönmez",
-    "cvButton": { "label": "CV", "url": "assets/uploads/cv.pdf" }
+    "cvButton": {
+      "label": "CV",
+      "url": "assets/uploads/cv.pdf"
+    }
   },
   "hero": {
     "eyebrow": "Geospatial intelligence · Long-term experiments · FAIR data",
     "title": "Connecting landscapes, long-term evidence and decisions.",
     "text": "I work at the interface of agricultural landscape research, long-term field experiments and scientific data infrastructures — turning decades of field evidence into spatial intelligence that science and policy can use.",
     "affiliation": "[Position] · [Institute], [City, Country]",
-    "portrait": "",
+    "portrait": "assets/uploads/2026/cenk.jpg",
     "portraitCaption": "",
     "buttons": [
-      { "label": "Explore my research", "url": "#research", "style": "primary" },
-      { "label": "Download CV", "url": "assets/uploads/cv.pdf", "style": "ghost" }
+      {
+        "label": "Explore my research",
+        "url": "#research",
+        "style": "primary"
+      },
+      {
+        "label": "Download CV",
+        "url": "assets/uploads/cv.pdf",
+        "style": "ghost"
+      }
     ],
     "links": [
-      { "label": "ORCID", "url": "https://orcid.org/" },
-      { "label": "Google Scholar", "url": "https://scholar.google.com/" },
-      { "label": "ResearchGate", "url": "https://www.researchgate.net/" },
-      { "label": "LinkedIn", "url": "https://www.linkedin.com/" },
-      { "label": "GitHub", "url": "https://github.com/cdonmez16" }
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/"
+      },
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/cdonmez16"
+      }
     ],
     "networksLabel": "Networks & initiatives",
-    "networks": ["BonaRes", "GLTEN", "LTAR", "EJP SOIL", "SoilWise", "Mission Soil"]
+    "networks": [
+      "BonaRes",
+      "GLTEN",
+      "LTAR",
+      "EJP SOIL",
+      "SoilWise",
+      "Mission Soil"
+    ]
   },
   "sections": [
     {
@@ -40,7 +73,11 @@
       "image": "",
       "attachments": [],
       "buttons": [
-        { "label": "Read full CV", "url": "assets/uploads/cv.pdf", "style": "ghost" }
+        {
+          "label": "Read full CV",
+          "url": "assets/uploads/cv.pdf",
+          "style": "ghost"
+        }
       ]
     },
     {
@@ -54,10 +91,34 @@
       "image": "",
       "attachments": [],
       "items": [
-        { "title": "Long-term field experiments", "text": "Documenting, harmonising and synthesising decades of experimental evidence on soils and agricultural systems.", "image": "", "attachments": [], "buttons": [] },
-        { "title": "Geospatial intelligence & GeoAI", "text": "Spatial analysis and machine learning that link site-level results to landscape and continental scales.", "image": "", "attachments": [], "buttons": [] },
-        { "title": "FAIR data & knowledge infrastructures", "text": "Metadata standards and interoperable platforms that make research data findable, accessible and reusable.", "image": "", "attachments": [], "buttons": [] },
-        { "title": "Environmental representativeness", "text": "How well do experiment networks cover the climates, soils and land uses they are meant to inform?", "image": "", "attachments": [], "buttons": [] }
+        {
+          "title": "Long-term field experiments",
+          "text": "Documenting, harmonising and synthesising decades of experimental evidence on soils and agricultural systems.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Geospatial intelligence & GeoAI",
+          "text": "Spatial analysis and machine learning that link site-level results to landscape and continental scales.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "FAIR data & knowledge infrastructures",
+          "text": "Metadata standards and interoperable platforms that make research data findable, accessible and reusable.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Environmental representativeness",
+          "text": "How well do experiment networks cover the climates, soils and land uses they are meant to inform?",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        }
       ]
     },
     {
@@ -75,27 +136,50 @@
           "name": "BonaRes LTE Overview Map",
           "role": "Co-developer & coordinator",
           "text": "An international geospatial infrastructure documenting long-term agricultural experiments, with harmonised metadata that connects networks across continents.",
-          "tags": ["Web GIS", "Metadata", "FAIR"],
+          "tags": [
+            "Web GIS",
+            "Metadata",
+            "FAIR"
+          ],
           "image": "",
           "featured": true,
           "attachments": [],
-          "buttons": [ { "label": "Open the map", "url": "https://lte.bonares.de/", "style": "primary" } ]
+          "buttons": [
+            {
+              "label": "Open the map",
+              "url": "https://lte.bonares.de/",
+              "style": "primary"
+            }
+          ]
         },
         {
           "name": "[Tool name — e.g. representativeness analysis workflow]",
           "role": "Developer",
           "text": "[Short description of what the tool does and who uses it.]",
-          "tags": ["GeoAI", "Python"],
+          "tags": [
+            "GeoAI",
+            "Python"
+          ],
           "image": "",
           "featured": false,
           "attachments": [],
-          "buttons": [ { "label": "View on GitHub", "url": "https://github.com/cdonmez16", "style": "ghost" } ]
+          "buttons": [
+            {
+              "label": "View on GitHub",
+              "url": "https://github.com/cdonmez16",
+              "style": "ghost"
+            }
+          ]
         },
         {
           "name": "[Software I use]",
           "role": "Everyday toolkit",
           "text": "[e.g. QGIS, ArcGIS Pro, R, Python, Google Earth Engine, PostGIS]",
-          "tags": ["GIS", "R", "Python"],
+          "tags": [
+            "GIS",
+            "R",
+            "Python"
+          ],
           "image": "",
           "featured": false,
           "attachments": [],
@@ -114,9 +198,33 @@
       "image": "",
       "attachments": [],
       "items": [
-        { "title": "GLTEN · LTAR · EJP SOIL", "category": "Network collaboration", "period": "[Years]", "text": "Aligning metadata and evidence across long-term experiment networks.", "image": "", "attachments": [], "buttons": [] },
-        { "title": "SoilWise", "category": "Knowledge infrastructure", "period": "[Years]", "text": "Contributing to a European knowledge repository for soil data and knowledge.", "image": "", "attachments": [], "buttons": [] },
-        { "title": "LTEs & living labs", "category": "Mission Soil", "period": "[Years]", "text": "Bridging long-term experiments and living labs through geospatial intelligence.", "image": "", "attachments": [], "buttons": [] }
+        {
+          "title": "GLTEN · LTAR · EJP SOIL",
+          "category": "Network collaboration",
+          "period": "[Years]",
+          "text": "Aligning metadata and evidence across long-term experiment networks.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "SoilWise",
+          "category": "Knowledge infrastructure",
+          "period": "[Years]",
+          "text": "Contributing to a European knowledge repository for soil data and knowledge.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "LTEs & living labs",
+          "category": "Mission Soil",
+          "period": "[Years]",
+          "text": "Bridging long-term experiments and living labs through geospatial intelligence.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        }
       ]
     },
     {
@@ -131,12 +239,58 @@
       "doiLabel": "DOI",
       "image": "",
       "attachments": [],
-      "buttons": [ { "label": "Full list on Google Scholar", "url": "https://scholar.google.com/", "style": "ghost" } ],
+      "buttons": [
+        {
+          "label": "Full list on Google Scholar",
+          "url": "https://scholar.google.com/",
+          "style": "ghost"
+        }
+      ],
       "items": [
-        { "year": "[Year]", "title": "[Journal article title on long-term experiment networks]", "authors": "Dönmez, C., [co-authors]", "venue": "[Journal]", "type": "Article", "doi": "", "summary": "", "image": "", "attachments": [] },
-        { "year": "[Year]", "title": "[Journal article title on environmental representativeness]", "authors": "Dönmez, C., [co-authors]", "venue": "[Journal]", "type": "Article", "doi": "", "summary": "", "image": "", "attachments": [] },
-        { "year": "[Year]", "title": "[Dataset / metadata release title]", "authors": "Dönmez, C., [co-authors]", "venue": "[Repository]", "type": "Dataset", "doi": "", "summary": "", "image": "", "attachments": [] },
-        { "year": "[Year]", "title": "[Report or policy brief title]", "authors": "[Authors]", "venue": "[Project / Network]", "type": "Report", "doi": "", "summary": "", "image": "", "attachments": [] }
+        {
+          "year": "[Year]",
+          "title": "[Journal article title on long-term experiment networks]",
+          "authors": "Dönmez, C., [co-authors]",
+          "venue": "[Journal]",
+          "type": "Article",
+          "doi": "",
+          "summary": "",
+          "image": "",
+          "attachments": []
+        },
+        {
+          "year": "[Year]",
+          "title": "[Journal article title on environmental representativeness]",
+          "authors": "Dönmez, C., [co-authors]",
+          "venue": "[Journal]",
+          "type": "Article",
+          "doi": "",
+          "summary": "",
+          "image": "",
+          "attachments": []
+        },
+        {
+          "year": "[Year]",
+          "title": "[Dataset / metadata release title]",
+          "authors": "Dönmez, C., [co-authors]",
+          "venue": "[Repository]",
+          "type": "Dataset",
+          "doi": "",
+          "summary": "",
+          "image": "",
+          "attachments": []
+        },
+        {
+          "year": "[Year]",
+          "title": "[Report or policy brief title]",
+          "authors": "[Authors]",
+          "venue": "[Project / Network]",
+          "type": "Report",
+          "doi": "",
+          "summary": "",
+          "image": "",
+          "attachments": []
+        }
       ]
     },
     {
@@ -150,9 +304,36 @@
       "image": "",
       "attachments": [],
       "items": [
-        { "course": "[Course title — e.g. Introduction to GIS for Agricultural Sciences]", "institution": "[University]", "period": "[Semester / Year]", "level": "MSc", "text": "[What students learn.]", "image": "", "attachments": [], "buttons": [] },
-        { "course": "[Workshop — e.g. FAIR metadata for long-term experiments]", "institution": "[Network / Summer school]", "period": "[Year]", "level": "Workshop", "text": "[Short description.]", "image": "", "attachments": [], "buttons": [] },
-        { "course": "[Thesis supervision]", "institution": "[University]", "period": "[Years]", "level": "Supervision", "text": "[Topics of supervised BSc/MSc/PhD theses.]", "image": "", "attachments": [], "buttons": [] }
+        {
+          "course": "[Course title — e.g. Introduction to GIS for Agricultural Sciences]",
+          "institution": "[University]",
+          "period": "[Semester / Year]",
+          "level": "MSc",
+          "text": "[What students learn.]",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "[Workshop — e.g. FAIR metadata for long-term experiments]",
+          "institution": "[Network / Summer school]",
+          "period": "[Year]",
+          "level": "Workshop",
+          "text": "[Short description.]",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "[Thesis supervision]",
+          "institution": "[University]",
+          "period": "[Years]",
+          "level": "Supervision",
+          "text": "[Topics of supervised BSc/MSc/PhD theses.]",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        }
       ]
     },
     {
@@ -166,8 +347,24 @@
       "image": "",
       "attachments": [],
       "items": [
-        { "title": "[Talk title]", "event": "[Event]", "place": "[City]", "date": "[Month Year]", "image": "", "attachments": [], "buttons": [] },
-        { "title": "[Keynote title]", "event": "[Conference]", "place": "[City]", "date": "[Month Year]", "image": "", "attachments": [], "buttons": [] }
+        {
+          "title": "[Talk title]",
+          "event": "[Event]",
+          "place": "[City]",
+          "date": "[Month Year]",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "[Keynote title]",
+          "event": "[Conference]",
+          "place": "[City]",
+          "date": "[Month Year]",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        }
       ]
     },
     {
@@ -181,8 +378,20 @@
       "image": "",
       "attachments": [],
       "items": [
-        { "date": "[Date]", "text": "[New paper, award, project start or event]", "image": "", "attachments": [], "buttons": [] },
-        { "date": "[Date]", "text": "[News item]", "image": "", "attachments": [], "buttons": [] }
+        {
+          "date": "[Date]",
+          "text": "[New paper, award, project start or event]",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "date": "[Date]",
+          "text": "[News item]",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        }
       ]
     },
     {
@@ -196,7 +405,13 @@
       "address": "[Institute], [Address]",
       "image": "",
       "attachments": [],
-      "buttons": [ { "label": "Send an email", "url": "mailto:your.email@institute.org", "style": "primary" } ]
+      "buttons": [
+        {
+          "label": "Send an email",
+          "url": "mailto:your.email@institute.org",
+          "style": "primary"
+        }
+      ]
     }
   ]
 }
