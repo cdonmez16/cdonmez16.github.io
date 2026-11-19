@@ -1,86 +1,70 @@
-# Cenk Dönmez — academic website
+# Cenk Dönmez — academic website (version 2)
 
-A fast, static academic website for GitHub Pages, with a built-in **Content Studio** (admin panel) for editing text, buttons, images and files, with no coding needed.
+A multi-page academic website for GitHub Pages, with a built-in **Content Studio** for editing all text, buttons, images, files and publications.
 
 ```
-index.html            the public website (one page, all sections)
-css/style.css         design: colours, typography, hover-enlarge, animations
-js/hero.js            animated vector background (contours + experiment network)
-js/main.js            builds the page from content/site.json
-content/site.json     ALL text, buttons, links, image and file paths
-assets/uploads/       your images, PDFs and slides (filled by the admin panel)
-admin/                Content Studio (index.html, admin.js, admin.css, config.js)
+index.html           Home: hero → achievements → research areas → featured contributions → research to practice → selected publications
+about.html           About: biography, positions, education
+publications.html    Full publication list: search, plus filters for year, type and research area
+projects.html        Projects & Infrastructure
+leadership.html      Academic Leadership
+teaching.html        Teaching & Mentoring
+talks.html           Talks & Outreach
+css/style.css        Design
+js/hero.js           Animated geospatial network and landscape contours (hero and page headers)
+js/main.js           Builds every page from content/site.json
+content/site.json    ALL content, including the 137 publications
+admin/               Content Studio (unchanged way of working: token sign-in, uploads, media library, publish)
+assets/uploads/      Your images, PDFs and slides
 ```
 
----
+## Replacing the current website safely (about 5 minutes)
 
-## 1. Put the files on GitHub (one time)
+1. **Back up first.** On github.com/cdonmez16/cenkdonmez.github.io, click **Code → Download ZIP**. That gives you a copy of everything as it is today.
+2. Click **Add file → Upload files**, then drag in **everything inside this folder** (including `.nojekyll` and the `admin`, `assets`, `content`, `css` and `js` folders). Files with the same name are replaced; your uploaded files in `assets/uploads/` are kept.
+3. Write a commit message such as "Website version 2" and click **Commit changes**.
+4. Wait about one minute, then open https://cdonmez16.github.io/cenkdonmez.github.io/ and reload once (Ctrl/⌘ + Shift + R).
 
-1. Open your repository **github.com/cdonmez16/cenkdonmez.github.io**.
-2. Optional but recommended: download a copy of your current files as a backup (**Code → Download ZIP**).
-3. Delete the old site files (or keep anything you still need, such as images).
-4. Click **Add file → Upload files** and drag in **everything inside this folder**, including the hidden `.nojekyll` file. Commit.
-5. Go to **Settings → Pages**, and check that the source is **Deploy from a branch → main → / (root)**.
+> Your repository currently has no `index.html` at the top level (it was deleted in an earlier commit), so the homepage did not load. This package restores it.
 
-After about a minute the site is live at **https://cdonmez16.github.io/cenkdonmez.github.io/**.
+**Optional cleanup:** these files belong to the very first version of the site. Nothing uses them any more, and you can delete them on GitHub if you like: `admin.html`, `content.json`, `cv.html`, `posts.html`, `presentations.html`, the `data/` folder, and in `assets/`: `admin.html`, `admin.js`, `background.js`, `cv.html`, `index.html`, `posts.html`, `presentations.html`, `site.js`, `style.css`, `placeholder.txt`, `README.md`, `Cenk.JPG`, `media/`.
 
-> If your repository's branch is not called `main`, or you rename the repository, change `admin/config.js`.
+**Your portrait:** the site uses `assets/uploads/2026/cenk-web.jpg`, a 130 KB copy of your uploaded photo for fast loading. The 1.9 MB original stays in the repository.
 
-## 2. Create your admin key (one time, about 1 minute)
+## Editing
 
-The admin panel saves changes directly to GitHub, so it needs a personal access token that can write **only to this repository**.
+Open **/admin/** (or click "Manage content" in the footer) and sign in with your GitHub token, exactly as before.
 
-1. Go to **GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**.
-2. Name: `Content Studio`. Expiration: choose what you like (for example 1 year).
-3. **Repository access → Only select repositories →** `cenkdonmez.github.io`.
-4. **Permissions → Repository permissions → Contents → Read and write.** (Metadata: read is added automatically.)
-5. Generate the token and copy it (it starts with `github_pat_`).
+- **Publications:** search, filter, edit, add (new entries go to the top), attach PDFs, assign research areas, and tick **Show on homepage** to feature an entry under *Selected publications*.
+- **Site, menu & contact:** every menu item (text, link, highlighted or normal) and the contact band shown at the bottom of every page.
+- **Homepage hero:** headline, introduction, positions (one per line), portrait, buttons, profile links and networks.
+- **Page headers:** title and introduction of each sub-page, plus an optional image.
+- **Sections** (listed in the sidebar under each page): every section and item can have an image, files (PDF, PPT/PPTX, images or links) and buttons.
+- **Add / move sections:** add new sections (such as Awards), move a section to another page, reorder, hide or delete.
+- **Achievements:** a highlight value such as `{articles}` is counted automatically from your publication list. Available counts: `{articles}`, `{chapters}`, `{conferences}`, `{underreview}`, `{total}`, `{firstyear}`, `{firstconference}`.
 
-Keep it private, like a password. If it is ever exposed, delete it on GitHub and create a new one.
+Use **Preview** to check your changes, **Publish changes** to put them live, and **Download JSON** for a backup.
 
-## 3. Edit your site
+## Before sharing the site
 
-Open **https://cdonmez16.github.io/cenkdonmez.github.io/admin/** (there is also a "Manage content" link in the footer) and paste the token.
+Fill in or check these:
+- **CV:** go to *Site, menu & contact → Top menu → CV*, click **Upload** and choose your CV PDF. (The About page's **Download CV** button also points to `assets/uploads/cv.pdf`.)
+- **E-mail address:** under *Contact band*.
+- **Academic Leadership → Service** and **Teaching & Mentoring → Supervision:** replace the [bracketed] placeholders, or hide those sections.
+- **Projects:** the collaboration period for "BonaRes & EJP SOIL" is still a placeholder.
+- **Images:** research maps, figures and photos (for example a screenshot of the LTE map) can be added to any card. Until then, cards show neutral contour placeholders.
 
-- **Every section** (About, Research, Tools, Projects, Publications, Teaching, Talks, News, Contact) and **every item** has:
-  - an **image** (upload, drag and drop, or choose from the library),
-  - **files**: drop any number of PDF, PPT/PPTX or image files, or add a web link,
-  - **buttons**: edit the text, the link (a web address, `#section`, or an uploaded file) and the style (filled or outline).
-- **Hero**: headline, introduction, portrait photo, buttons, profile links, partner networks.
-- **Site & menu**: name, browser title, footer, and the **CV** button in the top menu (click *Upload* next to its link to upload your CV PDF).
-- **Add / reorder sections**: show, hide, reorder or delete sections, or add new ones (for example *Awards* or *Supervision*).
-- **Media library**: see, copy or delete everything you have uploaded.
+## About the publication data
 
-Buttons along the top of the admin panel:
+All 137 entries were taken from *4_1_CenkDonmez_Publications.docx* (as of November 2025), keeping titles, authors, years, venues and DOIs as written there. Works under review, submitted or in preparation are labelled as such, and never as published.
 
-| Button | What it does |
-|---|---|
-| **Preview** | Opens the website with your unpublished edits (only you see them) |
-| **Publish changes** | Saves to GitHub. The site updates in about a minute. Shortcut: Ctrl/⌘ + S |
-| **Download JSON** | Saves a backup copy of all content to your computer |
+Please check these points:
+- **Research areas:** each entry was assigned to its research areas from its title. Review and change them in Content Studio.
+- **"inirrigated" (2026, Uzbekistan paper):** this appears in the source document and was kept exactly.
+- **Incomplete DOI** `doi:10.14627/537690xxx` (2020, *Journal of Digital Landscape Architecture*): kept as text, not linked.
+- **2005 symposium entry:** the source has an unclosed quotation mark, so the split between title and event is my reading of it.
+- **Five entries in your peer-reviewed section are marked "under review" or "submitted" in the source.** These are the multi-covariate, hidden-attrition, green-spaces, rebound-effects and apple-suitability papers. They are shown under "Under review & in preparation" and are not counted as published.
 
-Uploads are saved to the repository straight away; text edits are saved when you press **Publish changes**. Your edits are also kept as a draft in the browser, so an accidentally closed tab can be restored.
+## Local test
 
-**Text formatting:** in longer texts, a blank line starts a new paragraph, `**bold**` makes text bold, and `[link text](https://…)` makes a link.
-
-**File sizes:** GitHub accepts up to 100 MB per file. For large slide decks, save them as PDF. For photos, keep them under about 1 MB (2000 px wide is plenty).
-
-## 4. Things to fill in first
-
-Everything in `[square brackets]` is a placeholder:
-
-- Your position and institute (**Hero**), e-mail and address (**Contact**)
-- Your portrait (**Hero → Portrait photo**) and CV (**Site & menu → CV button → Upload**)
-- Your ORCID, Google Scholar, ResearchGate and LinkedIn addresses (**Hero → Profile links**)
-- Real publications, courses, talks and news
-- Check the BonaRes LTE Overview Map link in **Tools**
-
-## Working without a token
-
-On the login page, choose **Work offline**. You can edit and preview everything, then **Download JSON** and upload the file to `content/site.json` on GitHub yourself. You can't upload files in offline mode.
-
-## Notes
-
-- The site works in all modern browsers and on phones. Animations switch off for visitors who have asked their system for reduced motion.
-- The admin page is marked `noindex` and does nothing without a valid token, so visitors who find it cannot change anything.
-- For a local test on your computer, run `python3 -m http.server` in this folder and open http://localhost:8000.
+Run `python3 -m http.server` in this folder and open http://localhost:8000.
