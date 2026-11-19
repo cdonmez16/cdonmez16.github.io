@@ -3,66 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cenk Dönmez — Geospatial Intelligence for Sustainable Landscapes and Agricultural Systems</title>
-  <meta name="description" content="Geospatial and environmental scientist: GeoAI, remote sensing, landscape and environmental assessment, long-term agricultural research, FAIR data infrastructures and knowledge exchange.">
-  <meta name="theme-color" content="#0E1F19">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Content Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
 </head>
-<body data-page="home">
-  <a class="skip" href="#main">Skip to content</a>
+<body>
 
-  <header class="topbar" id="top">
-    <div class="wrap wrap--wide topbar__inner">
-      <a class="brand" href="index.html" data-bind="site.name">Cenk Dönmez</a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
-        <span></span><span></span>
-      </button>
-      <nav id="nav" class="nav" aria-label="Main"></nav>
-    </div>
-  </header>
+  <!-- Sign in -->
+  <div class="login" id="login">
+    <form class="login__card" id="loginForm">
+      <div class="login__brand">Content Studio</div>
+      <p class="login__lead">Edit your website, upload images and files, and publish — all saved straight to your GitHub repository.</p>
+      <label class="field">
+        <span class="field__label">GitHub access token</span>
+        <input type="password" id="token" autocomplete="off" placeholder="github_pat_…" required>
+        <span class="field__hint">A fine-grained token with <strong>Contents: read and write</strong> on this repository only. See the README for the 1-minute setup.</span>
+      </label>
+      <label class="check"><input type="checkbox" id="remember"> Remember on this device</label>
+      <div class="login__error" id="loginError" role="alert" hidden></div>
+      <button class="btn btn--primary btn--wide" type="submit">Sign in</button>
+      <button class="btn btn--ghost btn--wide" type="button" id="offlineBtn">Work offline (edit and download the file)</button>
+      <a class="login__back" href="../">← Back to website</a>
+    </form>
+  </div>
 
-  <section class="hero" aria-labelledby="hero-title">
-    <canvas class="hero__canvas" aria-hidden="true"></canvas>
-    <div class="wrap hero__inner">
-      <div class="hero__text">
-        <p class="eyebrow eyebrow--light" data-bind="hero.eyebrow"></p>
-        <h1 id="hero-title" class="hero__title" data-bind="hero.title"></h1>
-        <p class="hero__lead" data-bind="hero.text"></p>
-        <p class="hero__aff" data-bind="hero.affiliation"></p>
-        <div class="btn-row" data-slot="hero.buttons"></div>
-        <div class="hero__links" data-slot="hero.links"></div>
+  <!-- App -->
+  <div class="app" id="app" hidden>
+    <aside class="side">
+      <div class="side__brand">
+        <div class="side__title">Content Studio</div>
+        <div class="side__repo" id="repoLabel"></div>
       </div>
-      <figure class="hero__portrait" data-slot="hero.portrait"></figure>
-    </div>
-    <div class="hero__scroll" aria-hidden="true"><span></span></div>
-  </section>
+      <nav class="side__nav" id="sideNav" aria-label="Content"></nav>
+      <div class="side__foot">
+        <div class="side__status" id="connStatus"></div>
+        <button class="linkbtn" type="button" id="signOut">Sign out</button>
+      </div>
+    </aside>
 
-  <div class="networks">
-    <div class="wrap networks__inner" data-slot="hero.networks"></div>
+    <div class="main">
+      <header class="bar">
+        <div>
+          <div class="bar__crumb" id="crumb">Content</div>
+          <h1 class="bar__title" id="viewTitle">Overview</h1>
+        </div>
+        <div class="bar__actions">
+          <span class="pill pill--warn" id="dirtyPill" hidden>Unpublished changes</span>
+          <button class="btn btn--ghost" type="button" id="previewBtn">Preview</button>
+          <button class="btn btn--ghost" type="button" id="downloadBtn">Download JSON</button>
+          <button class="btn btn--primary" type="button" id="publishBtn">Publish changes</button>
+        </div>
+      </header>
+      <div class="notice" id="draftNotice" hidden>
+        <span>You have an unsaved draft from an earlier session.</span>
+        <button class="btn btn--small btn--primary" type="button" id="restoreDraft">Restore it</button>
+        <button class="btn btn--small btn--ghost" type="button" id="discardDraft">Discard</button>
+      </div>
+      <div class="view" id="view"></div>
+    </div>
   </div>
 
-  <main id="main"></main>
-
-  <section class="contact dark" id="contact" aria-label="Contact"></section>
-
-  <footer class="footer">
-    <div class="wrap footer__inner">
-      <span data-bind="site.copyright"></span>
-      <span data-bind="site.footerNote"></span>
-      <a href="admin/" class="footer__admin">Manage content</a>
+  <!-- Media library dialog -->
+  <dialog class="dialog" id="libraryDialog">
+    <div class="dialog__head">
+      <h2>Media library</h2>
+      <button class="iconbtn" type="button" data-close aria-label="Close">×</button>
     </div>
-  </footer>
+    <div class="dialog__body" id="libraryBody"></div>
+  </dialog>
 
-  <div class="lightbox" hidden>
-    <button class="lightbox__close" type="button" aria-label="Close image">×</button>
-    <img alt="">
-  </div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <input type="file" id="filePicker" hidden>
 
-  <noscript><p class="wrap" style="padding:40px 0">This site needs JavaScript to load its content.</p></noscript>
-  <script src="js/hero.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
 </body>
 </html>
