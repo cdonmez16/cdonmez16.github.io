@@ -384,22 +384,23 @@
       if (!has(v) && el.tagName === 'P') el.hidden = true;
     });
     var slot = function (name) { return document.querySelector('[data-slot="' + name + '"]'); };
+    var setSlot = function (name, html) { var el = slot(name); if (el) el.innerHTML = html; };
 
     if (PAGE === 'home') {
-      slot('hero.buttons').innerHTML = list(hero.buttons).map(function (b) { return button(b); }).join('');
-      slot('hero.links').innerHTML = list(hero.links).filter(function (l) { return has(l.label); })
-        .map(function (l) { return '<a ' + linkAttrs(l.url) + '>' + esc(l.label) + '</a>'; }).join('');
+      setSlot('hero.buttons', list(hero.buttons).map(function (b) { return button(b); }).join(''));
+      setSlot('hero.links', list(hero.links).filter(function (l) { return has(l.label); })
+        .map(function (l) { return '<a ' + linkAttrs(l.url) + '>' + esc(l.label) + '</a>'; }).join(''));
       var initials = String(site.name || '').split(/\s+/).map(function (w) { return w.charAt(0); }).join('').slice(0, 2);
-      slot('hero.portrait').innerHTML = '<div class="portrait-wrap"><div class="portrait">' + (has(hero.portrait)
+      setSlot('hero.portrait', '<div class="portrait-wrap"><div class="portrait">' + (has(hero.portrait)
         ? '<img src="' + esc(safeUrl(hero.portrait)) + '" alt="Portrait of ' + esc(site.name) + '" fetchpriority="high">'
         : '<svg viewBox="0 0 320 400" style="width:100%;height:100%" role="img" aria-label="Portrait placeholder"><rect width="320" height="400" fill="#1C3A30"/>' +
           '<g fill="none" stroke="#3E6E5F">' + [1, 2, 3, 4, 5, 6, 7, 8].map(function (k) { return '<ellipse cx="160" cy="200" rx="' + (k * 22) + '" ry="' + (k * 28) + '"/>'; }).join('') + '</g>' +
           '<text x="160" y="214" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="56" fill="#9CCBB9">' + esc(initials) + '</text></svg>') +
-        '</div>' + (has(hero.portraitCaption) ? '<figcaption class="portrait__caption">' + esc(hero.portraitCaption) + '</figcaption>' : '') + '</div>';
+        '</div>' + (has(hero.portraitCaption) ? '<figcaption class="portrait__caption">' + esc(hero.portraitCaption) + '</figcaption>' : '') + '</div>');
       var nets = list(hero.networks);
-      slot('hero.networks').innerHTML = nets.length ? '<span class="networks__label">' + esc(hero.networksLabel) + '</span><div class="networks__list">' +
-        nets.map(function (n) { return '<span>' + esc(n) + '</span>'; }).join('') + '</div>' : '';
-      if (!nets.length) slot('hero.networks').parentElement.hidden = true;
+      setSlot('hero.networks', nets.length ? '<span class="networks__label">' + esc(hero.networksLabel) + '</span><div class="networks__list">' +
+        nets.map(function (n) { return '<span>' + esc(n) + '</span>'; }).join('') + '</div>' : '');
+      if (!nets.length && slot('hero.networks') && slot('hero.networks').parentElement) slot('hero.networks').parentElement.hidden = true;
     } else {
       var ph = slot('pagehead');
       if (ph) ph.innerHTML = '<div class="pagehead__text">' + (has(pageInfo.eyebrow) ? '<p class="eyebrow eyebrow--light">' + esc(pageInfo.eyebrow) + '</p>' : '') +
