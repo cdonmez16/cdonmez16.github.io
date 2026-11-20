@@ -579,24 +579,40 @@
       "buttons": [],
       "items": [
         {
-          "period": "Current",
+          "period": "05/2021-Current",
           "title": "Senior Scientist",
           "organization": "Leibniz Centre for Agricultural Landscape Research (ZALF), Germany",
           "text": "Research on geospatial assessments, long-term field experiments and research data infrastructure; scientific coordination and European project activities.",
           "attachments": []
         },
         {
-          "period": "Current",
-          "title": "Professor · Landscape Architecture",
+          "period": "03/2023-11/2025",
+          "title": "Professor · Landscape Architecture-Digital Planning Division",
           "organization": "Çukurova University, Türkiye",
           "text": "Research and teaching in landscape planning, GIS, remote sensing and environmental assessment.",
           "attachments": []
         },
         {
-          "period": "Earlier",
-          "title": "DAAD Research Scholar",
+          "period": "2009-03/2010",
+          "title": "DAAD PhD Scholar",
           "organization": "Friedrich Schiller University Jena, Germany",
           "text": "Geoinformatics and spatial modelling research.",
+          "attachments": []
+        },
+        {
+          "period": "05/2010-09/2010",
+          "title": "Research Fellow",
+          "organization": "University of California Santa Barbara",
+          "text": "EU Marie-Curie Programme. Department of Geography",
+          "image": "",
+          "attachments": []
+        },
+        {
+          "period": "2009",
+          "title": "Research Fellow",
+          "organization": "Boston University",
+          "text": "EU Marie-Curie Programme, Center for Environmental Research",
+          "image": "",
           "attachments": []
         }
       ]
