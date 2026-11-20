@@ -547,7 +547,7 @@
       "id": "bio",
       "page": "about",
       "type": "about",
-      "visible": true,
+      "visible": false,
       "eyebrow": "Biography",
       "title": "Science across boundaries",
       "body": "My research brings together GIS, remote sensing, spatial modelling and long-term field experiments to understand agricultural landscapes and make scientific evidence more useful. Alongside research, I develop data infrastructures and help coordinate international collaborations linking experiments, living labs and decision-making.\n\nI am a **Senior Scientist at the Leibniz Centre for Agricultural Landscape Research (ZALF)** in Germany, where I work on geospatial assessments, long-term field experiments and research data infrastructure, together with scientific coordination and European project activities. I am also **Professor of Landscape Architecture at Çukurova University** in Türkiye, with research and teaching in landscape planning, GIS, remote sensing and environmental assessment.",
