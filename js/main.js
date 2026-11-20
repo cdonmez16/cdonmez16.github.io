@@ -432,14 +432,6 @@
       return '<a ' + linkAttrs(url) + ' class="' + (n.style === 'primary' ? 'nav__cv' : '') + (active ? ' is-active' : '') + '"' + (active ? ' aria-current="page"' : '') + '>' + esc(n.label) + '</a>';
     }).join('');
 
-    // Keep the publication catalogue visible even if reveal animations fail.
-    if (PAGE === 'publications') {
-      document.querySelectorAll('#main .reveal').forEach(function (el) {
-        el.classList.add('is-visible');
-        el.style.opacity = '1';
-        el.style.transform = 'none';
-      });
-    }
     wire();
     wirePublications();
   }
@@ -514,15 +506,6 @@
   if (window.SITE_CONTENT) { render(window.SITE_CONTENT); return; }
   fetch('content/site.json', { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (data) {
-      try { render(data); }
-      catch (err) {
-        console.error('Website rendering failed:', err);
-        showError('Website rendering error: ' + (err && err.message ? err.message : String(err)));
-      }
-    })
-    .catch(function (err) {
-      console.error('Website content loading failed:', err);
-      showError('Content could not be loaded: ' + (err && err.message ? err.message : String(err)));
-    });
+    .then(render)
+    .catch(function () { showError('Content could not be loaded. If you opened this file directly from your computer, run it through GitHub Pages or a local web server instead.'); });
 })();
