@@ -385,7 +385,7 @@
     });
     var slot = function (name) { return document.querySelector('[data-slot="' + name + '"]'); };
 
-    if (PAGE === 'home') {
+    if (PAGE === 'home' || PAGE === 'about') {
       slot('hero.buttons').innerHTML = list(hero.buttons).map(function (b) { return button(b); }).join('');
       slot('hero.links').innerHTML = list(hero.links).filter(function (l) { return has(l.label); })
         .map(function (l) { return '<a ' + linkAttrs(l.url) + '>' + esc(l.label) + '</a>'; }).join('');
