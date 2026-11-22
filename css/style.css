@@ -471,3 +471,16 @@ body[data-page="publications"] #main .reveal {
   transform: none !important;
   transition: none !important;
 }
+
+/* Publications: permanently disable hidden reveal states */
+body[data-page="publications"] #main,
+body[data-page="publications"] #main .section,
+body[data-page="publications"] #main .reveal,
+body[data-page="publications"] #main .pub,
+body[data-page="publications"] #main .pubgroup {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+}
