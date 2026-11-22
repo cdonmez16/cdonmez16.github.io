@@ -463,3 +463,11 @@ a:hover { color: var(--accent-dark); }
   .pagehead__inner { padding-top: 120px; padding-bottom: 52px; }
   .stat__value { font-size: 40px; }
 }
+
+/* Fix: Keep publication content visible */
+body[data-page="publications"] #main .reveal {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  transition: none !important;
+}
