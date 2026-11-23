@@ -180,6 +180,13 @@
       "title": "Talks & outreach",
       "intro": "Invited lectures, conference presentations and updates from my research.",
       "image": ""
+    },
+    "tools": {
+      "label": "Scientific Tools & Infrastructures",
+      "file": "scientific-tools.html",
+      "eyebrow": "Scientific Tools & Infrastructures",
+      "title": "Connecting environmental evidence, data and spatial intelligence",
+      "intro": "Research platforms, geospatial methods and emerging tools that make long-term experimental and environmental knowledge easier to discover, interpret and apply."
     }
   },
   "contact": {
@@ -695,19 +702,19 @@
     },
     {
       "id": "infrastructure",
-      "page": "projects",
+      "page": "tools",
       "type": "tools",
       "visible": true,
       "eyebrow": "",
-      "title": "Scientific Tools & Infrastructures",
-      "intro": "",
+      "title": "Scientific tools, methods & infrastructures",
+      "intro": "Operational platforms, reusable analytical methods and emerging research concepts.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
           "name": "BonaRes LTE Overview Map",
-          "role": "My role: co-developer and coordinator",
+          "role": "co-developer and coordinator",
           "text": "A discoverable, curated overview of long-term field experiments, supporting experimental comparison, data reuse and international network connections.",
           "tags": [
             "LTEs",
@@ -728,11 +735,13 @@
               "url": "https://doi.org/10.1016/j.compag.2026.111534",
               "style": "ghost"
             }
-          ]
+          ],
+          "category": "Research platforms",
+          "status": "Operational platform"
         },
         {
           "name": "SoilWise catalogue",
-          "role": "My role: contributor (knowledge management, BonaRes reuse)",
+          "role": "contributor (knowledge management, BonaRes reuse)",
           "text": "Part of an interoperable knowledge infrastructure for European soil data and knowledge.",
           "tags": [
             "FAIR data",
@@ -748,11 +757,13 @@
               "url": "https://catalogue.soilwise-he.eu/",
               "style": "ghost"
             }
-          ]
+          ],
+          "category": "Research platforms",
+          "status": "Collaborative infrastructure"
         },
         {
           "name": "BonaRes Repository",
-          "role": "My role: co-author of the repository paper",
+          "role": "co-author of the repository paper",
           "text": "A repository for soil research data supporting effective reuse in agroecosystem science.",
           "tags": [
             "Repository",
@@ -767,7 +778,73 @@
               "url": "https://doi.org/10.1111/ejss.70103",
               "style": "ghost"
             }
-          ]
+          ],
+          "category": "Research platforms",
+          "status": "Collaborative infrastructure"
+        },
+        {
+          "name": "LTE metadata harmonisation",
+          "category": "Research platforms",
+          "status": "Data stewardship & methods",
+          "role": "Metadata curation and interoperability",
+          "text": "Schema development, metadata curation and cross-network integration approaches supporting consistent descriptions and discovery of long-term experiments.",
+          "tags": [
+            "Metadata",
+            "Interoperability",
+            "LTE networks"
+          ],
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "name": "Environmental representativeness & research gaps",
+          "category": "Analytical methods",
+          "status": "Geospatial assessment",
+          "role": "Spatial research methods",
+          "text": "Multivariate spatial comparison of experimental sites and agricultural landscapes to identify environmental coverage, representativeness and research gaps.",
+          "tags": [
+            "GIS",
+            "Representativeness",
+            "Research gaps"
+          ],
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "name": "Climate-sensitive suitability & vulnerability",
+          "category": "Analytical methods",
+          "status": "GeoAI & spatial modelling",
+          "role": "Spatial modelling research",
+          "text": "Machine-learning and spatial modelling workflows for evaluating agroenvironmental conditions and future climate-related changes.",
+          "tags": [
+            "GeoAI",
+            "Spatial modelling",
+            "Climate"
+          ],
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "name": "LTE2LL — Linking Long-Term Experiments and Living Labs",
+          "category": "Emerging concepts",
+          "status": "Research concept / prototype",
+          "role": "Concept development",
+          "text": "An emerging approach to contextualise long-term experimental evidence for Living Labs through environmental similarity, evidence assessment, research-gap analysis and stakeholder perspectives.",
+          "tags": [
+            "Living Labs",
+            "Evidence transfer",
+            "Participatory assessment"
+          ],
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": []
         }
       ]
     },
