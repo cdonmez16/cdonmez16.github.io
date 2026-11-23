@@ -31,7 +31,7 @@
 @media(max-width:760px){.tools-grid{grid-template-columns:1fr}.tools-card--hero{grid-template-columns:1fr}.tools-card__visual{min-height:190px}.tools-card__body{padding:26px}.tools-card--hero h3{font-size:28px}.tools-page{padding-top:52px}}
 </style></head>
 <body data-page="tools"><a class="skip" href="#main">Skip to content</a>
-<header class="topbar" id="top"><div class="wrap wrap--wide topbar__inner"><a class="brand" href="index.html">Cenk Dönmez</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button><nav id="nav" class="nav" aria-label="Main"><a href="about.html">About</a><a href="index.html#research">Research</a><a href="publications.html">Publications</a><a href="projects.html">Projects</a><a href="scientific-tools.html" class="is-active" aria-current="page">Tools</a><a href="leadership.html">Academic Leadership</a><a href="teaching.html">Teaching</a><a href="talks.html">Talks</a><a href="#contact">Contact</a></nav></div></header>
+<header class="topbar" id="top"><div class="wrap wrap--wide topbar__inner"><a class="brand" href="index.html" data-bind="site.name">Cenk Dönmez</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span></button><nav id="nav" class="nav" aria-label="Main"></nav></div></header>
 <section class="pagehead" aria-labelledby="page-title"><canvas class="hero__canvas" aria-hidden="true"></canvas><div class="wrap pagehead__inner"><div class="pagehead__text"><p class="eyebrow eyebrow--light">SCIENTIFIC TOOLS & INFRASTRUCTURES</p><h1 class="pagehead__title" id="page-title">Connecting environmental evidence, data and spatial intelligence</h1><p class="pagehead__intro">Research platforms, geospatial methods and emerging tools that make long-term experimental and environmental knowledge easier to discover, interpret and apply.</p></div></div></section>
 <main id="main" class="tools-page"><div class="wrap"><p class="tools-intro">My work combines the development of research data infrastructures with spatial analysis and methodological innovation. The outputs below range from operational platforms to reproducible analytical approaches and research concepts under development.</p>
 <section aria-labelledby="platforms"><p class="eyebrow">01 / Research platforms</p><h2 class="tools-section__heading" id="platforms">Data infrastructures & discovery</h2><p class="tools-section__lead">Curated metadata and interoperable knowledge services that help researchers find and reuse long-term environmental evidence.</p><div class="tools-grid">
@@ -48,5 +48,50 @@
 </div></main>
 <section class="contact dark" id="contact" aria-label="Contact"><div class="wrap contact__inner"><div class="contact__main"><p class="eyebrow eyebrow--light">COLLABORATE</p><h2 class="contact__title">Interested in applying or developing these approaches?</h2><p class="contact__text">Explore the research, publications and projects behind these outputs, or get in touch about potential collaboration.</p></div><div class="contact__side"><a class="btn btn--primary" href="index.html#contact">Contact & collaboration</a></div></div></section>
 <footer class="footer"><div class="wrap footer__inner"><span>© Cenk Dönmez</span><a class="footer__admin" href="admin/">Manage content</a></div></footer>
-<script src="js/hero.js" defer></script><script>document.querySelector('.menu-toggle').addEventListener('click',function(){var n=document.getElementById('nav');var open=n.classList.toggle('is-open');this.setAttribute('aria-expanded',String(open))});window.addEventListener('scroll',function(){document.querySelector('.topbar').classList.toggle('is-scrolled',window.scrollY>20)},{passive:true});</script>
+<script src="js/hero.js" defer></script><script>
+/* Navigation is shared with the rest of the website through content/site.json.
+   This standalone page deliberately does not load js/main.js because its
+   content is currently authored directly in this HTML file. */
+(function () {
+  var nav = document.getElementById('nav');
+  var toggle = document.querySelector('.menu-toggle');
+  function safeUrl(url) {
+    url = String(url || '').trim();
+    return /^(javascript|data|vbscript):/i.test(url) ? '#' : url;
+  }
+  fetch('content/site.json', {cache:'no-cache'})
+    .then(function (response) { if (!response.ok) throw new Error('Site content unavailable'); return response.json(); })
+    .then(function (data) {
+      var brand = document.querySelector('[data-bind="site.name"]');
+      if (brand && data.site && data.site.name) brand.textContent = data.site.name;
+      nav.replaceChildren();
+      (Array.isArray(data.nav) ? data.nav : []).forEach(function (item) {
+        if (!item || !item.label) return;
+        var link = document.createElement('a');
+        link.href = safeUrl(item.url);
+        link.textContent = item.label;
+        if (item.style === 'primary') link.classList.add('nav__cv');
+        if (link.getAttribute('href').split(/[?#]/)[0] === 'scientific-tools.html') {
+          link.classList.add('is-active'); link.setAttribute('aria-current','page');
+        }
+        nav.appendChild(link);
+      });
+    })
+    .catch(function () {
+      var link = document.createElement('a');
+      link.href = 'index.html'; link.textContent = 'Home'; nav.appendChild(link);
+    });
+  toggle.addEventListener('click',function(){
+    var open = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.closest('a')) {nav.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');}
+  });
+  window.addEventListener('scroll',function(){
+    document.querySelector('.topbar').classList.toggle('is-scrolled',window.scrollY>40);
+  },{passive:true});
+})();
+</script>
 </body></html>
