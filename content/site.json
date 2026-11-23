@@ -160,9 +160,9 @@
     "leadership": {
       "label": "Academic Leadership",
       "file": "leadership.html",
-      "eyebrow": "Prof.Dr. Cenk Dönmez",
-      "title": "Scientific coordination and international collaboration",
-      "intro": "Coordinating research initiatives and connecting experiment networks, data infrastructures and partners across countries.",
+      "eyebrow": "Scientific community",
+      "title": "Academic leadership & scientific service",
+      "intro": "Building international research connections, supporting scientific quality and recognising contributions to geospatial and environmental research.",
       "image": ""
     },
     "teaching": {
@@ -1108,40 +1108,27 @@
       ]
     },
     {
-      "id": "coordination",
+      "id": "scientific-networks",
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "",
-      "title": "Scientific coordination",
-      "intro": "",
+      "eyebrow": "Networks & leadership",
+      "title": "Scientific networks & community building",
+      "intro": "Connecting research groups, infrastructures and international scientific communities.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
-          "title": "SOILTE.ai — Horizon Europe proposal (2026)",
-          "text": "Scientific coordination of an international consortium around LTE data, AI-ready infrastructure and soil decision support. Submission does not imply funding.",
+          "title": "International Long-Term Experiment Networks",
+          "text": "- Scientific coordination of ZALF’s long-term experiment network and international cooperation.\n- Connecting European and global LTE communities through knowledge exchange and metadata harmonisation.\n- Supporting research infrastructure development and reuse of long-term experimental evidence.",
           "image": "",
           "attachments": [],
           "buttons": []
         },
         {
-          "title": "BonaRes LTE Overview Map",
-          "text": "Coordination of the international map of long-term field experiments and its metadata harmonisation.",
-          "image": "",
-          "attachments": [],
-          "buttons": [
-            {
-              "label": "Open the map",
-              "url": "https://tools.bonares.de/ltfe/",
-              "style": "ghost"
-            }
-          ]
-        },
-        {
-          "title": "International LTE network collaboration",
-          "text": "Working across GLTEN, LTAR and EJP SOIL to connect long-term experiment networks in Europe and beyond.",
+          "title": "LANDGIS Research Laboratory",
+          "text": "- Co-leadership of the LANDGIS Research Laboratory at Çukurova University.\n- Mentoring a multidisciplinary team of 13 researchers.\n- Collaborative research across GIS, remote sensing, environmental modelling and landscape planning.",
           "image": "",
           "attachments": [],
           "buttons": []
@@ -1149,34 +1136,41 @@
       ]
     },
     {
-      "id": "service",
+      "id": "scientific-recognition",
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "",
-      "title": "Service to the scientific community",
-      "intro": "Add editorial roles, review activity, sessions you convened and committee work here.",
+      "eyebrow": "Recognition",
+      "title": "Scientific awards & recognition",
+      "intro": "Selected distinctions for scientific publications, applied geospatial research and research performance.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
-          "title": "[Editorial roles]",
-          "text": "[Journals, special issues or editorial boards]",
+          "title": "Scientific Awards & Recognition",
+          "text": "- Best Publication Award — Japanese Society of Irrigation, Drainage and Rural Engineering (2020).\n- ESRI Award — Citrus Information System application (2012).\n- Scientific-performance recognition — Turkish Research Council (2023 and 2024).\n- Publication-performance recognition — ZALF (research published during 2021–2024).",
           "image": "",
           "attachments": [],
           "buttons": []
-        },
+        }
+      ]
+    },
+    {
+      "id": "peer-review",
+      "page": "leadership",
+      "type": "cards",
+      "visible": true,
+      "eyebrow": "Scientific service",
+      "title": "Journal peer review & scientific service",
+      "intro": "Contributing to the quality and integrity of international peer-reviewed research.",
+      "image": "",
+      "attachments": [],
+      "buttons": [],
+      "items": [
         {
-          "title": "[Peer review]",
-          "text": "[Journals you review for, funding agencies]",
-          "image": "",
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "title": "[Sessions & events]",
-          "text": "[Conference sessions convened, workshops organised]",
+          "title": "Journal Peer Review",
+          "text": "- Environmental and geospatial journals: Remote Sensing of Environment, Applied Geography, International Journal of Digital Earth.\n- Land, water and ecological sciences: Land Use Policy, Journal of Hydrology, Ecological Indicators.\n- Interdisciplinary and environmental research: Scientific Reports, Environmental Monitoring and Assessment.",
           "image": "",
           "attachments": [],
           "buttons": []
