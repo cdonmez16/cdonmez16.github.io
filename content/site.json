@@ -251,23 +251,24 @@
       "id": "research",
       "page": "home",
       "type": "areas",
-      "visible": true,
-      "eyebrow": "Research",
+      "visible": false,
+      "eyebrow": "",
       "title": "Five interconnected research areas",
-      "intro": "Geospatial science and environmental assessment form the core of my work — connected with long-term evidence, data infrastructures and the people who use research.",
+      "intro": "Geospatial science and environmental assessment form the core of my work — connected with long-term experimental data/knowledge, FAIR data infrastructures and participatory approaches to support sustainable soil and land management",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
           "theme": "geoai",
-          "title": "Geospatial Analytics & GeoAI",
-          "text": "GIS, remote sensing, machine learning and spatial modelling — from satellite and UAV image analysis to process-based models of productivity, hydrology and snow.",
+          "title": "Geospatial Analytics & AI/ML",
+          "text": "Integrating GIS, remote sensing, machine learning and spatial modelling to understand environmental processes, map landscape dynamics and support spatial decision-making.",
           "methods": [
             "GIS",
             "Remote sensing",
             "Machine learning",
-            "Spatial modelling"
+            "Spatial modelling",
+            "GeoAI"
           ],
           "image": "",
           "attachments": [],
@@ -275,12 +276,11 @@
         },
         {
           "theme": "lte",
-          "title": "Long-Term Agricultural Research",
-          "text": "Long-term field experiment networks, the experimental evidence they hold, and how environmentally representative that evidence is.",
+          "title": "Long-Term Field Experiments",
+          "text": "Connecting long-term field experiments and research networks to assess soil and land-management practices, environmental change and the representativeness of experimental evidence.",
           "methods": [
             "LTE networks",
-            "Experimental evidence",
-            "Representativeness"
+            "Experimental knowledge"
           ],
           "image": "",
           "attachments": [],
@@ -289,7 +289,7 @@
         {
           "theme": "landscape",
           "title": "Landscape & Environmental Assessment",
-          "text": "Risk and vulnerability assessment, mapping, land-use change and landscape planning — including erosion, land degradation and climate change impacts.",
+          "text": "Risk and vulnerability assessment, mapping, land-use change and landscape planning — including erosion, land degradation and climate change impacts to inform planning and sustainable management.",
           "methods": [
             "Risk & vulnerability",
             "Mapping",
@@ -302,8 +302,8 @@
         },
         {
           "theme": "data",
-          "title": "Scientific Data Infrastructures",
-          "text": "FAIR data, metadata interoperability, knowledge management and research platforms that make scientific evidence findable and reusable.",
+          "title": "FAIR Data Infrastructures",
+          "text": "Developing FAIR research data infrastructures, interoperable metadata and knowledge-management approaches that improve the discovery, reuse and applicability of scientific evidence.",
           "methods": [
             "FAIR data",
             "Metadata",
@@ -317,7 +317,7 @@
         {
           "theme": "participatory",
           "title": "Participatory Assessment & Knowledge Exchange",
-          "text": "Stakeholder engagement, Living Labs and participatory assessment that connect research with practice and societal needs.",
+          "text": "Connecting scientific evidence with stakeholder knowledge through participatory assessment, Living Labs and collaborative approaches to environmental decision-making.",
           "methods": [
             "Stakeholder engagement",
             "Living Labs",
