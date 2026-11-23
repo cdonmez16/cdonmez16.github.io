@@ -631,10 +631,34 @@
       "buttons": [],
       "items": [
         {
-          "period": "PhD",
-          "title": "Environmental & Landscape Planning",
-          "organization": "Remote sensing and GIS specialization",
-          "text": "Doctoral research focused on geospatial approaches in environmental and landscape planning.",
+          "period": "02/2008-11/2012",
+          "title": "PhD in Landscape Planning/Architecture ",
+          "organization": "Graduate School of Natural Sciences, Çukurova University, Türkiye",
+          "text": "Thesis: coupled modelling of carbon and water interactions under climate change, combining eco-hydrological processes, land cover and spatial data.",
+          "attachments": []
+        },
+        {
+          "period": "02/2006-02/2008",
+          "title": "MSc in Landscape Planning/Architecture",
+          "organization": "Graduate School of Natural Sciences, Çukurova University, Türkiye",
+          "text": "Thesis: Spatial modelling of tree cover in a Mediterranean watershed.",
+          "image": "",
+          "attachments": []
+        },
+        {
+          "period": "10/2001-06/2005",
+          "title": "BSc in Landscape Architecture",
+          "organization": "Faculty of Agriculture, Çukurova University, Turkiye",
+          "text": "Foundation in landscape ecology, site analysis, planting, planning and land-use systems.",
+          "image": "",
+          "attachments": []
+        },
+        {
+          "period": "2009-2010",
+          "title": "DAAD PhD Scholar",
+          "organization": "Friedrich-Schiller University Jena, Germany",
+          "text": "DAAD sandwich program supported doctoral research in geoinformatics and environmental modelling, including eco-hydrological interactions under climate change.",
+          "image": "",
           "attachments": []
         }
       ]
