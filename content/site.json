@@ -51,6 +51,11 @@
       "label": "CV",
       "url": "assets/uploads/cv.pdf",
       "style": "primary"
+    },
+    {
+      "label": "Scientific tools & Infrastructures",
+      "url": "tools.html",
+      "style": "ghost"
     }
   ],
   "hero": {
@@ -181,8 +186,8 @@
     "eyebrow": "Contact",
     "title": "Let's work across disciplines, data and landscapes.",
     "text": "For research collaboration, invited talks and teaching opportunities.",
-    "email": "[your.email@institute.org]",
-    "address": "Müncheberg / Berlin, Germany · Adana, Türkiye",
+    "email": "cenk.doenmez@zalf.de",
+    "address": "Müncheberg/Berlin, Germany",
     "buttons": [
       {
         "label": "ORCID",
