@@ -1139,7 +1139,7 @@
       "id": "scientific-recognition",
       "page": "leadership",
       "type": "cards",
-      "visible": false,
+      "visible": true,
       "eyebrow": "",
       "title": "Scientific awards & recognition",
       "intro": "Selected distinctions for scientific publications, applied geospatial research and research performance.",
