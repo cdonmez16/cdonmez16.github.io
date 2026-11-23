@@ -161,8 +161,8 @@
       "label": "Academic Leadership",
       "file": "leadership.html",
       "eyebrow": "Academic Leadership",
-      "title": "Scientific coordination and international collaboration",
-      "intro": "Coordinating research initiatives and connecting experiment networks, data infrastructures and partners across countries.",
+      "title": "Academic leadership & scientific service",
+      "intro": "Contributing to international scientific communities through research network development, invited scientific contributions, recognition and peer review.",
       "image": ""
     },
     "teaching": {
@@ -1108,40 +1108,27 @@
       ]
     },
     {
-      "id": "coordination",
+      "id": "scientific-networks",
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "Coordination",
-      "title": "Scientific coordination",
-      "intro": "",
+      "eyebrow": "Scientific networks",
+      "title": "International scientific networks & community building",
+      "intro": "Connecting research communities and strengthening collaboration in long-term agricultural research and geospatial science.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
-          "title": "SOILTE.ai — Horizon Europe proposal (2026)",
-          "text": "Scientific coordination of an international consortium around LTE data, AI-ready infrastructure and soil decision support. Submission does not imply funding.",
+          "title": "International Long-Term Experiment Networks",
+          "text": "Scientific network coordination · ZALF · 2021–present — Coordinating international cooperation around long-term agricultural experiments, including metadata harmonisation, research infrastructure development and knowledge exchange with European and global LTE networks.",
           "image": "",
           "attachments": [],
           "buttons": []
         },
         {
-          "title": "BonaRes LTE Overview Map",
-          "text": "Coordination of the international map of long-term field experiments and its metadata harmonisation.",
-          "image": "",
-          "attachments": [],
-          "buttons": [
-            {
-              "label": "Open the map",
-              "url": "https://tools.bonares.de/ltfe/",
-              "style": "ghost"
-            }
-          ]
-        },
-        {
-          "title": "International LTE network collaboration",
-          "text": "Working across GLTEN, LTAR and EJP SOIL to connect long-term experiment networks in Europe and beyond.",
+          "title": "LANDGIS Research Laboratory",
+          "text": "Research group co-leadership · Çukurova University — Co-led the LANDGIS research laboratory and mentored a multidisciplinary team of 13, supporting collaborative research in GIS, remote sensing, environmental modelling and landscape planning.",
           "image": "",
           "attachments": [],
           "buttons": []
@@ -1149,34 +1136,48 @@
       ]
     },
     {
-      "id": "service",
+      "id": "scientific-recognition",
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "Academic service",
-      "title": "Service to the scientific community",
-      "intro": "Add editorial roles, review activity, sessions you convened and committee work here.",
+      "eyebrow": "Invited contributions",
+      "title": "Invited scientific contributions & recognition",
+      "intro": "Selected keynote and highlight presentations, scientific awards and research recognition.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
-          "title": "[Editorial roles]",
-          "text": "[Journals, special issues or editorial boards]",
+          "title": "Keynote & Highlight Presentations",
+          "text": "Selected international events · 2024–2026 — Keynote speaker at the Morrow Plots Centennial Conference (University of Illinois, USA, 2026), the SGGW Long-Term Experiments Centennial Conference (Warsaw, 2026), and IDUSPAD24 (İzmir, 2024); highlight speaker at Soils for Europe (SOLO), Coimbra (2026).",
           "image": "",
           "attachments": [],
           "buttons": []
         },
         {
-          "title": "[Peer review]",
-          "text": "[Journals you review for, funding agencies]",
+          "title": "Scientific Awards & Recognition",
+          "text": "Selected distinctions · 2012–2024 — Best Publication Award, Japanese Society of Irrigation, Drainage and Rural Engineering (2020); ESRI Award for the Citrus Information System (2012); scientific-performance recognition from the Turkish Research Council (2023 and 2024); and ZALF publication-performance recognition for research published during 2021–2024.",
           "image": "",
           "attachments": [],
           "buttons": []
-        },
+        }
+      ]
+    },
+    {
+      "id": "peer-review",
+      "page": "leadership",
+      "type": "cards",
+      "visible": true,
+      "eyebrow": "Scientific service",
+      "title": "Peer review & scientific service",
+      "intro": "Supporting scientific quality through independent peer review of international research publications.",
+      "image": "",
+      "attachments": [],
+      "buttons": [],
+      "items": [
         {
-          "title": "[Sessions & events]",
-          "text": "[Conference sessions convened, workshops organised]",
+          "title": "Journal Peer Review",
+          "text": "Environmental science · Geospatial research · Land systems — Reviewer for international journals including Remote Sensing of Environment, Applied Geography, Scientific Reports, Land Use Policy, Journal of Hydrology, Ecological Indicators, International Journal of Digital Earth and Environmental Monitoring and Assessment.",
           "image": "",
           "attachments": [],
           "buttons": []
