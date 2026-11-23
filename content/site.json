@@ -160,9 +160,9 @@
     "leadership": {
       "label": "Academic Leadership",
       "file": "leadership.html",
-      "eyebrow": "Academic Leadership",
+      "eyebrow": "Scientific community",
       "title": "Academic leadership & scientific service",
-      "intro": "Contributing to international scientific communities through research network development, invited scientific contributions, recognition and peer review.",
+      "intro": "Building international research connections, supporting scientific quality and recognising contributions to geospatial and environmental research.",
       "image": ""
     },
     "teaching": {
@@ -1112,23 +1112,23 @@
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "Scientific networks",
-      "title": "International scientific networks & community building",
-      "intro": "Connecting research communities and strengthening collaboration in long-term agricultural research and geospatial science.",
+      "eyebrow": "Networks & leadership",
+      "title": "Scientific networks & community building",
+      "intro": "Connecting research groups, infrastructures and international scientific communities.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
           "title": "International Long-Term Experiment Networks",
-          "text": "Scientific network coordination · ZALF · 2021–present — Coordinating international cooperation around long-term agricultural experiments, including metadata harmonisation, research infrastructure development and knowledge exchange with European and global LTE networks.",
+          "text": "- Scientific coordination of ZALF’s long-term experiment network and international cooperation.\n- Connecting European and global LTE communities through knowledge exchange and metadata harmonisation.\n- Supporting research infrastructure development and reuse of long-term experimental evidence.",
           "image": "",
           "attachments": [],
           "buttons": []
         },
         {
           "title": "LANDGIS Research Laboratory",
-          "text": "Research group co-leadership · Çukurova University — Co-led the LANDGIS research laboratory and mentored a multidisciplinary team of 13, supporting collaborative research in GIS, remote sensing, environmental modelling and landscape planning.",
+          "text": "- Co-leadership of the LANDGIS Research Laboratory at Çukurova University.\n- Mentoring a multidisciplinary team of 13 researchers.\n- Collaborative research across GIS, remote sensing, environmental modelling and landscape planning.",
           "image": "",
           "attachments": [],
           "buttons": []
@@ -1140,23 +1140,16 @@
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "Invited contributions",
-      "title": "Invited scientific contributions & recognition",
-      "intro": "Selected keynote and highlight presentations, scientific awards and research recognition.",
+      "eyebrow": "Recognition",
+      "title": "Scientific awards & recognition",
+      "intro": "Selected distinctions for scientific publications, applied geospatial research and research performance.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
-          "title": "Keynote & Highlight Presentations",
-          "text": "Selected international events · 2024–2026 — Keynote speaker at the Morrow Plots Centennial Conference (University of Illinois, USA, 2026), the SGGW Long-Term Experiments Centennial Conference (Warsaw, 2026), and IDUSPAD24 (İzmir, 2024); highlight speaker at Soils for Europe (SOLO), Coimbra (2026).",
-          "image": "",
-          "attachments": [],
-          "buttons": []
-        },
-        {
           "title": "Scientific Awards & Recognition",
-          "text": "Selected distinctions · 2012–2024 — Best Publication Award, Japanese Society of Irrigation, Drainage and Rural Engineering (2020); ESRI Award for the Citrus Information System (2012); scientific-performance recognition from the Turkish Research Council (2023 and 2024); and ZALF publication-performance recognition for research published during 2021–2024.",
+          "text": "- Best Publication Award — Japanese Society of Irrigation, Drainage and Rural Engineering (2020).\n- ESRI Award — Citrus Information System application (2012).\n- Scientific-performance recognition — Turkish Research Council (2023 and 2024).\n- Publication-performance recognition — ZALF (research published during 2021–2024).",
           "image": "",
           "attachments": [],
           "buttons": []
@@ -1169,15 +1162,15 @@
       "type": "cards",
       "visible": true,
       "eyebrow": "Scientific service",
-      "title": "Peer review & scientific service",
-      "intro": "Supporting scientific quality through independent peer review of international research publications.",
+      "title": "Journal peer review & scientific service",
+      "intro": "Contributing to the quality and integrity of international peer-reviewed research.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
           "title": "Journal Peer Review",
-          "text": "Environmental science · Geospatial research · Land systems — Reviewer for international journals including Remote Sensing of Environment, Applied Geography, Scientific Reports, Land Use Policy, Journal of Hydrology, Ecological Indicators, International Journal of Digital Earth and Environmental Monitoring and Assessment.",
+          "text": "- Environmental and geospatial journals: Remote Sensing of Environment, Applied Geography, International Journal of Digital Earth.\n- Land, water and ecological sciences: Land Use Policy, Journal of Hydrology, Ecological Indicators.\n- Interdisciplinary and environmental research: Scientific Reports, Environmental Monitoring and Assessment.",
           "image": "",
           "attachments": [],
           "buttons": []
