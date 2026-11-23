@@ -570,7 +570,7 @@
       "id": "positions",
       "page": "about",
       "type": "timeline",
-      "visible": false,
+      "visible": true,
       "eyebrow": "",
       "title": "Professional Experience & Appointments",
       "intro": "",
