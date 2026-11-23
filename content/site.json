@@ -251,7 +251,7 @@
       "id": "research",
       "page": "home",
       "type": "areas",
-      "visible": false,
+      "visible": true,
       "eyebrow": "",
       "title": "Five interconnected research areas",
       "intro": "Geospatial science and environmental assessment form the core of my work — connected with long-term experimental data/knowledge, FAIR data infrastructures and participatory approaches to support sustainable soil and land management",
