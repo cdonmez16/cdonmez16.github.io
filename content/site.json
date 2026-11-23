@@ -854,7 +854,7 @@
       "type": "projects",
       "visible": true,
       "eyebrow": "Projects",
-      "title": "Scientific Coordination & Leadership",
+      "title": "01 — Scientific Coordination & Leadership",
       "intro": "",
       "image": "",
       "attachments": [],
@@ -911,6 +911,154 @@
               "style": "ghost"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "projects-collaborative",
+      "page": "projects",
+      "type": "projects",
+      "visible": true,
+      "eyebrow": "Projects",
+      "title": "02 — Collaborative Research Projects",
+      "intro": "Selected funded research collaborations and international networks, with my role in each initiative.",
+      "image": "",
+      "attachments": [],
+      "buttons": [],
+      "items": [
+        {
+          "title": "BonaRes — Long-Term Field Experiments Metadata Platform",
+          "category": "BMBF · BonaRes programme",
+          "period": "2021–2025",
+          "role": "Coordinating LTE metadata platform development",
+          "text": "Coordinated the development and curation of an interoperable overview of agricultural long-term field experiments, supporting experiment discovery, metadata harmonisation and reuse of long-term evidence.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "European Network for Harmonised Snow Monitoring",
+          "category": "COST Action ES1404",
+          "period": "2014–2018",
+          "role": "Working Group Member",
+          "text": "Contributed to European cooperation on harmonised snow observations for hydrology, climate-change scenarios and numerical weather prediction.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Water Potential and Spatial Decision Support in the Seyhan Watershed",
+          "category": "TÜBİTAK · 115Y063",
+          "period": "2016–2019",
+          "role": "Work Package Lead",
+          "text": "Developed spatial information approaches for assessing watershed water potential and informing water-management decisions.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Geospatial Agricultural Decision Support System",
+          "category": "TÜBİTAK",
+          "period": "2013–2016",
+          "role": "Researcher",
+          "text": "Contributed to the development of a GIS-based decision-support system for agricultural planning and management.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Web-Based Citrus Information System — Lower Seyhan Basin",
+          "category": "Eastern Mediterranean Development Agency",
+          "period": "2013–2015",
+          "role": "Work Package Lead",
+          "text": "Helped develop a web-based spatial information system to support citrus-sector monitoring and decision-making in the Lower Seyhan Basin.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Local Frameworks for Integrated Water Resources Management",
+          "category": "Research Institute for Humanity and Nature · Japan",
+          "period": "2011–2015",
+          "role": "Researcher",
+          "text": "Participated in interdisciplinary research on locally relevant frameworks for integrated water-resources management.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Climate Change and Environmental Risk Analysis of Türkiye",
+          "category": "TÜBİTAK–BMBF bilateral programme",
+          "period": "2011–2014",
+          "role": "Work Package Lead",
+          "text": "Led a work package examining climate-related environmental risks using spatial analysis and environmental assessment.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "MedSal — Irrigation Efficiency and Salinisation in Mediterranean Agriculture",
+          "category": "TÜBİTAK–BMBF bilateral programme",
+          "period": "2009–2011",
+          "role": "Researcher",
+          "text": "Investigated irrigation-efficiency improvements and salinisation risks in intensively managed semiarid agricultural landscapes.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "ICCAP — Climate Change Impacts on Agricultural Production in Arid Areas",
+          "category": "Research Institute for Humanity and Nature · Japan",
+          "period": "2006–2007",
+          "role": "Research Assistant",
+          "text": "Supported research on climate-change impacts on agricultural production in arid environments.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        }
+      ]
+    },
+    {
+      "id": "projects-emerging",
+      "page": "projects",
+      "type": "projects",
+      "visible": true,
+      "eyebrow": "Projects",
+      "title": "03 — Proposals & Emerging Initiatives",
+      "intro": "Research proposals and developing collaborations. These entries are not presented as awarded grants.",
+      "image": "",
+      "attachments": [],
+      "buttons": [],
+      "items": [
+        {
+          "title": "SOILTE.ai — AI-Ready Evidence from Long-Term Experiments",
+          "category": "Horizon Europe · Innovation Action proposal",
+          "period": "Submitted 2026 · Under evaluation",
+          "role": "Consortium Lead & Scientific Coordinator",
+          "text": "Coordinated a multi-partner proposal to connect agricultural long-term experiments, interoperable data and AI-enabled decision support for sustainable soil management. Proposal under evaluation; funding not yet awarded.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "AISETS — Artificial Intelligence for Social-Ecological-Technological Systems",
+          "category": "EU-RAISE proposal",
+          "period": "Under evaluation",
+          "role": "Contributor — Experimental Data Use",
+          "text": "Contributed to a proposed research activity on using experimental evidence within AI approaches to coupled social, ecological and technological systems. Funding decision pending.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Agritechture — Climate-Adaptive Agricultural Landscapes",
+          "category": "Horizon Europe · Innovation Action proposal",
+          "period": "Under evaluation",
+          "role": "Proposed Work Package Lead",
+          "text": "Contributed to a proposal addressing sustainable, climate-adaptive agricultural landscapes, with responsibility for a proposed work package. Funding decision pending.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
         }
       ]
     },
