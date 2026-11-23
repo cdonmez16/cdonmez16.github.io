@@ -1148,8 +1148,36 @@
       "buttons": [],
       "items": [
         {
-          "title": "Scientific Awards & Recognition",
-          "text": "- Best Publication Award — Japanese Society of Irrigation, Drainage and Rural Engineering (2020).\n- ESRI Award — Citrus Information System application (2012).\n- Scientific-performance recognition — Turkish Research Council (2023 and 2024).\n- Publication-performance recognition — ZALF (research published during 2021–2024).",
+          "title": "Best Publication Award",
+          "text": "Japanese Society of Irrigation, Drainage and Rural Engineering (JSIDRE), 2020.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "ESRI Award",
+          "text": "Citrus Information System application, 2012.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Best Proceedings Award",
+          "text": "VI Remote Sensing Conference of Türkiye, 2014.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Scientific Performance Recognition",
+          "text": "Scientific-performance recognition, Çukurova University, 2023 and 2024.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Publication Performance Recognition",
+          "text": "ZALF — research published during 2021–2024.",
           "image": "",
           "attachments": [],
           "buttons": []
@@ -1169,8 +1197,22 @@
       "buttons": [],
       "items": [
         {
-          "title": "Journal Peer Review",
-          "text": "- Environmental and geospatial journals: Remote Sensing of Environment, Applied Geography, International Journal of Digital Earth.\n- Land, water and ecological sciences: Land Use Policy, Journal of Hydrology, Ecological Indicators.\n- Interdisciplinary and environmental research: Scientific Reports, Environmental Monitoring and Assessment.",
+          "title": "Remote sensing & geospatial science",
+          "text": "- Remote Sensing of Environment\n- Applied Geography\n- International Journal of Digital Earth\n- Journal of Spatial Science\n- International Journal of Remote Sensing\n- Photogrammetric Engineering & Remote Sensing",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Land, water & ecological sciences",
+          "text": "- Land Use Policy\n- Journal of Hydrology\n- Ecological Indicators",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Environmental research",
+          "text": "- Scientific Reports\n- Environmental Monitoring and Assessment",
           "image": "",
           "attachments": [],
           "buttons": []
