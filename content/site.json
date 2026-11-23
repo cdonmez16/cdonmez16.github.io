@@ -23,7 +23,7 @@
       "style": "ghost"
     },
     {
-      "label": "Projects & Infrastructure",
+      "label": "Research Projects & Collaborations",
       "url": "projects.html",
       "style": "ghost"
     },
@@ -152,7 +152,7 @@
     "projects": {
       "label": "Research Projects & Collaborations",
       "file": "projects.html",
-      "eyebrow": "Research Projects & Collaborations",
+      "eyebrow": "",
       "title": "Research Projects & Collaborations",
       "intro": "I coordinate and contribute to interdisciplinary research initiatives connecting geospatial intelligence, agricultural landscapes, environmental assessment and research data management. My work spans European and international collaborations, combining scientific development, project coordination and stakeholder engagement.",
       "image": ""
