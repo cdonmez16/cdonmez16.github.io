@@ -33,23 +33,23 @@
       "style": "ghost"
     },
     {
-      "label": "Teaching&Mentoring",
-      "url": "teaching.html",
-      "style": "ghost"
-    },
-    {
       "label": "Talks&Outreach",
       "url": "talks.html",
       "style": "ghost"
     },
     {
-      "label": "Contact",
-      "url": "#contact",
+      "label": "Teaching&Mentoring",
+      "url": "teaching.html",
       "style": "ghost"
     },
     {
       "label": "Tools&Infrastructures",
       "url": "scientific-tools.html",
+      "style": "ghost"
+    },
+    {
+      "label": "Contact",
+      "url": "#contact",
       "style": "ghost"
     },
     {
