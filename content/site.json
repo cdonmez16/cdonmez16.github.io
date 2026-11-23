@@ -51,11 +51,6 @@
       "label": "CV",
       "url": "assets/uploads/cv.pdf",
       "style": "primary"
-    },
-    {
-      "label": "Scientific tools & Infrastructures",
-      "url": "tools.html",
-      "style": "ghost"
     }
   ],
   "hero": {
