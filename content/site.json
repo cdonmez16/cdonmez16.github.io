@@ -783,6 +783,22 @@
           "status": "Collaborative infrastructure"
         },
         {
+          "name": "LTE2LL — Linking Long-Term Experiments and Living Labs",
+          "category": "Emerging concepts",
+          "status": "Research concept / prototype",
+          "role": "Concept development",
+          "text": "An emerging approach to contextualise long-term experimental evidence for Living Labs through environmental similarity, evidence assessment, research-gap analysis and stakeholder perspectives.",
+          "tags": [
+            "Living Labs",
+            "Evidence transfer",
+            "Participatory assessment"
+          ],
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": []
+        },
+        {
           "name": "LTE metadata harmonisation",
           "category": "Research platforms",
           "status": "Data stewardship & methods",
@@ -824,22 +840,6 @@
             "GeoAI",
             "Spatial modelling",
             "Climate"
-          ],
-          "image": "",
-          "featured": false,
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "name": "LTE2LL — Linking Long-Term Experiments and Living Labs",
-          "category": "Emerging concepts",
-          "status": "Research concept / prototype",
-          "role": "Concept development",
-          "text": "An emerging approach to contextualise long-term experimental evidence for Living Labs through environmental similarity, evidence assessment, research-gap analysis and stakeholder perspectives.",
-          "tags": [
-            "Living Labs",
-            "Evidence transfer",
-            "Participatory assessment"
           ],
           "image": "",
           "featured": false,
