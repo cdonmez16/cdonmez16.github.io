@@ -29,63 +29,52 @@
 .tools-note {background:#e9eee8;border-left:3px solid var(--accent);padding:20px 24px;margin-top:40px;color:var(--ink-2);font-size:14px;line-height:1.7;}
 .tools-note strong {display:block;margin-bottom:5px;}
 @media(max-width:760px){.tools-grid{grid-template-columns:1fr}.tools-card--hero{grid-template-columns:1fr}.tools-card__visual{min-height:190px}.tools-card__body{padding:26px}.tools-card--hero h3{font-size:28px}.tools-page{padding-top:52px}}
-/* Full site navigation has ten entries; collapse before links overlap. */
-@media (max-width: 1500px) {
-  /* The shared stylesheet hides the menu button at some widths.
-     Explicitly show a visible, accessible toggle on the Tools page. */
+/* Tools navigation: show the shared horizontal menu on desktop. */
+@media (min-width: 1051px) {
+  body[data-page="tools"] .topbar .topbar__inner { display:flex; align-items:center; gap:20px; }
+  body[data-page="tools"] .topbar .brand { flex:0 0 auto; font-size:clamp(16px,1.45vw,22px); white-space:nowrap; }
+  body[data-page="tools"] .topbar .menu-toggle { display:none !important; }
+  body[data-page="tools"] .topbar .nav {
+    display:flex !important; position:static !important; inset:auto !important;
+    transform:none !important; visibility:visible !important; opacity:1 !important;
+    pointer-events:auto !important; flex-direction:row !important; flex-wrap:nowrap;
+    align-items:center; justify-content:flex-end; gap:clamp(7px,1.05vw,18px);
+    width:auto; max-width:none; max-height:none; overflow:visible;
+    padding:0; margin-left:auto; background:transparent !important;
+  }
+  body[data-page="tools"] .topbar .nav a {
+    display:inline-flex !important; align-items:center; flex:0 0 auto;
+    font-size:clamp(10px,.88vw,13px); white-space:nowrap;
+    padding:9px 0;
+  }
+}
+@media (max-width: 1050px) {
   body[data-page="tools"] .topbar .menu-toggle {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 6px;
-    width: 46px;
-    height: 42px;
-    min-width: 46px;
-    padding: 8px;
-    margin-left: auto;
-    border: 1px solid rgba(255,255,255,.45);
-    border-radius: 8px;
-    background: rgba(14,31,25,.65);
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    z-index: 101;
+    display:flex !important; align-items:center; justify-content:center;
+    flex-direction:column; gap:6px; width:46px; height:42px;
+    min-width:46px; padding:8px; margin-left:auto;
+    border:1px solid rgba(255,255,255,.45); border-radius:8px;
+    background:rgba(14,31,25,.65); cursor:pointer; z-index:101;
   }
   body[data-page="tools"] .topbar .menu-toggle span {
-    display: block !important;
-    width: 23px;
-    height: 2px;
-    background: #fff;
-    opacity: 1;
-    transform: none;
+    display:block !important; width:23px; height:2px;
+    background:#fff; opacity:1; transform:none;
   }
   body[data-page="tools"] .topbar .nav {
-    display: flex !important;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    padding: 16px max(24px, 5vw) 28px;
-    background: #0e1f19;
-    transform: translateY(-160%);
-    visibility: hidden;
-    pointer-events: none;
-    transition: transform .25s ease, visibility .25s;
-    max-height: calc(100vh - 70px);
-    overflow-y: auto;
-    z-index: 100;
+    display:flex !important; position:fixed; top:70px; left:0; right:0;
+    bottom:auto; flex-direction:column; align-items:flex-start;
+    gap:4px; padding:16px max(24px,5vw) 28px;
+    background:#0e1f19; transform:translateY(-160%);
+    visibility:hidden; pointer-events:none;
+    transition:transform .25s ease,visibility .25s;
+    max-height:calc(100vh - 70px); overflow-y:auto; z-index:100;
   }
   body[data-page="tools"] .topbar .nav.is-open {
-    transform: none;
-    visibility: visible;
-    pointer-events: auto;
+    transform:none; visibility:visible; pointer-events:auto;
   }
-  body[data-page="tools"] .topbar .nav a { display: block; font-size: 16px; padding: 9px 0; }
+  body[data-page="tools"] .topbar .nav a {
+    display:block; font-size:16px; padding:9px 0;
+  }
 }
 </style></head>
 <body data-page="tools"><a class="skip" href="#main">Skip to content</a>
