@@ -33,12 +33,12 @@
       "style": "ghost"
     },
     {
-      "label": "Teaching & Mentoring",
+      "label": "Teaching&Mentoring",
       "url": "teaching.html",
       "style": "ghost"
     },
     {
-      "label": "Talks & Outreach",
+      "label": "Talks&Outreach",
       "url": "talks.html",
       "style": "ghost"
     },
@@ -48,7 +48,7 @@
       "style": "ghost"
     },
     {
-      "label": "Tools & Infrastructures",
+      "label": "Tools&Infrastructures",
       "url": "scientific-tools.html",
       "style": "ghost"
     },
@@ -144,7 +144,7 @@
     "publications": {
       "label": "Publications",
       "file": "publications.html",
-      "eyebrow": "Prof.Dr. Cenk Dönmez",
+      "eyebrow": "Publications",
       "title": "Publications",
       "intro": "Peer-reviewed articles, book chapters, conference contributions and work under review. Search, or filter by year, type and research area.",
       "image": ""
@@ -152,25 +152,25 @@
     "projects": {
       "label": "Projects & Collaborations",
       "file": "projects.html",
-      "eyebrow": "Prof.Dr. Cenk Dönmez",
+      "eyebrow": "",
       "title": "Projects & Collaborations",
       "intro": "I coordinate and contribute to interdisciplinary research initiatives connecting geospatial intelligence, agricultural landscapes, environmental assessment and research data management. My work spans European and international collaborations, combining scientific development, project coordination and stakeholder engagement.",
       "image": ""
     },
     "leadership": {
-      "label": "",
+      "label": "Academic Leadership",
       "file": "leadership.html",
-      "eyebrow": "Prof.Dr. Cenk Dönmez",
-      "title": "Academic leadership & scientific service",
-      "intro": "Building international research connections, supporting scientific quality and recognising contributions to geospatial and environmental research.",
+      "eyebrow": "Academic Leadership",
+      "title": "Scientific coordination and international collaboration",
+      "intro": "Coordinating research initiatives and connecting experiment networks, data infrastructures and partners across countries.",
       "image": ""
     },
     "teaching": {
-      "label": "",
+      "label": "Teaching & Mentoring",
       "file": "teaching.html",
-      "eyebrow": "Prof.Dr. Cenk Dönmez",
+      "eyebrow": "Teaching / Training / Mentoring",
       "title": "Teaching & mentoring",
-      "intro": "Teaching and training in landscape planning, GIS, remote sensing, spatial data science and environmental assessment.",
+      "intro": "University teaching, practical training and research supervision across GIS, remote sensing, environmental modelling, landscape planning and geospatial intelligence.",
       "image": ""
     },
     "talks": {
@@ -1108,27 +1108,40 @@
       ]
     },
     {
-      "id": "scientific-networks",
+      "id": "coordination",
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "Networks & leadership",
-      "title": "Scientific networks & community building",
-      "intro": "Connecting research groups, infrastructures and international scientific communities.",
+      "eyebrow": "Coordination",
+      "title": "Scientific coordination",
+      "intro": "",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
-          "title": "International Long-Term Field Experiment Networks",
-          "text": "Scientific coordination and development of the BonaRes LTE Overview Map, documenting over 700 long-term agricultural experiments worldwide. The initiative strengthens international collaboration with networks and research infrastructures, including GLTEN, USDA-LTAR, ILTER, EJP SOIL and European research partners",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-16-47.png",
+          "title": "SOILTE.ai — Horizon Europe proposal (2026)",
+          "text": "Scientific coordination of an international consortium around LTE data, AI-ready infrastructure and soil decision support. Submission does not imply funding.",
+          "image": "",
           "attachments": [],
           "buttons": []
         },
         {
-          "title": "LANDGIS Research Laboratory",
-          "text": "- Member of the LANDGIS Research Laboratory at Çukurova University.\n- Support mentoring a multidisciplinary team of 13 researchers.\n- Collaborative research across GIS, remote sensing, environmental modelling and landscape planning.",
+          "title": "BonaRes LTE Overview Map",
+          "text": "Coordination of the international map of long-term field experiments and its metadata harmonisation.",
+          "image": "",
+          "attachments": [],
+          "buttons": [
+            {
+              "label": "Open the map",
+              "url": "https://tools.bonares.de/ltfe/",
+              "style": "ghost"
+            }
+          ]
+        },
+        {
+          "title": "International LTE network collaboration",
+          "text": "Working across GLTEN, LTAR and EJP SOIL to connect long-term experiment networks in Europe and beyond.",
           "image": "",
           "attachments": [],
           "buttons": []
@@ -1136,62 +1149,34 @@
       ]
     },
     {
-      "id": "scientific-recognition",
+      "id": "service",
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "",
-      "title": "Scientific awards & recognition",
-      "intro": "Recognition of my contributions to scientific publications, applied geospatial research and overall research performance",
+      "eyebrow": "Academic service",
+      "title": "Service to the scientific community",
+      "intro": "Add editorial roles, review activity, sessions you convened and committee work here.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
-          "title": "Best publication awards",
-          "text": "Japanese Society of Irrigation, Drainage and Rural Engineering (2020)",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-24-47.png",
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "title": "ESRI Award",
-          "text": "Citrus Information System application (2012)",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-25-11.png",
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "title": "Scientific-performance recognition",
-          "text": "Turkish Scientific and Research Council (2023 and 2024)",
+          "title": "[Editorial roles]",
+          "text": "[Journals, special issues or editorial boards]",
           "image": "",
           "attachments": [],
           "buttons": []
         },
         {
-          "title": "Publication-performance recognition",
-          "text": "ZALF (research published during 2021–2024).",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-25-49.png",
+          "title": "[Peer review]",
+          "text": "[Journals you review for, funding agencies]",
+          "image": "",
           "attachments": [],
           "buttons": []
-        }
-      ]
-    },
-    {
-      "id": "peer-review",
-      "page": "leadership",
-      "type": "cards",
-      "visible": true,
-      "eyebrow": "Scientific service",
-      "title": "Journal peer review & scientific service",
-      "intro": "Contributing to the quality and integrity of international peer-reviewed research.",
-      "image": "",
-      "attachments": [],
-      "buttons": [],
-      "items": [
+        },
         {
-          "title": "Journal Peer Review",
-          "text": "- Environmental and geospatial journals: Remote Sensing of Environment, Applied Geography, International Journal of Digital Earth.\n- Land, water and ecological sciences: Land Use Policy, Journal of Hydrology, Ecological Indicators.\n- Interdisciplinary and environmental research: Scientific Reports, Environmental Monitoring and Assessment.",
+          "title": "[Sessions & events]",
+          "text": "[Conference sessions convened, workshops organised]",
           "image": "",
           "attachments": [],
           "buttons": []
@@ -1199,33 +1184,113 @@
       ]
     },
     {
-      "id": "courses",
+      "id": "university-teaching",
       "page": "teaching",
       "type": "teaching",
       "visible": true,
-      "eyebrow": "Teaching",
-      "title": "Courses & training",
-      "intro": "",
+      "eyebrow": "Academic courses",
+      "title": "University teaching",
+      "intro": "Courses delivered at Humboldt University of Berlin and Çukurova University, from undergraduate to doctoral level.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
-          "course": "Landscape planning, GIS and remote sensing",
-          "institution": "Çukurova University · Landscape Architecture",
-          "period": "[Years]",
-          "level": "University",
-          "text": "Teaching in landscape planning, GIS, remote sensing and environmental assessment. [Add course titles and levels.]",
+          "course": "Advanced Empirical Methodology for Socio-Ecological Systems Analysis",
+          "institution": "Humboldt University of Berlin · Integrated Natural Resources",
+          "period": "Since April 2025",
+          "level": "MSc · Guest lecture",
+          "text": "GIS-supported spatial planning and multi-criteria site suitability analysis, including participatory web-based decision support for natural-resource decisions.",
           "image": "",
           "attachments": [],
           "buttons": []
         },
         {
-          "course": "GIS × AI: from spatial analysis to useful research workflows",
-          "institution": "Practitioner training and university teaching",
-          "period": "2026",
-          "level": "Course concept",
-          "text": "A course concept connecting GIS and AI methods with practical research workflows.",
+          "course": "Spatial Modelling in Landscape Planning",
+          "institution": "Çukurova University · U0021",
+          "period": "2013–2021",
+          "level": "PhD · 6 ECTS",
+          "text": "Landscape structure analysis, ecosystem-service mapping, land-use change modelling and GIS-based spatial analysis.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "Watershed Eco-Hydrology",
+          "institution": "Çukurova University · PM0005",
+          "period": "2013–2021",
+          "level": "MSc · 6 ECTS",
+          "text": "Hydrological processes, watershed delineation, GIS-based hydrological modelling and water management under global change.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "Environmental Modelling",
+          "institution": "Çukurova University · PM606",
+          "period": "2013–2021",
+          "level": "MSc · 6 ECTS",
+          "text": "Environmental model design and implementation, including biogeochemical models, multi-criteria assessment and system dynamics.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "Principles of Spatial Information Systems",
+          "institution": "Çukurova University · ENF121",
+          "period": "2013–2021",
+          "level": "Undergraduate · 8 ECTS",
+          "text": "GIS fundamentals, spatial data formats, georeferencing, data management and applications in environmental impact assessment.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "Landscape Engineering",
+          "institution": "Çukurova University · P267",
+          "period": "2013–2021",
+          "level": "Undergraduate · 6 ECTS",
+          "text": "Terrain analysis, cut-and-fill calculations, 3D landscape visualisation, LiDAR and ArcGIS-based landscape workflows.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "Environmental Sustainability",
+          "institution": "Çukurova University · P380",
+          "period": "2013–2021",
+          "level": "Undergraduate · 4 ECTS",
+          "text": "Environmental, social and economic dimensions of sustainability, with mapping exercises in ecology and climate change.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "Landscape Planning Studio",
+          "institution": "Çukurova University · P380 (as listed)",
+          "period": "2013–2021",
+          "level": "Undergraduate · 8 ECTS",
+          "text": "Applied spatial and regional planning, landscape planning methods and biodiversity mapping.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "English Terminology in Landscape Architecture",
+          "institution": "Çukurova University · P432",
+          "period": "2013–2021",
+          "level": "Undergraduate · 4 ECTS",
+          "text": "Technical communication and English terminology in landscape planning, ecological design and environmental sustainability.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "Principles of Geodesign",
+          "institution": "Çukurova University · P176",
+          "period": "2013–2021",
+          "level": "Undergraduate · 8 ECTS",
+          "text": "Integrating geospatial technologies and design methods for evidence-informed sustainable landscape planning.",
           "image": "",
           "attachments": [],
           "buttons": []
@@ -1233,34 +1298,141 @@
       ]
     },
     {
-      "id": "mentoring",
+      "id": "professional-training",
       "page": "teaching",
-      "type": "cards",
+      "type": "teaching",
       "visible": true,
-      "eyebrow": "Mentoring",
-      "title": "Supervision & mentoring",
-      "intro": "",
+      "eyebrow": "Courses to offer",
+      "title": "Courses & professional training",
+      "intro": "Flexible training concepts for research institutes, universities, organisations and professional audiences. These are offerings, not a record of completed courses.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
         {
-          "title": "[Doctoral supervision]",
-          "text": "[Names, topics and years of supervised PhD theses]",
+          "course": "GIS × AI: From spatial analysis to research workflows",
+          "institution": "Professional development · Research institutes and organisations",
+          "period": "Available for development",
+          "level": "One-day workshop · 10:00–16:00",
+          "text": "Introduction to GIS and AI, spatial data management, AI-assisted GIS pipelines, practical exercises and responsible use of geospatial models. Can be adapted to soil, agriculture and environmental applications.",
           "image": "",
           "attachments": [],
           "buttons": []
         },
         {
-          "title": "[MSc & BSc theses]",
-          "text": "[Number and topics of supervised theses]",
+          "course": "Geospatial intelligence for soil and agricultural research",
+          "institution": "Research groups · Universities · Scientific networks",
+          "period": "Available for development",
+          "level": "Short seminar · 30 minutes",
+          "text": "An accessible overview of how GIS, spatial modelling and AI support soil and agricultural research, with examples from long-term field experiments and data infrastructures.",
           "image": "",
           "attachments": [],
           "buttons": []
         },
         {
-          "title": "[Early-career mentoring]",
-          "text": "[Mentoring of early-career researchers, guest researchers]",
+          "course": "Spatial data, modelling and AI for environmental decisions",
+          "institution": "Universities · Graduate schools · Training programmes",
+          "period": "Available for development",
+          "level": "Guest lecture / tailored module",
+          "text": "Applied GIS, remote sensing, environmental modelling and multi-criteria decision analysis, including contextualisation of long-term experimental evidence and participatory approaches.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        }
+      ]
+    },
+    {
+      "id": "supervision-mentoring",
+      "page": "teaching",
+      "type": "cards",
+      "visible": true,
+      "eyebrow": "Research supervision",
+      "title": "Supervision & mentoring",
+      "intro": "Doctoral and MSc supervision and research mentoring, with thesis topics and periods drawn from the teaching and supervision record.",
+      "image": "",
+      "attachments": [],
+      "buttons": [],
+      "items": [
+        {
+          "title": "Nejatiyanpour E.",
+          "text": "PhD mentoring · ZALF · 2025–. Doctoral research mentoring at the Leibniz Centre for Agricultural Landscape Research.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Cooke D.",
+          "text": "PhD mentoring · ZALF · 2023–. Doctoral research mentoring at the Leibniz Centre for Agricultural Landscape Research.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Bayazit E.",
+          "text": "PhD supervision · Çukurova University · 2018–2023. GIS-based spatial modelling of city-scale green-space availability.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Cicekli S. Y.",
+          "text": "PhD co-supervision · Çukurova University · 2018–2022. Automated crop classification in the Çukurova region.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Coskun E.",
+          "text": "PhD supervision · Çukurova University · 2020– (as listed). UAV–LiDAR applications for urban monitoring.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Isik H.",
+          "text": "MSc supervision · Çukurova University · 2017–2020. Machine-learning-based land-cover and land-use mapping of the Büyük Menderes watershed.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Gumuser T.",
+          "text": "MSc supervision · Çukurova University · 2020– (as listed). Monitoring land-use change in Kahramanmaraş using supervised classification.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Karalar S.",
+          "text": "MSc supervision · Çukurova University · 2020– (as listed). GIS and web-based decision support for integrated water-resources management.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Gokdemir E.",
+          "text": "MSc supervision · Çukurova University · 2018– (as listed). Campus information system development for Gaziantep University.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Villi O.",
+          "text": "MSc supervision · Çukurova University · 2017–2019. Computer vision and UAV image processing for crop detection and precision agriculture.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Coskun E.",
+          "text": "MSc supervision · Çukurova University · 2016–2019. Deriving urban cadastral maps from UAV imagery.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Sari O.",
+          "text": "MSc supervision · Çukurova University · 2016–2018. Assessment of the SWAT model in a lowland agricultural watershed.",
           "image": "",
           "attachments": [],
           "buttons": []
