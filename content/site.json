@@ -104,7 +104,7 @@
   "themes": [
     {
       "id": "geoai",
-      "label": "Geospatial Analytics & AI/ML"
+      "label": "Geospatial Intelligence & AI/ML"
     },
     {
       "id": "lte",
@@ -145,11 +145,11 @@
       "image": ""
     },
     "projects": {
-      "label": "Projects & Infrastructure",
+      "label": "Research Projects & Collaborations",
       "file": "projects.html",
-      "eyebrow": "Projects & Infrastructure",
-      "title": "Research infrastructures and collaborative projects",
-      "intro": "Platforms, data infrastructures and projects I develop or contribute to — with my own role stated for each.",
+      "eyebrow": "",
+      "title": "Research Projects & Collaborations",
+      "intro": "I coordinate and contribute to interdisciplinary research initiatives connecting geospatial intelligence, agricultural landscapes, environmental assessment and research data management. My work spans European and international collaborations, combining scientific development, project coordination and stakeholder engagement.",
       "image": ""
     },
     "leadership": {
@@ -333,7 +333,7 @@
       "id": "contributions",
       "page": "home",
       "type": "features",
-      "visible": true,
+      "visible": false,
       "eyebrow": "Featured contributions",
       "title": "Methods, infrastructures and coordination",
       "intro": "Each contribution separates my own role from the wider project or collaboration it belongs to.",
@@ -1349,26 +1349,6 @@
       "url": "",
       "attachments": [],
       "ref": "journal-11"
-    },
-    {
-      "year": "2025",
-      "authors": "Beyazit E. and Donmez C.",
-      "title": "Mapping the Impact of Green Spaces on Urban Well-Being in Eastern Türkiye Test Case: A Knowledge-Based GIS Approach",
-      "venue": "Landscape Research",
-      "details": "",
-      "doi": "",
-      "category": "Peer-reviewed publication",
-      "status": "Under review",
-      "themes": [
-        "geoai",
-        "landscape",
-        "participatory"
-      ],
-      "featured": false,
-      "corresponding": false,
-      "url": "",
-      "attachments": [],
-      "ref": "journal-12"
     },
     {
       "year": "2024",
