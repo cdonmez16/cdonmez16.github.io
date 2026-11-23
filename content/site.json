@@ -853,8 +853,8 @@
       "page": "projects",
       "type": "projects",
       "visible": true,
-      "eyebrow": "Projects",
-      "title": "01 — Scientific Coordination & Leadership",
+      "eyebrow": "",
+      "title": "Scientific Coordination & Leadership",
       "intro": "",
       "image": "",
       "attachments": [],
@@ -911,6 +911,36 @@
               "style": "ghost"
             }
           ]
+        },
+        {
+          "title": "SOILTE.ai — AI-Ready Evidence from Long-Term Experiments",
+          "category": "Horizon Europe · Innovation Action",
+          "period": "Under evaluation",
+          "role": "Scientific Coordinator",
+          "text": "Coordinated a multi-partner proposal to connect agricultural long-term experiments, interoperable data and AI-enabled decision support for sustainable soil management",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "AISETS — Artificial Intelligence for Social-Ecological-Technological Systems",
+          "category": "EU-RAISE proposal",
+          "period": "Under evaluation",
+          "role": "Task leader",
+          "text": "Contributed to a proposed research activity on using experimental evidence within AI approaches to coupled social, ecological and technological systems",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Agritechture — Climate-Adaptive Agricultural Landscapes",
+          "category": "Horizon Europe · Innovation Action proposal",
+          "period": "Under evaluation",
+          "role": "Work package lead",
+          "text": "Contributed to a proposal addressing sustainable, climate-adaptive agricultural landscapes, with responsibility for a proposed work package. Funding decision pending.\n\n",
+          "image": "",
+          "attachments": [],
+          "buttons": []
         }
       ]
     },
@@ -920,7 +950,7 @@
       "type": "projects",
       "visible": true,
       "eyebrow": "Projects",
-      "title": "02 — Collaborative Research Projects",
+      "title": "Collaborative Research Projects",
       "intro": "Selected funded research collaborations and international networks, with my role in each initiative.",
       "image": "",
       "attachments": [],
@@ -1022,9 +1052,9 @@
       "id": "projects-emerging",
       "page": "projects",
       "type": "projects",
-      "visible": true,
+      "visible": false,
       "eyebrow": "Projects",
-      "title": "03 — Proposals & Emerging Initiatives",
+      "title": "Proposals & Emerging Initiatives",
       "intro": "Research proposals and developing collaborations. These entries are not presented as awarded grants.",
       "image": "",
       "attachments": [],
