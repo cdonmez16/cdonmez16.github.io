@@ -1139,8 +1139,8 @@
       "id": "scientific-recognition",
       "page": "leadership",
       "type": "cards",
-      "visible": true,
-      "eyebrow": "Recognition",
+      "visible": false,
+      "eyebrow": "",
       "title": "Scientific awards & recognition",
       "intro": "Selected distinctions for scientific publications, applied geospatial research and research performance.",
       "image": "",
@@ -1148,9 +1148,30 @@
       "buttons": [],
       "items": [
         {
-          "title": "Scientific Awards & Recognition",
-          "text": "- Best Publication Award — Japanese Society of Irrigation, Drainage and Rural Engineering (2020).\n- ESRI Award — Citrus Information System application (2012).\n- Scientific-performance recognition — Turkish Research Council (2023 and 2024).\n- Publication-performance recognition — ZALF (research published during 2021–2024).",
+          "title": "Best publication awards",
+          "text": "Japanese Society of Irrigation, Drainage and Rural Engineering (2020)",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-24-47.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "ESRI Award",
+          "text": "Citrus Information System application (2012)",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-25-11.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Scientific-performance recognition",
+          "text": "Turkish Scientific and Research Council (2023 and 2024)",
           "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Publication-performance recognition",
+          "text": "ZALF (research published during 2021–2024).",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-25-49.png",
           "attachments": [],
           "buttons": []
         }
