@@ -71,6 +71,87 @@
     .then(function (data) {
       var brand = document.querySelector('[data-bind="site.name"]');
       if (brand && data.site && data.site.name) brand.textContent = data.site.name;
+
+      // Content Studio integration: render the Tools section from content/site.json.
+      // The HTML cards remain as a fallback if site.json is temporarily unavailable.
+      var toolSection = (data.sections || []).find(function (s) {
+        return s && s.page === 'tools' && s.type === 'tools' && s.visible !== false;
+      });
+      if (toolSection && Array.isArray(toolSection.items)) {
+        var groups = [
+          {key:'Research platforms', selector:'#platforms', title:'Data infrastructures & discovery'},
+          {key:'Analytical methods', selector:'#methods', title:'Geospatial intelligence & environmental assessment'},
+          {key:'Emerging concepts', selector:'#emerging', title:'From experimental evidence to Living Labs'}
+        ];
+        function make(tag, cls, value) {
+          var el = document.createElement(tag);
+          if (cls) el.className = cls;
+          if (value != null) el.textContent = String(value);
+          return el;
+        }
+        function safeLink(value) {
+          var v = String(value || '').trim();
+          return /^(https?:\/\/|mailto:|[a-z0-9_./#-]+$)/i.test(v) && !v.startsWith('//') ? v : '#';
+        }
+        groups.forEach(function (group) {
+          var heading = document.querySelector(group.selector);
+          var container = heading && heading.closest('section');
+          var grid = container && container.querySelector('.tools-grid');
+          if (!grid) return;
+          grid.replaceChildren();
+          var items = toolSection.items.filter(function (it) {
+            return (it.category || 'Research platforms') === group.key;
+          });
+          container.hidden = items.length === 0;
+          items.forEach(function (item) {
+            var hero = !!item.featured && group.key === 'Research platforms';
+            var card = make('article', 'tools-card' + (hero ? ' tools-card--hero' : ''));
+            if (hero && !item.image) card.appendChild(make('div','tools-card__visual'));
+            var body = hero ? make('div','tools-card__body') : card;
+            body.appendChild(make('span','tools-card__category',item.status || group.key));
+            body.appendChild(make('h3','',item.name || 'Untitled tool'));
+            if (item.role) body.appendChild(make('p','',item.role));
+            if (item.text) body.appendChild(make('p','',item.text));
+            if (Array.isArray(item.tags) && item.tags.length) {
+              var tags = make('div','tools-card__meta');
+              item.tags.forEach(function (tag) { tags.appendChild(make('span','tools-pill',tag)); });
+              body.appendChild(tags);
+            }
+            if (Array.isArray(item.buttons) && item.buttons.length) {
+              var links = make('div','tools-card__links');
+              item.buttons.forEach(function (btn) {
+                if (!btn.url) return;
+                var a = make('a','',btn.label || 'Open resource');
+                a.href = safeLink(btn.url);
+                if (/^https?:\/\//.test(a.href)) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+                links.appendChild(a);
+              });
+              body.appendChild(links);
+            }
+            if (item.image) {
+              var img = document.createElement('img');
+              img.src = safeLink(item.image);
+              img.alt = item.name || '';
+              img.loading = 'lazy';
+              img.style.cssText = 'width:100%;max-height:240px;object-fit:cover;border-radius:8px';
+              if (hero) {var visual = card.querySelector('.tools-card__visual'); if(visual) visual.replaceWith(img);}
+              else card.insertBefore(img,card.firstChild);
+            }
+            if (hero) card.appendChild(body);
+            grid.appendChild(card);
+          });
+        });
+        var page = data.pages && data.pages.tools;
+        if (page) {
+          var eyebrow = document.querySelector('.pagehead .eyebrow');
+          var title = document.querySelector('#page-title');
+          var intro = document.querySelector('.pagehead__intro');
+          if (eyebrow && page.eyebrow) eyebrow.textContent = page.eyebrow;
+          if (title && page.title) title.textContent = page.title;
+          if (intro && page.intro) intro.textContent = page.intro;
+        }
+      }
+
       nav.replaceChildren();
       (Array.isArray(data.nav) ? data.nav : []).forEach(function (item) {
         if (!item || !item.label) return;
