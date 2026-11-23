@@ -638,6 +638,14 @@
           "attachments": []
         },
         {
+          "period": "2009-2010",
+          "title": "DAAD PhD Scholar",
+          "organization": "Friedrich-Schiller University Jena, Germany",
+          "text": "DAAD sandwich program supported doctoral research in geoinformatics and environmental modelling, including eco-hydrological interactions under climate change.",
+          "image": "",
+          "attachments": []
+        },
+        {
           "period": "02/2006-02/2008",
           "title": "MSc in Landscape Planning/Architecture",
           "organization": "Graduate School of Natural Sciences, Çukurova University, Türkiye",
@@ -650,14 +658,6 @@
           "title": "BSc in Landscape Architecture",
           "organization": "Faculty of Agriculture, Çukurova University, Turkiye",
           "text": "Foundation in landscape ecology, site analysis, planting, planning and land-use systems.",
-          "image": "",
-          "attachments": []
-        },
-        {
-          "period": "2009-2010",
-          "title": "DAAD PhD Scholar",
-          "organization": "Friedrich-Schiller University Jena, Germany",
-          "text": "DAAD sandwich program supported doctoral research in geoinformatics and environmental modelling, including eco-hydrological interactions under climate change.",
           "image": "",
           "attachments": []
         }
