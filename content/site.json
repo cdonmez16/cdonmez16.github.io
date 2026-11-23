@@ -48,14 +48,14 @@
       "style": "ghost"
     },
     {
-      "label": "CV",
-      "url": "assets/uploads/cv.pdf",
-      "style": "primary"
-    },
-    {
       "label": "Scientific tools",
       "url": "scientific-tools.html",
       "style": "ghost"
+    },
+    {
+      "label": "CV",
+      "url": "assets/uploads/cv.pdf",
+      "style": "primary"
     }
   ],
   "hero": {
