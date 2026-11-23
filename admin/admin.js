@@ -223,14 +223,14 @@
   };
   var TEXTAREA = ['body', 'text', 'summary', 'intro', 'description', 'address'];
   var IMAGE = ['image', 'portrait', 'logo', 'cover', 'thumbnail'];
-  var STRINGLIST = ['tags', 'networks'];
+  var STRINGLIST = ['tags', 'networks', 'themes', 'methods'];
   var BUTTONLIST = ['buttons', 'links'];
   var PUB_TYPES = ['Article', 'Review', 'Dataset', 'Report', 'Chapter', 'Book', 'Preprint', 'Software', 'Conference paper', 'Policy brief'];
-  var SECTION_TYPES = { about: 'About text', cards: 'Cards / supervision & mentoring', tools: 'Tools & platforms', projects: 'Projects', publications: 'Publications', teaching: 'Teaching', talks: 'Talks', news: 'News', contact: 'Contact' };
-  var TEMPLATES = {
+  var SECTION_TYPES = { achievements:'Achievements', areas:'Research areas', features:'Featured contributions', practice:'Research to practice', selectedPubs:'Selected publications', timeline:'Timeline', text:'Text', about: 'About text', cards: 'Cards / supervision & mentoring', tools: 'Tools & platforms', projects: 'Projects', publications: 'Publications', teaching: 'Teaching', talks: 'Talks', news: 'News', contact: 'Contact' };
+  var TEMPLATES = { navigation:{label:'',url:'',style:'ghost'}, themes:{id:'',label:''}, achievements:{value:'',label:'',text:'',image:'',buttons:[]}, areas:{theme:'',title:'',text:'',methods:'',image:'',attachments:[],buttons:[]}, features:{title:'',category:'',featured:false,myRole:'',context:'',tags:[],image:'',attachments:[],buttons:[]}, practice:{icon:'',title:'',text:'',evidence:'',image:''}, timeline:{period:'',title:'',organization:'',text:'',image:'',attachments:[]},
     cards: { title: '', text: '', image: '', attachments: [], buttons: [] },
-    tools: { name: '', role: '', text: '', tags: [], image: '', featured: false, attachments: [], buttons: [] },
-    projects: { title: '', category: '', period: '', text: '', image: '', attachments: [], buttons: [] },
+    tools: { category: 'Research platforms', status: '', name: '', role: '', text: '', tags: [], image: '', featured: false, attachments: [], buttons: [] },
+    projects: { title: '', category: '', period: '', role: '', text: '', image: '', attachments: [], buttons: [] },
     publications: { year: String(new Date().getFullYear()), title: '', authors: '', venue: '', type: 'Article', doi: '', summary: '', image: '', attachments: [] },
     teaching: { course: '', institution: '', period: '', level: '', text: '', image: '', attachments: [], buttons: [] },
     talks: { title: '', event: '', place: '', date: '', image: '', attachments: [], buttons: [] },
@@ -444,6 +444,7 @@
   function objectEditor(obj, opts) {
     opts = opts || {};
     var skip = opts.skip || [];
+    if(opts.sectionType && opts.onTitle && TEMPLATES[opts.sectionType]) Object.keys(TEMPLATES[opts.sectionType]).forEach(function(k){if(!(k in obj))obj[k]=clone(TEMPLATES[opts.sectionType][k]);});
     var grid = h('div', { class: 'fields' });
     var rest = h('div', { class: 'fields', style: { marginTop: '16px' } });
     Object.keys(obj).forEach(function (key) {
@@ -453,7 +454,7 @@
       if (IMAGE.indexOf(key) >= 0) rest.appendChild(imageField(obj, key));
       else if (key === 'attachments') rest.appendChild(attachmentsField(obj));
       else if (BUTTONLIST.indexOf(key) >= 0) rest.appendChild(buttonListField(obj, key));
-      else if (STRINGLIST.indexOf(key) >= 0) grid.appendChild(stringListField(obj, key));
+      else if (STRINGLIST.indexOf(key) >= 0 && Array.isArray(v)) grid.appendChild(stringListField(obj, key));
       else if (key === 'items' && Array.isArray(v)) { /* rendered by the section view */ }
       else if (Array.isArray(v)) rest.appendChild(h('div', { class: 'field field--full' }, [h('span', { class: 'field__label', text: labelFor(key) }), itemsField(obj, key, null)]));
       else if (v && typeof v === 'object') {
@@ -478,14 +479,15 @@
     }
     nav.appendChild(h('div', { class: 'side__group', text: 'General' }));
     link('overview', 'Overview'); link('site', 'Site & menu'); link('hero', 'Hero (top of page)');
-    nav.appendChild(h('div', { class: 'side__group', text: 'Teaching & mentoring' }));
-    (S.data.sections || []).forEach(function (s, i) {
-      if (s.page === 'teaching') link('section:' + i, s.title || s.id, s.visible === false ? 'hidden' : '');
+    link('contact', 'Contact & collaboration'); link('themes', 'Research themes / filters');
+    Object.keys(S.data.pages || {}).forEach(function (key) {
+      var page = S.data.pages[key];
+      nav.appendChild(h('div', { class:'side__group', text: page.label || key }));
+      if(key !== 'home') link('page:'+key, 'Page header');
+      (S.data.sections || []).forEach(function(s,i){if((s.page || 'home')===key) link('section:'+i,s.title || s.id,s.visible===false?'hidden':'');});
+      if(key==='publications') link('publications','All publications',String((S.data.publications||[]).length));
     });
-    nav.appendChild(h('div', { class: 'side__group', text: 'Other sections' }));
-    (S.data.sections || []).forEach(function (s, i) {
-      if (s.page !== 'teaching') link('section:' + i, s.nav || s.title || s.id, s.visible === false ? 'hidden' : '');
-    });
+    (S.data.sections || []).forEach(function(s,i){if(!(S.data.pages||{})[s.page||'home']) link('section:'+i,s.title||s.id,'Unassigned');});
     nav.appendChild(h('div', { class: 'side__group', text: 'Manage' }));
     link('sections', 'Add / reorder sections'); link('library', 'Media library');
   }
@@ -516,8 +518,12 @@
       v.appendChild(panel('Your sections', null, h('div', null, rows)));
       return;
     }
-    if (S.view === 'site') { header('General', 'Site & menu'); v.appendChild(panel('Site settings', 'Name, browser title, footer and the CV button in the top menu.', objectEditor(S.data.site))); return; }
+    if (S.view === 'site') { header('General', 'Site & menu'); v.appendChild(panel('Site settings', 'Name, browser title, footer and the CV button in the top menu.', objectEditor(S.data.site))); v.appendChild(panel('Navigation & CV', 'Edit labels, links and order.', itemsField(S.data,'nav','navigation'))); return; }
     if (S.view === 'hero') { header('General', 'Hero'); v.appendChild(panel('Top of the homepage', 'Headline, introduction, portrait, buttons, profile links and partner networks.', objectEditor(S.data.hero))); return; }
+    if (S.view === 'contact') { header('General','Contact & collaboration'); v.appendChild(panel('Shared contact section',null,objectEditor(S.data.contact || (S.data.contact={eyebrow:'',title:'',text:'',email:'',address:'',buttons:[],attachments:[]})))); return; }
+    if (S.view === 'themes') { header('General','Research themes'); v.appendChild(panel('Publication filters', 'Keep theme IDs consistent with publication records.',itemsField(S.data,'themes','themes'))); return; }
+    if (S.view === 'publications') { header('Publications','All publications'); v.appendChild(panel('Publication records', 'Add, edit, duplicate or remove records.',itemsField(S.data,'publications','publications'))); return; }
+    if (S.view.indexOf('page:') === 0) { var key=S.view.slice(5), p=S.data.pages[key]; if(!p)return setView('overview'); ['eyebrow','title','intro','image'].forEach(function(k){if(!(k in p))p[k]='';}); header(p.label||key,'Page header'); v.appendChild(panel('Public page header', 'Changes appear on the corresponding page after publishing.',objectEditor(p,{skip:['file']}))); return; }
     if (S.view.indexOf('section:') === 0) {
       var i = +S.view.split(':')[1], sec = S.data.sections[i];
       if (!sec) return setView('overview');
@@ -554,12 +560,13 @@
     function mv(i, d) { var j = i + d; if (j < 0 || j >= S.data.sections.length) return; S.data.sections.splice(j, 0, S.data.sections.splice(i, 1)[0]); markDirty(); renderNav(); draw(); }
     draw();
     var typeSel = h('select', { class: 'input', style: { maxWidth: '260px' } }, Object.keys(SECTION_TYPES).map(function (t) { return h('option', { value: t, text: SECTION_TYPES[t] }); }));
+    var pageSel = h('select',null,Object.keys(S.data.pages||{}).map(function(k){return h('option',{value:k,text:S.data.pages[k].label||k});}));
     var nameIn = h('input', { type: 'text', class: 'input', placeholder: 'Section title, e.g. Awards', style: { maxWidth: '300px' } });
     var add = h('button', { type: 'button', class: 'btn btn--primary', onclick: function () {
       var title = nameIn.value.trim() || 'New section', t = typeSel.value;
       var id = slugify(title).replace(/\./g, '') || ('section-' + Date.now().toString(36));
       while (S.data.sections.some(function (s) { return s.id === id; })) id += '-2';
-      var sec = { id: id, type: t, nav: title, visible: true, eyebrow: title, title: title, intro: '', image: '', attachments: [], buttons: [] };
+      var sec = { id: id, page: pageSel.value, type: t, nav: title, visible: true, eyebrow: title, title: title, intro: '', image: '', attachments: [], buttons: [] };
       if (t === 'about') sec.body = '';
       else if (t === 'contact') { sec.email = ''; sec.address = ''; }
       else sec.items = [];
@@ -567,7 +574,7 @@
     } }, 'Add section');
     return h('div', null, [
       panel('Order & visibility', 'The website shows sections in this order. Untick “Show” to hide a section without deleting it.', box),
-      panel('Add a new section', 'For example Awards, Supervision, Software or Media coverage. Pick the layout that fits.', h('div', { class: 'inline', style: { flexWrap: 'wrap' } }, [nameIn, typeSel, add]))
+      panel('Add a new section', 'For example Awards, Supervision, Software or Media coverage. Pick the layout that fits.', h('div', { class: 'inline', style: { flexWrap: 'wrap' } }, [pageSel, nameIn, typeSel, add]))
     ]);
   }
 
@@ -638,7 +645,7 @@
   }
   function preview() {
     saveDraft();
-    window.open('../index.html?preview=draft', '_blank');
+    var key=S.view.indexOf('page:')===0?S.view.slice(5):S.view.indexOf('section:')===0?(S.data.sections[+S.view.split(':')[1]]||{}).page:S.view==='publications'?'publications':'home'; var p=(S.data.pages||{})[key]||{}; window.open('../'+(p.file||'index.html')+'?preview=draft','_blank');
   }
 
   /* =========================================================
