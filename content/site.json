@@ -144,7 +144,7 @@
     "publications": {
       "label": "Publications",
       "file": "publications.html",
-      "eyebrow": "Publications",
+      "eyebrow": "Prof.Dr. Cenk Dönmez",
       "title": "Publications",
       "intro": "Peer-reviewed articles, book chapters, conference contributions and work under review. Search, or filter by year, type and research area.",
       "image": ""
@@ -152,23 +152,23 @@
     "projects": {
       "label": "Projects & Collaborations",
       "file": "projects.html",
-      "eyebrow": "",
+      "eyebrow": "Prof.Dr. Cenk Dönmez",
       "title": "Projects & Collaborations",
       "intro": "I coordinate and contribute to interdisciplinary research initiatives connecting geospatial intelligence, agricultural landscapes, environmental assessment and research data management. My work spans European and international collaborations, combining scientific development, project coordination and stakeholder engagement.",
       "image": ""
     },
     "leadership": {
-      "label": "Academic Leadership",
+      "label": "",
       "file": "leadership.html",
-      "eyebrow": "Scientific community",
+      "eyebrow": "Prof.Dr. Cenk Dönmez",
       "title": "Academic leadership & scientific service",
       "intro": "Building international research connections, supporting scientific quality and recognising contributions to geospatial and environmental research.",
       "image": ""
     },
     "teaching": {
-      "label": "Teaching & Mentoring",
+      "label": "",
       "file": "teaching.html",
-      "eyebrow": "Teaching & Mentoring",
+      "eyebrow": "Prof.Dr. Cenk Dönmez",
       "title": "Teaching & mentoring",
       "intro": "Teaching and training in landscape planning, GIS, remote sensing, spatial data science and environmental assessment.",
       "image": ""
