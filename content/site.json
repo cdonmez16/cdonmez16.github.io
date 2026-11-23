@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Cenk Dönmez",
+    "name": "Prof.Dr. Cenk Dönmez",
     "title": "Cenk Dönmez — Geospatial Intelligence for Sustainable Landscapes and Agricultural Systems",
     "description": "Geospatial and environmental scientist: GeoAI, remote sensing, landscape and environmental assessment, long-term agricultural research, FAIR data infrastructures and knowledge exchange.",
     "footerNote": "Independent academic portfolio · Views are my own.",
@@ -55,9 +55,9 @@
   ],
   "hero": {
     "eyebrow": "",
-    "title": "Geospatial Intelligence for Sustainable Landscapes and Agricultural Systems",
-    "text": "I am a geospatial scientist working at the intersection of agricultural landscapes, long-term experiments and research data infrastructures. My work connects field evidence, spatial intelligence and collaborative research to support better environmental decisions.",
-    "affiliation": "Senior Scientist I Professor\nLeibniz Centre for Agricultural Landscape Research (ZALF), Germany",
+    "title": "Geospatial science for sustainable landscapes, soils and agricultural systems",
+    "text": "I am a geospatial scientist connecting spatial intelligence, long-term experimental evidence and stakeholder knowledge to better understand agricultural landscapes and support sustainable land management. My work integrates geospatial AI, environmental modelling, and collaborative research to turn scientific evidence into actionable insights",
+    "affiliation": "Senior Scientist I Professor I Scientific Consultant\nLeibniz Centre for Agricultural Landscape Research (ZALF), Germany",
     "portrait": "assets/uploads/2026/professioneller-business-portrat-im-grunen.png",
     "portraitCaption": "",
     "buttons": [
@@ -133,7 +133,7 @@
       "file": "about.html",
       "eyebrow": "Cenk Dönmez",
       "title": "Geospatial science for sustainable landscapes, soils and agricultural systems",
-      "intro": "Senior Scientist I Professor I Consultant",
+      "intro": "Senior Scientist I Professor I Scientific Consultant",
       "image": "assets/uploads/2026/professioneller-business-portrat-im-grunen-mwou9vwq.png"
     },
     "publications": {
