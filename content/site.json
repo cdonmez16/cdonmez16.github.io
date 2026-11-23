@@ -570,9 +570,9 @@
       "id": "positions",
       "page": "about",
       "type": "timeline",
-      "visible": true,
-      "eyebrow": "Positions",
-      "title": "Appointments",
+      "visible": false,
+      "eyebrow": "",
+      "title": "Professional Experience & Appointments",
       "intro": "",
       "image": "",
       "attachments": [],
@@ -582,36 +582,37 @@
           "period": "05/2021-Current",
           "title": "Senior Scientist",
           "organization": "Leibniz Centre for Agricultural Landscape Research (ZALF), Germany",
-          "text": "Research on geospatial assessments, long-term field experiments and research data infrastructure; scientific coordination and European project activities.",
+          "text": "Combining spatial modelling and AI/ML with the coordination a long-term field experiments platform, international partnerships and interdisciplinary initiatives, advancing how scientific knowledge is discovered, contextualized and applied to soil, climate and land-use challenges.",
           "attachments": []
         },
         {
           "period": "03/2023-11/2025",
           "title": "Professor · Landscape Architecture-Digital Planning Division",
           "organization": "Çukurova University, Türkiye",
-          "text": "Research and teaching in landscape planning, GIS, remote sensing and environmental assessment.",
-          "attachments": []
-        },
-        {
-          "period": "2009-03/2010",
-          "title": "DAAD PhD Scholar",
-          "organization": "Friedrich Schiller University Jena, Germany",
-          "text": "Geoinformatics and spatial modelling research.",
+          "text": "Research and teaching in landscape planning, GIS, remote sensing and environmental risk assessment.",
           "attachments": []
         },
         {
           "period": "05/2010-09/2010",
           "title": "Research Fellow",
-          "organization": "University of California Santa Barbara",
-          "text": "EU Marie-Curie Programme. Department of Geography",
+          "organization": "University of California Santa Barbara, USA",
+          "text": "EU Marie-Curie Programme fellowship. Research and teaching contributions on sustainable land management in the Department of Geography.",
           "image": "",
           "attachments": []
         },
         {
           "period": "2009",
           "title": "Research Fellow",
-          "organization": "Boston University",
-          "text": "EU Marie-Curie Programme, Center for Environmental Research",
+          "organization": "Boston University, USA",
+          "text": "EU Marie-Curie Programme fellowship at the Department of Earth and Environment, supporting environmental modelling work.",
+          "image": "",
+          "attachments": []
+        },
+        {
+          "period": "2012-2013",
+          "title": "Postdoctoral Researcher",
+          "organization": "Friedrich-Schiller University Jena, Germany",
+          "text": "Geoinformatics and environmental/hydrological modelling of carbon–water processes and climate impacts ",
           "image": "",
           "attachments": []
         }
