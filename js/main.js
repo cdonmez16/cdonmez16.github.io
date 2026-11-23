@@ -243,6 +243,14 @@
     return wrapSection(sec, head(sec) + controls + '<div id="pubList"></div>', 'section--pubs');
   };
   R.cards = function (sec) {
+    if (PAGE === 'leadership') {
+      var cards=list(sec.items).map(function(it,i){
+        var text=String(it.text||'').trim(), points=text.split(/\n+/).map(function(p){return p.replace(/^\s*[-•]\s*/, '').trim();}).filter(Boolean);
+        return '<article class="lift project reveal">'+media(it.image,'project__media',it.title)+'<div class="project__body"><div class="project__meta">Selected contribution · '+String(i+1).padStart(2,'0')+'</div><h3 class="lift__title">'+esc(it.title)+'</h3><ul class="lead-points">'+points.map(function(p){return '<li>'+inline(p)+'</li>';}).join('')+'</ul>'+files(it.attachments)+buttons(it.buttons,'btn--small')+'</div></article>';
+      }).join('');
+      return wrapSection(sec,head(sec)+'<div class="projects lead-grid">'+cards+'</div>');
+    }
+
     var items = list(sec.items).map(function (it, i) {
       var n = i + 1 < 10 ? '0' + (i + 1) : String(i + 1);
       return '<article class="lift card reveal">' +
@@ -262,12 +270,13 @@
     return wrapSection(sec, head(sec) + '<ol class="tl">' + items + '</ol>');
   };
   R.tools = function (sec) {
+    if(PAGE==='tools' && !sec._grouped){ var groups=[]; list(sec.items).forEach(function(it){var k=it.category||'Research platforms';if(groups.indexOf(k)<0)groups.push(k);}); if(groups.length) return groups.map(function(k,i){return R.tools(Object.assign({},sec,{_grouped:true,id:i?sec.id+'-'+i:sec.id,title:i===0?(sec.title||k):k,eyebrow: i===0?sec.eyebrow:'',intro:i===0?sec.intro:'',items:list(sec.items).filter(function(it){return (it.category||'Research platforms')===k;})}));}).join(''); } 
     var items = list(sec.items).map(function (it) {
       var featured = !!it.featured;
       var tags = list(it.tags).length ? '<div class="tags">' + list(it.tags).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' : '';
       return '<article class="lift tool reveal' + (featured ? ' tool--featured dark' : '') + '">' +
         media(it.image, 'tool__media', it.name, it.name, { dark: featured }) +
-        '<div class="tool__body">' + (has(it.role) ? '<div class="kicker">' + esc(it.role) + '</div>' : '') +
+        '<div class="tool__body">' + (has(it.status) ? '<div class="kicker">' + esc(it.status) + '</div>' : '') + (has(it.role) ? '<div class="kicker">' + esc(it.role) + '</div>' : '') +
         '<h3 class="lift__title">' + esc(it.name) + '</h3><p>' + inline(it.text) + '</p>' + tags +
         files(it.attachments) + buttons(it.buttons) + '</div></article>';
     }).join('');
