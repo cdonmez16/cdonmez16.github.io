@@ -158,7 +158,7 @@
       "image": ""
     },
     "leadership": {
-      "label": "Academic Leadership",
+      "label": "Prof.Dr. Cenk Dönmez",
       "file": "leadership.html",
       "eyebrow": "Academic Leadership",
       "title": "Scientific coordination and international collaboration",
@@ -1112,7 +1112,7 @@
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "Coordination",
+      "eyebrow": "",
       "title": "Scientific coordination",
       "intro": "",
       "image": "",
@@ -1153,7 +1153,7 @@
       "page": "leadership",
       "type": "cards",
       "visible": true,
-      "eyebrow": "Academic service",
+      "eyebrow": "",
       "title": "Service to the scientific community",
       "intro": "Add editorial roles, review activity, sessions you convened and committee work here.",
       "image": "",
