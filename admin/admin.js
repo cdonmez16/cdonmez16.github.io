@@ -229,6 +229,8 @@
     evidence: 'Use [publication title](https://doi.org/…) to link. Separate several with · ',
     myRole: 'What you did yourself. *italic* works.',
     featured: '',
+    category: 'Group: Research platforms, Analytical methods, or Emerging concepts.',
+    status: 'Maturity / contribution label shown on the tool card.',
     affiliation: 'One position per line.',
     file: 'The HTML file of this page — do not change.'
   };
@@ -248,7 +250,7 @@
     timeline: { period: '', title: '', organization: '', text: '', image: '', attachments: [] },
     pubs: { year: String(new Date().getFullYear()), authors: '', title: '', venue: '', details: '', doi: '', category: 'Peer-reviewed publication', status: 'Published', themes: [], featured: false, corresponding: false, url: '', attachments: [] },
     cards: { title: '', text: '', image: '', attachments: [], buttons: [] },
-    tools: { name: '', role: '', text: '', tags: [], image: '', featured: false, attachments: [], buttons: [] },
+    tools: { name: '', category: 'Research platforms', status: '', role: '', text: '', tags: [], image: '', featured: false, attachments: [], buttons: [] },
     projects: { title: '', category: '', period: '', role: '', text: '', image: '', attachments: [], buttons: [] },
     publications: { year: String(new Date().getFullYear()), title: '', authors: '', venue: '', type: 'Article', doi: '', summary: '', image: '', attachments: [] },
     teaching: { course: '', institution: '', period: '', level: '', text: '', image: '', attachments: [], buttons: [] },
