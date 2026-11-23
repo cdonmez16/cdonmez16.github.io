@@ -601,18 +601,18 @@
           "attachments": []
         },
         {
-          "period": "2009",
-          "title": "Research Fellow",
-          "organization": "Boston University, USA",
-          "text": "EU Marie-Curie Programme fellowship at the Department of Earth and Environment, supporting environmental modelling work.",
-          "image": "",
-          "attachments": []
-        },
-        {
           "period": "2012-2013",
           "title": "Postdoctoral Researcher",
           "organization": "Friedrich-Schiller University Jena, Germany",
           "text": "Geoinformatics and environmental/hydrological modelling of carbon–water processes and climate impacts ",
+          "image": "",
+          "attachments": []
+        },
+        {
+          "period": "2009",
+          "title": "Research Fellow",
+          "organization": "Boston University, USA",
+          "text": "EU Marie-Curie Programme fellowship at the Department of Earth and Environment, supporting environmental modelling work.",
           "image": "",
           "attachments": []
         }
