@@ -104,11 +104,11 @@
   "themes": [
     {
       "id": "geoai",
-      "label": "Geospatial Analytics & GeoAI"
+      "label": "Geospatial Analytics & AI/ML"
     },
     {
       "id": "lte",
-      "label": "Long-Term Agricultural Research"
+      "label": "Long-Term Field Experiments"
     },
     {
       "id": "landscape",
@@ -116,7 +116,7 @@
     },
     {
       "id": "data",
-      "label": "Scientific Data Infrastructures"
+      "label": "FAIR Data Infrastructures"
     },
     {
       "id": "participatory",
