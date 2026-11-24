@@ -2206,9 +2206,21 @@
       "intro": "Examples of applied scientific work.",
       "items": [
         {
-          "title": "CarbonIQ — Agricultural soil carbon modelling",
-          "text": "Soil organic carbon modelling using RothC and spatial environmental data to assess climate and agricultural management scenarios across four agricultural regions of Kazakhstan, in collaboration with UfU Berlin.",
-          "image": "",
+          "title": "UfU e.V. Berlin — Independent Institute for Environmental Issues",
+          "text": "Scientific consultancy on agricultural soil carbon dynamics, integrating geospatial analysis, RothC modelling and climate scenarios. The work assesses carbon sequestration potential and the impacts of conventional and regenerative agricultural practices across major agricultural regions of Kazakhstan, supporting evidence-based climate mitigation and sustainable land management.",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-14-49-39.png",
+          "attachments": [
+            {
+              "label": "UfU Berlin",
+              "file": "https://www.ufu.de/en/"
+            }
+          ],
+          "buttons": []
+        },
+        {
+          "title": "Boston Consulting Group (BCG)",
+          "text": "Scientific and technical advisory contributions focused on agricultural information systems, geospatial data integration and the reuse of scientific evidence. The collaboration explores how agricultural research data, environmental information and digital technologies can support the development of knowledge-driven information systems and decision-support applications.",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-14-51-08.png",
           "attachments": [],
           "buttons": []
         }
@@ -2221,7 +2233,7 @@
       "id": "consultancy-collaboration",
       "page": "consultancy",
       "type": "cards",
-      "visible": true,
+      "visible": false,
       "eyebrow": "",
       "title": "Work with me",
       "intro": "Discuss scientific consultancy, technical advisory services, research collaboration or tailored training.",
