@@ -809,7 +809,7 @@
         },
         {
           "name": "Integrated LTE Metadata Harmonisation Framework",
-          "category": "Data management & interoperability",
+          "category": "Research Platforms",
           "status": "Data stewardship & methods",
           "role": "Leading metadata schema development, harmonisation & scientific data reuse",
           "text": "An integrated metadata harmonisation framework connecting BonaRes and EJP SOIL long-term experiment inventories. It combines standardised descriptions of experimental design, agricultural management, soil properties and environmental conditions to facilitate cross-network data discovery and reuse. The framework supports modellers and researchers in identifying relevant experimental evidence, integrating agricultural and environmental datasets, and conducting spatial analyses across soil, agricultural and landscape systems.",
