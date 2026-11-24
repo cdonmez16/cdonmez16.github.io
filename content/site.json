@@ -883,7 +883,7 @@
         {
           "name": "GeoAI-based agricultural suitability & vulnerability modelling",
           "role": "Methodology development & spatial modelling",
-          "text": "Multi-criteria spatial suitability assessment combined with Random Forest machine learning to identify priority locations for agricultural experiments under current and future climates. Integrates environmental and agricultural variables to assess production potential and vulnerability across Europe. Models achieved R² of 0.88–0.92.",
+          "text": "Multi-criteria spatial suitability assessment combined with Random Forest machine learning to identify priority locations for agricultural experiments under current and future climates.",
           "tags": [
             "Random Forest",
             "MCDA",
@@ -900,7 +900,7 @@
         {
           "name": "Spatial representativeness & research gap mapping",
           "role": "Methodology development & geospatial analysis",
-          "text": "PCA-based environmental similarity and spatial distance mapping to quantify the coverage of European long-term experiments across agricultural land. Identifies underrepresented soil, climate and cropping conditions to guide network expansion and site selection.",
+          "text": "PCA-based environmental similarity and spatial distance mapping to quantify the coverage of European long-term experiments across agricultural land. ",
           "tags": [
             "PCA",
             "Spatial statistics",
@@ -917,7 +917,7 @@
         {
           "name": "AgriGullyAtlas — agricultural erosion mapping",
           "role": "Collaborative scientific contributor",
-          "text": "A collaborative geospatial inventory of agricultural gullies supporting erosion research, spatial assessment of soil degradation and data-driven soil conservation.",
+          "text": "A collaborative geospatial inventory of agricultural gullies (+200k globally) supporting erosion research, spatial assessment of soil degradation and data-driven soil conservation.",
           "tags": [
             "Gully mapping",
             "Earth observation",
@@ -925,10 +925,16 @@
             "Open data"
           ],
           "status": "Collaborative research dataset",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-11-40-00.png",
           "featured": false,
           "attachments": [],
-          "buttons": [],
+          "buttons": [
+            {
+              "label": "Link to dataset",
+              "url": "https://zenodo.org/records/23489092?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTc5Mjg1ODc2MiwiZXhwIjoxNzk4Njc1MTk5fQ.eyJpZCI6ImMxMjk3ZDNlLTQ3OWUtNDIxZi1iODM3LTMzZTEwZDY2ZWI5NyIsImRhdGEiOnt9LCJyYW5kb20iOiJjZGFjMmUzZGM0MTI1MWUxMGIyYTQxYTA3MjJlNzYxYiJ9.8-NJnQOTGIMftd52I_CH3Qpv6IVVo6v7OHOrZpIG7xTEnGPDoopKaN2oMsByrlQd9qpg6icUmKn4b-YPEYdOoA",
+              "style": "ghost"
+            }
+          ],
           "category": "Geospatial modelling, GeoAI & analytical workflows"
         },
         {
@@ -942,7 +948,7 @@
             "GIS"
           ],
           "status": "Published modelling workflow",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-11-41-09.png",
           "featured": false,
           "attachments": [],
           "buttons": [
@@ -971,7 +977,7 @@
             "Climate scenarios"
           ],
           "status": "Applied modelling workflow",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-11-42-31.png",
           "featured": false,
           "attachments": [],
           "buttons": [],
@@ -988,7 +994,7 @@
             "Precision agriculture"
           ],
           "status": "Published methodology",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-11-44-53.png",
           "featured": false,
           "attachments": [],
           "buttons": [
