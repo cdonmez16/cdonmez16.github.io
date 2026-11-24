@@ -828,7 +828,7 @@
           ]
         },
         {
-          "category": "Geospatial modelling, GeoAI/ML & analytical workflows",
+          "category": "Research platforms & data infrastructures",
           "status": "Research and demonstration application",
           "name": "Basin Scale Interactive Spatial Planning Dashboard",
           "role": "Dashboard development, Web GIS & spatial data integration",
@@ -847,7 +847,7 @@
           "buttons": []
         },
         {
-          "category": "Geospatial modelling, GeoAI/ML & analytical workflows",
+          "category": "Research platforms & data infrastructures",
           "status": "",
           "name": "GeoParticipate — Spatial Stakeholder Engagement Tool",
           "role": "Participatory GIS workflow design & application development",
