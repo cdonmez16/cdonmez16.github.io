@@ -1669,7 +1669,7 @@
           "period": "2013–2021",
           "level": "PhD · 6 ECTS",
           "text": "Landscape structure analysis, ecosystem-service mapping, land-use change modelling and GIS-based spatial analysis.",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-13-37-31.png",
           "attachments": [],
           "buttons": []
         },
@@ -1679,7 +1679,7 @@
           "period": "2013–2021",
           "level": "MSc · 6 ECTS",
           "text": "Hydrological processes, watershed delineation, GIS-based hydrological modelling and water management under global change.",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-13-37-48.png",
           "attachments": [],
           "buttons": []
         },
@@ -1689,7 +1689,7 @@
           "period": "2013–2021",
           "level": "MSc · 6 ECTS",
           "text": "Environmental model design and implementation, including biogeochemical models, multi-criteria assessment and system dynamics.",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-13-38-07.png",
           "attachments": [],
           "buttons": []
         },
@@ -1699,7 +1699,7 @@
           "period": "2013–2021",
           "level": "Undergraduate · 8 ECTS",
           "text": "GIS fundamentals, spatial data formats, georeferencing, data management and applications in environmental impact assessment.",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-13-38-23.png",
           "attachments": [],
           "buttons": []
         },
@@ -1709,7 +1709,7 @@
           "period": "2013–2021",
           "level": "Undergraduate · 6 ECTS",
           "text": "Terrain analysis, cut-and-fill calculations, 3D landscape visualisation, LiDAR and ArcGIS-based landscape workflows.",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-13-38-41.png",
           "attachments": [],
           "buttons": []
         },
@@ -1719,7 +1719,7 @@
           "period": "2013–2021",
           "level": "Undergraduate · 4 ECTS",
           "text": "Environmental, social and economic dimensions of sustainability, with mapping exercises in ecology and climate change.",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-13-38-59.png",
           "attachments": [],
           "buttons": []
         },
@@ -1729,17 +1729,7 @@
           "period": "2013–2021",
           "level": "Undergraduate · 8 ECTS",
           "text": "Applied spatial and regional planning, landscape planning methods and biodiversity mapping.",
-          "image": "",
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "course": "English Terminology in Landscape Architecture",
-          "institution": "Çukurova University · P432",
-          "period": "2013–2021",
-          "level": "Undergraduate · 4 ECTS",
-          "text": "Technical communication and English terminology in landscape planning, ecological design and environmental sustainability.",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-13-39-16.png",
           "attachments": [],
           "buttons": []
         },
@@ -1749,7 +1739,17 @@
           "period": "2013–2021",
           "level": "Undergraduate · 8 ECTS",
           "text": "Integrating geospatial technologies and design methods for evidence-informed sustainable landscape planning.",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-13-40-09.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "English Terminology in Landscape Architecture/Planning",
+          "institution": "Çukurova University · P432",
+          "period": "2013–2021",
+          "level": "Undergraduate · 4 ECTS",
+          "text": "Technical communication and English terminology in landscape planning, ecological design and environmental sustainability.",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-13-39-49.png",
           "attachments": [],
           "buttons": []
         }
