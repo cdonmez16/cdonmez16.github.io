@@ -744,14 +744,12 @@
         },
         {
           "name": "SoilWise catalogue",
-          "role": "contributor (knowledge management, BonaRes reuse)",
-          "text": "Part of an interoperable knowledge infrastructure for European soil data and knowledge.",
+          "role": "Role: Contributor (knowledge management, BonaRes reuse)",
+          "text": "SoilWise is a €6 million Horizon Europe initiative bringing together 15 European partner organisations to develop an integrated infrastructure for soil data and knowledge. The platform connects existing repositories, research networks and knowledge resources, making soil information more accessible, interoperable and reusable for researchers, practitioners and policymakers.",
           "tags": [
-            "FAIR data",
-            "Soil",
-            "Europe"
+            "Horizon Europe · EU Mission Soil · FAIR Data · Knowledge Management · Metadata Interoperability · Data Integration"
           ],
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-10-28-33.png",
           "featured": false,
           "attachments": [],
           "buttons": [
@@ -762,7 +760,7 @@
             }
           ],
           "category": "Research platforms",
-          "status": "Collaborative infrastructure"
+          "status": ""
         },
         {
           "name": "BonaRes Repository",
