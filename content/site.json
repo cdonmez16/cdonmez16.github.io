@@ -1499,6 +1499,24 @@
       ],
       "items": [
         {
+          "title": "A Geospatial Overview of Agricultural Long-Term Field Experiments across Europe",
+          "event": "EGU 2024",
+          "place": "Vienna, Austria",
+          "date": "19 April 2024",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-48-32.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Incorporating agricultural experimental data with geospatial information",
+          "event": "IUSS Centennial Conference",
+          "place": "Florence, Italy",
+          "date": "20 May 2026",
+          "image": "assets/uploads/2026/photo-florence1.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
           "title": "KEYNOTE TALK: Long-term field experiments (meta)data platform: challenges and opportunities for networking and data reuse",
           "event": "Centennial Meeting for Agricultural Experimentation in Poland",
           "place": "Warsaw, Poland",
@@ -1535,11 +1553,11 @@
           "buttons": []
         },
         {
-          "title": "Advancing the Reuse Of Long-Term Fıeld Experiments Data Through An Open-Access Platform",
+          "title": "Advancing the Reuse Of Long-Term Field Experiments Data Through An Open-Access Platform",
           "event": "EUROSOIL 2025",
           "place": "Sevilla, Spain",
           "date": "September 2025",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-43-07.png",
           "attachments": [],
           "buttons": []
         },
