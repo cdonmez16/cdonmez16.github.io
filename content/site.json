@@ -1803,7 +1803,7 @@
       "id": "supervision-mentoring",
       "page": "teaching",
       "type": "cards",
-      "visible": false,
+      "visible": true,
       "eyebrow": "",
       "title": "Supervision & mentoring",
       "intro": "Doctoral and MSc supervision and research mentoring, with thesis topics and periods drawn from the teaching and supervision record.",
