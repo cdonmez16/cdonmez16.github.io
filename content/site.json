@@ -43,7 +43,7 @@
       "style": "ghost"
     },
     {
-      "label": "Tools & Infrastructures",
+      "label": "Tools & Technologies",
       "url": "scientific-tools.html",
       "style": "ghost"
     },
@@ -190,7 +190,7 @@
       "file": "scientific-tools.html",
       "eyebrow": "Prof.Dr. Cenk Dönmez",
       "title": "Connecting environmental evidence, data and spatial intelligence",
-      "intro": "Research platforms, geospatial methods and emerging tools that make long-term experimental and environmental knowledge easier to discover, interpret and apply.",
+      "intro": "My research combines the development of scientific tools and data infrastructures with hands-on applications of GIS, remote sensing, artificial intelligence and environmental modelling.",
       "image": ""
     }
   },
