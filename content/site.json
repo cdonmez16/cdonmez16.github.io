@@ -256,10 +256,16 @@
       "buttons": [],
       "items": [
         {
-          "value": "{articles}",
-          "label": "peer-reviewed publications",
+          "value": "50+",
+          "label": "Peer-reviewed publications",
           "text": "spanning geospatial science, remote sensing, environmental modelling, soil and agricultural systems, and sustainable landscape management.",
-          "buttons": [],
+          "buttons": [
+            {
+              "label": "Publications",
+              "url": "publications.html",
+              "style": "ghost"
+            }
+          ],
           "image": ""
         },
         {
