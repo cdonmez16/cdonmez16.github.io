@@ -796,7 +796,7 @@
           "category": "Research platforms & data infrastructures",
           "status": "",
           "role": "Leading metadata schema development, harmonisation & scientific data reuse",
-          "text": "An integrated metadata harmonisation framework connecting BonaRes and EJP SOIL long-term experiment inventories. It combines standardised descriptions of experimental design, agricultural management, soil properties and environmental conditions to facilitate cross-network data discovery and reuse. The framework supports modellers and researchers in identifying relevant experimental evidence, integrating agricultural and environmental datasets, and conducting spatial analyses across soil, agricultural and landscape systems.",
+          "text": "An integrated metadata harmonisation framework connecting BonaRes and EJP SOIL long-term experiment inventories. It combines standardised descriptions of experimental design, agricultural management, soil properties and environmental conditions to facilitate cross-network data discovery and reuse. ",
           "tags": [
             "Metadata Harmonisation",
             "EJP SOIL",
@@ -832,7 +832,7 @@
           "status": "Research and demonstration application",
           "name": "Basin Scale Interactive Spatial Planning Dashboard",
           "role": "Dashboard development, Web GIS & spatial data integration",
-          "text": "An interactive Web GIS dashboard developed using ArcGIS Online to explore spatial suitability for industrial development in the Büyük Menderes Basin, Türkiye. The dashboard integrates environmental, socioeconomic and regulatory criteria with multi-criteria spatial modelling outputs, enabling users to explore suitable development locations, environmental constraints and potential land-use conflicts through interactive maps and indicators.",
+          "text": "An interactive Web GIS dashboard developed using ArcGIS Online to explore spatial suitability for industrial development in the Büyük Menderes Basin, Türkiye. ",
           "tags": [
             "ArcGIS Online",
             "ArcGIS Dashboards",
@@ -851,7 +851,7 @@
           "status": "",
           "name": "GeoParticipate — Spatial Stakeholder Engagement Tool",
           "role": "Participatory GIS workflow design & application development",
-          "text": "A spatial stakeholder engagement application developed using ArcGIS Survey123 and integrated with Web GIS dashboards. The workflow enables stakeholders to provide geographically referenced feedback, evaluate proposed development locations, identify environmental concerns and express preferences regarding planning alternatives. By linking stakeholder-generated information with scientific spatial assessments, the approach supports participatory planning, transparent decision-making and the integration of local knowledge into environmental research.",
+          "text": "A spatial stakeholder engagement application developed using ArcGIS Survey123 and integrated with Web GIS dashboards. The workflow enables stakeholders to provide geographically referenced feedback, evaluate proposed development locations, identify environmental concerns and express preferences regarding planning alternatives.",
           "tags": [
             "ArcGIS Survey123",
             "Participatory GIS",
