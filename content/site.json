@@ -1592,19 +1592,12 @@
       "type": "cards",
       "visible": true,
       "eyebrow": "Recognition",
-      "title": "Scientific awards, recognition & Awards, Fellowships & Professional Certifications",
+      "title": "Scientific Awards, Recognition & Professional Certifications",
       "intro": "Selected distinctions for scientific publications, applied geospatial research and research performance.",
       "image": "",
       "attachments": [],
       "buttons": [],
       "items": [
-        {
-          "title": "Environmental Systems Research Institute, Project Award",
-          "text": "As a dedicated member of the Citrus Information System project in the Eastern Mediterranean",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-25-11-mwtrz4ai.png",
-          "attachments": [],
-          "buttons": []
-        },
         {
           "title": "DAAD Doctoral Scholarship",
           "text": "Awarded a research scholarship by the German Academic Exchange Service (DAAD) to conduct doctoral research in geoinformatics and spatial modelling at Friedrich Schiller University Jena, Germany.",
@@ -1616,6 +1609,13 @@
           "title": "Certified Professional Scrum Product Owner (PSPO-I) ",
           "text": "Combining agile product management with scientific expertise to support user-centred research infrastructures, digital platforms and geospatial applications. Particular emphasis on translating scientific and stakeholder requirements into functional, reusable research tools.",
           "image": "assets/uploads/2026/ekran-resmi-2026-11-24-17-02-10.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Environmental Systems Research Institute, Project Award",
+          "text": "As a dedicated member of the Citrus Information System project in the Eastern Mediterranean",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-25-11-mwtrz4ai.png",
           "attachments": [],
           "buttons": []
         },
