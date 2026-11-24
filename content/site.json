@@ -711,8 +711,8 @@
       "type": "tools",
       "visible": true,
       "eyebrow": "",
-      "title": "Research platforms & data infrastructures",
-      "intro": "Research platforms and data infrastructures I develop or contribute to, supporting scientific data discovery, integration and reuse.",
+      "title": "Research platforms & Decision-making tools",
+      "intro": "Research platforms and decision-making tools I develop or contribute to, supporting soil, agriculture and geospatial data discovery, integration and reuse.",
       "image": "",
       "attachments": [],
       "buttons": [],
@@ -826,6 +826,45 @@
               "style": "ghost"
             }
           ]
+        },
+        {
+          "category": "Geospatial modelling, GeoAI/ML & analytical workflows",
+          "status": "Research and demonstration application",
+          "name": "Basin Scale Interactive Spatial Planning Dashboard",
+          "role": "Dashboard development, Web GIS & spatial data integration",
+          "text": "An interactive Web GIS dashboard developed using ArcGIS Online to explore spatial suitability for industrial development in the Büyük Menderes Basin, Türkiye. The dashboard integrates environmental, socioeconomic and regulatory criteria with multi-criteria spatial modelling outputs, enabling users to explore suitable development locations, environmental constraints and potential land-use conflicts through interactive maps and indicators.",
+          "tags": [
+            "ArcGIS Online",
+            "ArcGIS Dashboards",
+            "Web GIS",
+            "Spatial Decision Support",
+            "Environmental Planning",
+            "Interactive Mapping"
+          ],
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-11-29-06.png",
+          "featured": false,
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "category": "Geospatial modelling, GeoAI/ML & analytical workflows",
+          "status": "",
+          "name": "GeoParticipate — Spatial Stakeholder Engagement Tool",
+          "role": "Participatory GIS workflow design & application development",
+          "text": "A spatial stakeholder engagement application developed using ArcGIS Survey123 and integrated with Web GIS dashboards. The workflow enables stakeholders to provide geographically referenced feedback, evaluate proposed development locations, identify environmental concerns and express preferences regarding planning alternatives. By linking stakeholder-generated information with scientific spatial assessments, the approach supports participatory planning, transparent decision-making and the integration of local knowledge into environmental research.",
+          "tags": [
+            "ArcGIS Survey123",
+            "Participatory GIS",
+            "Stakeholder Engagement",
+            "Geospatial Data Collection",
+            "Public Participation",
+            "Co-design",
+            "Web GIS"
+          ],
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-11-32-08.png",
+          "featured": false,
+          "attachments": [],
+          "buttons": []
         }
       ]
     },
@@ -835,7 +874,7 @@
       "type": "tools",
       "visible": true,
       "eyebrow": "",
-      "title": "Geospatial modelling, GeoAI & analytical workflows",
+      "title": "Geospatial modelling, GeoAI/ML & analytical workflows",
       "intro": "Research-driven spatial methods and computational workflows I develop and implement across soil, agriculture and landscape research.",
       "image": "",
       "attachments": [],
@@ -1092,12 +1131,13 @@
           "category": "Software, programming & technical expertise"
         },
         {
-          "name": "ArcGIS Enterprise & Portal",
+          "name": "ArcGIS Enterprise & Online Portal",
           "role": "Applied technical expertise",
           "text": "Web GIS, spatial data services and research platform integration.",
           "tags": [
             "Web GIS",
-            "Spatial services"
+            "Spatial services",
+            "ArcGIS Online"
           ],
           "status": "Software & analytical environment",
           "image": "",
