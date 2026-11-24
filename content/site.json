@@ -1499,11 +1499,29 @@
       ],
       "items": [
         {
-          "title": "Long-term experiments across Europe and the United States",
-          "event": "Morrow Plots LTE Conference · Invited talk",
+          "title": "KEYNOTE TALK: Long-term field experiments (meta)data platform: challenges and opportunities for networking and data reuse",
+          "event": "Centennial Meeting for Agricultural Experimentation in Poland",
+          "place": "Warsaw, Poland",
+          "date": "26 June 2026",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-31-29.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "HIGHLIGHT TALK: An open-access (meta)data platform for Long-Term Field Experiments to support soil monitoring and assessment",
+          "event": "EU-Soils for Europe Conference",
+          "place": "Coimbra, Portugal",
+          "date": "10 September 2026",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-36-14.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "INVITED TALK: From Long-Term Field Experimentst o Reusable Knowledge: Connecting Data, Infrastructure and Analysis",
+          "event": "Morrow Plots 150th-year Conference",
           "place": "University of Illinois Urbana-Champaign, USA",
           "date": "October 2026",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-24-02.png",
           "attachments": [],
           "buttons": []
         },
@@ -1512,7 +1530,7 @@
           "event": "EGU General Assembly",
           "place": "Vienna, Austria",
           "date": "May 2026",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-34-50.png",
           "attachments": [],
           "buttons": []
         },
@@ -1530,7 +1548,7 @@
           "event": "AGU 2024",
           "place": "Washington D.C., USA",
           "date": "December 2024",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-37-22.png",
           "attachments": [],
           "buttons": []
         }
