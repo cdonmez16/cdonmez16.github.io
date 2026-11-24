@@ -764,13 +764,16 @@
         },
         {
           "name": "BonaRes Repository",
-          "role": "co-author of the repository paper",
-          "text": "A repository for soil research data supporting effective reuse in agroecosystem science.",
+          "role": "Scientific contributor & co-author of the repository paper",
+          "text": "A research data infrastructure providing access to more than 2,000 soil-related data and metadata records, supporting FAIR data management and reuse in agricultural and environmental research. My contributions focus on geospatial data reuse, metadata interoperability and scientific feedback to support the repository's further development.",
           "tags": [
-            "Repository",
-            "Data reuse"
+            "FAIR Data",
+            "Research Data Management",
+            "Metadata Interoperability",
+            "Geospatial Data Reuse",
+            "Soil Data"
           ],
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-10-32-16.png",
           "featured": false,
           "attachments": [],
           "buttons": [
@@ -778,10 +781,15 @@
               "label": "Paper (EJSS, 2025)",
               "url": "https://doi.org/10.1111/ejss.70103",
               "style": "ghost"
+            },
+            {
+              "label": "Repository",
+              "url": "https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=f5ad7822-0b5f-4f74-9d87-b965dea4936c",
+              "style": "ghost"
             }
           ],
           "category": "Research platforms",
-          "status": "Collaborative infrastructure"
+          "status": ""
         },
         {
           "name": "LTE2LL — Linking Long-Term Experiments and Living Labs",
