@@ -8,8 +8,8 @@
   },
   "nav": [
     {
-      "label": "About",
-      "url": "about.html",
+      "label": "Consultancy",
+      "url": "consultancy.html",
       "style": "ghost"
     },
     {
@@ -154,7 +154,7 @@
       "file": "index.html"
     },
     "about": {
-      "label": "About",
+      "label": "CV",
       "file": "about.html",
       "eyebrow": "Prof.Dr. Cenk Dönmez",
       "title": "Geospatial science for sustainable landscapes, soils and agricultural systems",
@@ -207,6 +207,14 @@
       "eyebrow": "Prof.Dr. Cenk Dönmez",
       "title": "Advancing environmental research and spatial decision-making through geospatial technologies",
       "intro": "I develop and apply scientific tools, geospatial technologies and research data infrastructures, combining GIS, remote sensing, artificial intelligence and environmental modelling to address challenges in soil, agriculture and landscape research supporting sustainable management",
+      "image": ""
+    },
+    "consultancy": {
+      "label": "Consultancy",
+      "file": "consultancy.html",
+      "eyebrow": "Prof.Dr. Cenk Dönmez",
+      "title": "Scientific & geospatial consultancy",
+      "intro": "Applied GIS, GeoAI, environmental modelling and research data management for research institutions, public authorities and industry.",
       "image": ""
     }
   },
@@ -2125,6 +2133,116 @@
           "buttons": []
         }
       ]
+    },
+    {
+      "id": "consultancy-expertise",
+      "page": "consultancy",
+      "type": "cards",
+      "visible": true,
+      "eyebrow": "",
+      "title": "Consultancy expertise",
+      "intro": "Scientific and technical services tailored to environmental research and spatial decision-making.",
+      "items": [
+        {
+          "title": "Geospatial analytics & GeoAI",
+          "text": "GIS, Earth observation, machine learning, spatial analysis and automated analytical workflows.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Environmental & soil modelling",
+          "text": "Soil carbon dynamics, soil threats, climate impacts, vegetation productivity and scenario assessment.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Spatial planning & decision support",
+          "text": "Multi-criteria suitability modelling, interactive Web GIS dashboards and participatory mapping.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Research data & digital infrastructures",
+          "text": "FAIR data management, metadata harmonisation, interoperability and scientific platform development.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Research & innovation advisory",
+          "text": "Scientific project development, methodological design and interdisciplinary research collaboration.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Professional training",
+          "text": "Tailored GIS, AI and environmental modelling training for researchers and practitioners.",
+          "image": "",
+          "attachments": [],
+          "buttons": [
+            {
+              "label": "Explore training",
+              "url": "teaching.html#professional-training",
+              "style": "ghost"
+            }
+          ]
+        }
+      ],
+      "image": "",
+      "attachments": [],
+      "buttons": []
+    },
+    {
+      "id": "consultancy-assignments",
+      "page": "consultancy",
+      "type": "cards",
+      "visible": true,
+      "eyebrow": "",
+      "title": "Selected consultancy assignments",
+      "intro": "Examples of applied scientific work.",
+      "items": [
+        {
+          "title": "CarbonIQ — Agricultural soil carbon modelling",
+          "text": "Soil organic carbon modelling using RothC and spatial environmental data to assess climate and agricultural management scenarios across four agricultural regions of Kazakhstan, in collaboration with UfU Berlin.",
+          "image": "",
+          "attachments": [],
+          "buttons": []
+        }
+      ],
+      "image": "",
+      "attachments": [],
+      "buttons": []
+    },
+    {
+      "id": "consultancy-collaboration",
+      "page": "consultancy",
+      "type": "cards",
+      "visible": true,
+      "eyebrow": "",
+      "title": "Work with me",
+      "intro": "Discuss scientific consultancy, technical advisory services, research collaboration or tailored training.",
+      "items": [
+        {
+          "title": "Discuss a collaboration",
+          "text": "Get in touch to discuss your research question, project requirements or training needs.",
+          "image": "",
+          "attachments": [],
+          "buttons": [
+            {
+              "label": "Contact",
+              "url": "#contact",
+              "style": "primary"
+            }
+          ]
+        }
+      ],
+      "image": "",
+      "attachments": [],
+      "buttons": []
     }
   ],
   "publications": [
