@@ -8,11 +8,6 @@
   },
   "nav": [
     {
-      "label": "Consultancy",
-      "url": "consultancy.html",
-      "style": "ghost"
-    },
-    {
       "label": "Research",
       "url": "index.html#research",
       "style": "ghost"
@@ -51,6 +46,11 @@
       "label": "Contact",
       "url": "#contact",
       "style": "ghost"
+    },
+    {
+      "label": "Consultancy",
+      "url": "consultancy.html",
+      "style": "primary"
     },
     {
       "label": "CV",
