@@ -75,6 +75,16 @@
         "label": "Publications",
         "url": "publications.html",
         "style": "ghost"
+      },
+      {
+        "label": "Outreach",
+        "url": "presentations.html",
+        "style": "ghost"
+      },
+      {
+        "label": "Scientific tools & Methods",
+        "url": "scientific-tools.html",
+        "style": "ghost"
       }
     ],
     "links": [
