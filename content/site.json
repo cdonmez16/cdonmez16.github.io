@@ -8,8 +8,8 @@
   },
   "nav": [
     {
-      "label": "Consultancy",
-      "url": "",
+      "label": "About",
+      "url": "about.html",
       "style": "ghost"
     },
     {
