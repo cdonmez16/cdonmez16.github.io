@@ -207,10 +207,10 @@
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Let's work across disciplines, data and landscapes.",
+    "title": "Let's work across disciplines, (geo)data and landscapes.",
     "text": "For research collaboration, invited talks and teaching opportunities.",
     "email": "cenk.doenmez@zalf.de",
-    "address": "Müncheberg/Berlin, Germany",
+    "address": "Eberswalder Str. 84, \nMüncheberg, Germany",
     "buttons": [
       {
         "label": "ORCID",
@@ -220,6 +220,11 @@
       {
         "label": "Google Scholar",
         "url": "https://scholar.google.com/citations?hl=tr&user=qIt6koQAAAAJ&view_op=list_works",
+        "style": "ghost"
+      },
+      {
+        "label": "Linkedin",
+        "url": "https://www.linkedin.com/in/cenk-d%C3%B6nmez-24aab99/",
         "style": "ghost"
       }
     ]
