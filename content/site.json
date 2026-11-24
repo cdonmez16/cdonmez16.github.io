@@ -13,7 +13,7 @@
       "style": "ghost"
     },
     {
-      "label": "About & CV",
+      "label": "About",
       "url": "about.html",
       "style": "primary"
     },
@@ -51,6 +51,11 @@
       "label": "Contact",
       "url": "#contact",
       "style": "ghost"
+    },
+    {
+      "label": "CV",
+      "url": "about.html",
+      "style": "primary"
     }
   ],
   "hero": {
