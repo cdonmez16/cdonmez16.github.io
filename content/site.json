@@ -711,8 +711,8 @@
       "type": "tools",
       "visible": true,
       "eyebrow": "",
-      "title": "Scientific tools, methods & decision-making platforms",
-      "intro": "",
+      "title": "Research platforms & data infrastructures",
+      "intro": "Research platforms and data infrastructures I develop or contribute to, supporting scientific data discovery, integration and reuse.",
       "image": "",
       "attachments": [],
       "buttons": [],
@@ -739,7 +739,7 @@
               "style": "ghost"
             }
           ],
-          "category": "Research platforms",
+          "category": "Research platforms & data infrastructures",
           "status": "Operational decision-making platform"
         },
         {
@@ -759,7 +759,7 @@
               "style": "ghost"
             }
           ],
-          "category": "Research platforms",
+          "category": "Research platforms & data infrastructures",
           "status": ""
         },
         {
@@ -788,28 +788,12 @@
               "style": "ghost"
             }
           ],
-          "category": "",
+          "category": "Research platforms & data infrastructures",
           "status": ""
         },
         {
-          "name": "LTE2LL — Linking Long-Term Experiments and Living Labs",
-          "category": "Emerging concepts",
-          "status": "Research concept / prototype",
-          "role": "Concept development",
-          "text": "An emerging approach to contextualise long-term experimental evidence for Living Labs through environmental similarity, evidence assessment, research-gap analysis and stakeholder perspectives.",
-          "tags": [
-            "Living Labs",
-            "Evidence transfer",
-            "Participatory assessment"
-          ],
-          "image": "",
-          "featured": false,
-          "attachments": [],
-          "buttons": []
-        },
-        {
           "name": "Integrated LTE Metadata Harmonisation Framework",
-          "category": "Research Platforms",
+          "category": "Research platforms & data infrastructures",
           "status": "",
           "role": "Leading metadata schema development, harmonisation & scientific data reuse",
           "text": "An integrated metadata harmonisation framework connecting BonaRes and EJP SOIL long-term experiment inventories. It combines standardised descriptions of experimental design, agricultural management, soil properties and environmental conditions to facilitate cross-network data discovery and reuse. The framework supports modellers and researchers in identifying relevant experimental evidence, integrating agricultural and environmental datasets, and conducting spatial analyses across soil, agricultural and landscape systems.",
@@ -842,38 +826,357 @@
               "style": "ghost"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "geospatial-workflows",
+      "page": "tools",
+      "type": "tools",
+      "visible": true,
+      "eyebrow": "",
+      "title": "Geospatial modelling, GeoAI & analytical workflows",
+      "intro": "Research-driven spatial methods and computational workflows I develop and implement across soil, agriculture and landscape research.",
+      "image": "",
+      "attachments": [],
+      "buttons": [],
+      "items": [
+        {
+          "name": "GeoAI-based agricultural suitability & vulnerability modelling",
+          "role": "Methodology development & spatial modelling",
+          "text": "Multi-criteria spatial suitability assessment combined with Random Forest machine learning to identify priority locations for agricultural experiments under current and future climates. Integrates environmental and agricultural variables to assess production potential and vulnerability across Europe. Models achieved R² of 0.88–0.92.",
+          "tags": [
+            "Random Forest",
+            "MCDA",
+            "GIS",
+            "Climate scenarios"
+          ],
+          "status": "Research-developed workflow",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Geospatial modelling, GeoAI & analytical workflows"
         },
         {
-          "name": "Environmental representativeness & research gaps",
-          "category": "Analytical methods - GIS Pipelines",
-          "status": "AI/ML & spatial modelling",
-          "role": "Spatial research methods",
-          "text": "Multivariate spatial comparison of experimental sites and agricultural landscapes to identify environmental coverage, representativeness and research gaps.",
+          "name": "Spatial representativeness & research gap mapping",
+          "role": "Methodology development & geospatial analysis",
+          "text": "PCA-based environmental similarity and spatial distance mapping to quantify the coverage of European long-term experiments across agricultural land. Identifies underrepresented soil, climate and cropping conditions to guide network expansion and site selection.",
+          "tags": [
+            "PCA",
+            "Spatial statistics",
+            "GIS",
+            "Environmental similarity"
+          ],
+          "status": "Research methodology",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Geospatial modelling, GeoAI & analytical workflows"
+        },
+        {
+          "name": "AgriGullyAtlas — agricultural erosion mapping",
+          "role": "Collaborative scientific contributor",
+          "text": "A collaborative geospatial inventory of agricultural gullies supporting erosion research, spatial assessment of soil degradation and data-driven soil conservation.",
+          "tags": [
+            "Gully mapping",
+            "Earth observation",
+            "Soil erosion",
+            "Open data"
+          ],
+          "status": "Collaborative research dataset",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Geospatial modelling, GeoAI & analytical workflows"
+        },
+        {
+          "name": "Satellite-based vegetation productivity & NPP modelling",
+          "role": "Spatial modelling & Earth observation",
+          "text": "Satellite and process-based modelling workflows for vegetation productivity and climate impacts, applied in Germany and Türkiye. Integrates environmental data and remote sensing to investigate spatial and temporal productivity patterns.",
+          "tags": [
+            "NPP",
+            "Remote sensing",
+            "Climate modelling",
+            "GIS"
+          ],
+          "status": "Published modelling workflow",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [
+            {
+              "label": "Scientific publication",
+              "url": "https://doi.org/10.1007/s10661-021-09031-z",
+              "style": "ghost"
+            },
+            {
+              "label": "European agricultural productivity study",
+              "url": "https://doi.org/10.1016/j.eja.2024.127121",
+              "style": "ghost"
+            }
+          ],
+          "category": "Geospatial modelling, GeoAI & analytical workflows"
+        },
+        {
+          "name": "Spatial soil carbon modelling & scenario assessment",
+          "role": "Model implementation & spatial data integration",
+          "text": "RothC and R-based modelling of soil organic carbon under alternative climate and agricultural management scenarios in Kazakhstan, supporting assessment of carbon sequestration potential and risks.",
+          "tags": [
+            "RothC",
+            "SoilR",
+            "R",
+            "SOC",
+            "Climate scenarios"
+          ],
+          "status": "Applied modelling workflow",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Geospatial modelling, GeoAI & analytical workflows"
+        },
+        {
+          "name": "UAV-based precision agriculture & automated tree mapping",
+          "role": "Research methodology & image analysis",
+          "text": "Computer vision and centimetre-scale multispectral UAV imagery for automated citrus tree detection and orchard inventory mapping. Detection recall reached approximately 97%, with precision above 95%.",
+          "tags": [
+            "UAV",
+            "Computer vision",
+            "Multispectral imagery",
+            "Precision agriculture"
+          ],
+          "status": "Published methodology",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [
+            {
+              "label": "Scientific publication",
+              "url": "https://doi.org/10.1016/j.compag.2021.106273",
+              "style": "ghost"
+            }
+          ],
+          "category": "Geospatial modelling, GeoAI & analytical workflows"
+        },
+        {
+          "name": "Agroclimatic zoning & climate risk mapping",
+          "role": "Spatial methodology & climate analysis",
+          "text": "GIS-based assessment of changing agroclimatic conditions and agricultural constraints, including long-term field experiment sites in Germany, supporting climate adaptation and agricultural planning.",
           "tags": [
             "GIS",
-            "Representativeness",
-            "Research gaps"
+            "Agroclimate",
+            "Climate adaptation"
           ],
+          "status": "Published methodology",
           "image": "",
           "featured": false,
           "attachments": [],
-          "buttons": []
+          "buttons": [
+            {
+              "label": "Scientific publication",
+              "url": "https://doi.org/10.1016/j.agsy.2022.103578",
+              "style": "ghost"
+            }
+          ],
+          "category": "Geospatial modelling, GeoAI & analytical workflows"
         },
         {
-          "name": "Climate-sensitive suitability & vulnerability",
-          "category": "Analytical methods - GIS Pipelines",
-          "status": "AI/ML & spatial modelling",
-          "role": "Spatial modelling research",
-          "text": "Machine-learning and spatial modelling workflows for evaluating agroenvironmental conditions and future climate-related changes.",
+          "name": "Watershed & ecohydrological modelling",
+          "role": "Model applications & scientific supervision",
+          "text": "GIS-integrated catchment modelling using terrain, land use, soil and hydrological data, including SWAT applications to assess watershed processes and management impacts.",
           "tags": [
-            "GeoAI",
-            "Spatial modelling",
-            "Climate"
+            "SWAT",
+            "Hydrology",
+            "Terrain analysis",
+            "GIS"
+          ],
+          "status": "Applied research methodology",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Geospatial modelling, GeoAI & analytical workflows"
+        },
+        {
+          "name": "Spatial decision support & participatory landscape planning",
+          "role": "Methodology, implementation & teaching",
+          "text": "GIS-based multi-criteria decision analysis integrating environmental indicators and stakeholder preferences to evaluate land-use alternatives and spatial trade-offs.",
+          "tags": [
+            "GIS-MCDA",
+            "Participatory GIS",
+            "Geodesign",
+            "Landscape planning"
+          ],
+          "status": "Applied analytical framework",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Geospatial modelling, GeoAI & analytical workflows"
+        },
+        {
+          "name": "LTE2LL — Linking Long-Term Experiments and Living Labs",
+          "category": "Geospatial modelling, GeoAI & analytical workflows",
+          "status": "Research concept / prototype",
+          "role": "Concept development",
+          "text": "An emerging approach to contextualise long-term experimental evidence for Living Labs through environmental similarity, evidence assessment, research-gap analysis and stakeholder perspectives.",
+          "tags": [
+            "Living Labs",
+            "Evidence transfer",
+            "Participatory assessment"
           ],
           "image": "",
           "featured": false,
           "attachments": [],
           "buttons": []
+        }
+      ]
+    },
+    {
+      "id": "software-technologies",
+      "page": "tools",
+      "type": "tools",
+      "visible": true,
+      "eyebrow": "",
+      "title": "Software, programming & technical expertise",
+      "intro": "GIS software, programming environments and environmental models used in my research and applied analytical workflows.",
+      "image": "",
+      "attachments": [],
+      "buttons": [],
+      "items": [
+        {
+          "name": "ArcGIS Pro 3.x",
+          "role": "Applied technical expertise",
+          "text": "Desktop spatial analysis, cartography, geoprocessing and modelling.",
+          "tags": [
+            "Desktop GIS",
+            "Geoprocessing"
+          ],
+          "status": "Software & analytical environment",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Software, programming & technical expertise"
+        },
+        {
+          "name": "QGIS",
+          "role": "Applied technical expertise",
+          "text": "Open-source GIS for spatial analysis, mapping and data integration.",
+          "tags": [
+            "Open-source GIS"
+          ],
+          "status": "Software & analytical environment",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Software, programming & technical expertise"
+        },
+        {
+          "name": "ArcInfo / ArcGIS Desktop",
+          "role": "Applied technical expertise",
+          "text": "Legacy GIS workflows and spatial data processing.",
+          "tags": [
+            "GIS",
+            "Spatial modelling"
+          ],
+          "status": "Software & analytical environment",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Software, programming & technical expertise"
+        },
+        {
+          "name": "ArcGIS Enterprise & Portal",
+          "role": "Applied technical expertise",
+          "text": "Web GIS, spatial data services and research platform integration.",
+          "tags": [
+            "Web GIS",
+            "Spatial services"
+          ],
+          "status": "Software & analytical environment",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Software, programming & technical expertise"
+        },
+        {
+          "name": "Python",
+          "role": "Applied technical expertise",
+          "text": "Geospatial processing, automation and machine learning workflows.",
+          "tags": [
+            "Programming",
+            "GeoAI"
+          ],
+          "status": "Software & analytical environment",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Software, programming & technical expertise"
+        },
+        {
+          "name": "R",
+          "role": "Applied technical expertise",
+          "text": "Statistical analysis and environmental modelling, including SoilR.",
+          "tags": [
+            "Statistics",
+            "Modelling"
+          ],
+          "status": "Software & analytical environment",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Software, programming & technical expertise"
+        },
+        {
+          "name": "Google Earth Pro",
+          "role": "Applied technical expertise",
+          "text": "Visual interpretation and exploration of high-resolution imagery.",
+          "tags": [
+            "Earth observation"
+          ],
+          "status": "Software & analytical environment",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Software, programming & technical expertise"
+        },
+        {
+          "name": "RothC / SoilR",
+          "role": "Applied technical expertise",
+          "text": "Soil organic carbon dynamics and scenario modelling.",
+          "tags": [
+            "Carbon modelling"
+          ],
+          "status": "Software & analytical environment",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Software, programming & technical expertise"
+        },
+        {
+          "name": "SWAT",
+          "role": "Applied technical expertise",
+          "text": "Catchment-scale hydrological and agricultural watershed modelling.",
+          "tags": [
+            "Hydrology"
+          ],
+          "status": "Software & analytical environment",
+          "image": "",
+          "featured": false,
+          "attachments": [],
+          "buttons": [],
+          "category": "Software, programming & technical expertise"
         }
       ]
     },
