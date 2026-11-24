@@ -13,6 +13,11 @@
       "style": "ghost"
     },
     {
+      "label": "About & CV",
+      "url": "about.html",
+      "style": "primary"
+    },
+    {
       "label": "Publications",
       "url": "publications.html",
       "style": "ghost"
@@ -46,11 +51,6 @@
       "label": "Contact",
       "url": "#contact",
       "style": "ghost"
-    },
-    {
-      "label": "About & CV",
-      "url": "about.html",
-      "style": "primary"
     }
   ],
   "hero": {
@@ -79,6 +79,11 @@
       {
         "label": "Scientific tools & Methods",
         "url": "scientific-tools.html",
+        "style": "ghost"
+      },
+      {
+        "label": "Teaching & Training",
+        "url": "teaching.html",
         "style": "ghost"
       }
     ],
