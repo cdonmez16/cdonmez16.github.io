@@ -718,14 +718,14 @@
       "buttons": [],
       "items": [
         {
-          "name": "FEatured tool-BonaRes LTE Overview Map",
+          "name": "Featured tool-BonaRes LTE Overview Map",
           "role": "My role: Co-developer and scientific coordinator",
           "text": "A discoverable, curated overview of long-term field experiments, supporting experimental comparison, data reuse and international network connections.",
           "tags": [
             "Web GIS · ArcGIS Enterprise · Django · Metadata Harmonisation · FAIR Data · AGROVOC · DataCite"
           ],
           "image": "assets/uploads/2026/ekran-resmi-2026-11-23-22-33-19-mwuhrr4u.png",
-          "featured": false,
+          "featured": true,
           "attachments": [],
           "buttons": [
             {
@@ -808,20 +808,35 @@
           "buttons": []
         },
         {
-          "name": "LTE metadata harmonisation",
-          "category": "Research platforms",
+          "name": "Integrated LTE Metadata Harmonisation Framework",
+          "category": "Data management & interoperability",
           "status": "Data stewardship & methods",
-          "role": "Metadata curation and interoperability",
-          "text": "Schema development, metadata curation and cross-network integration approaches supporting consistent descriptions and discovery of long-term experiments.",
+          "role": "Leading metadata schema development, harmonisation & scientific data reuse",
+          "text": "An integrated metadata harmonisation framework connecting BonaRes and EJP SOIL long-term experiment inventories. It combines standardised descriptions of experimental design, agricultural management, soil properties and environmental conditions to facilitate cross-network data discovery and reuse. The framework supports modellers and researchers in identifying relevant experimental evidence, integrating agricultural and environmental datasets, and conducting spatial analyses across soil, agricultural and landscape systems.",
           "tags": [
-            "Metadata",
-            "Interoperability",
-            "LTE networks"
+            "Metadata Harmonisation",
+            "EJP SOIL",
+            "BonaRes",
+            "FAIR Data",
+            "Semantic Interoperability",
+            "Environmental Modelling",
+            "Data Reuse"
           ],
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-10-39-24.png",
           "featured": false,
           "attachments": [],
-          "buttons": []
+          "buttons": [
+            {
+              "label": "Related paper - 1",
+              "url": "https://www.sciencedirect.com/science/article/pii/S2352340922004292",
+              "style": "ghost"
+            },
+            {
+              "label": "Related Paper - 2",
+              "url": "https://bsssjournals.onlinelibrary.wiley.com/doi/full/10.1111/sum.12978",
+              "style": "ghost"
+            }
+          ]
         },
         {
           "name": "Environmental representativeness & research gaps",
