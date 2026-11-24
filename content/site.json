@@ -265,7 +265,7 @@
         {
           "value": "{conferences}",
           "label": "Scientific presentations",
-          "text": "Presentations at international conferences and workshops since {firstconference}, including EGU, IUSS, AGU, EUROSOIL and ISPRS.",
+          "text": "Oral/Poster presentations at international conferences and workshops since {firstconference}, including EGU, IUSS, AGU, EUROSOIL and ISPRS.",
           "buttons": [],
           "image": ""
         },
