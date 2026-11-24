@@ -718,16 +718,14 @@
       "buttons": [],
       "items": [
         {
-          "name": "BonaRes LTE Overview Map",
-          "role": "co-developer and coordinator",
+          "name": "FEatured tool-BonaRes LTE Overview Map",
+          "role": "My role: Co-developer and scientific coordinator",
           "text": "A discoverable, curated overview of long-term field experiments, supporting experimental comparison, data reuse and international network connections.",
           "tags": [
-            "LTEs",
-            "Metadata",
-            "GIS"
+            "Web GIS · ArcGIS Enterprise · Django · Metadata Harmonisation · FAIR Data · AGROVOC · DataCite"
           ],
-          "image": "",
-          "featured": true,
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-22-33-19-mwuhrr4u.png",
+          "featured": false,
           "attachments": [],
           "buttons": [
             {
@@ -742,7 +740,7 @@
             }
           ],
           "category": "Research platforms",
-          "status": "Operational platform"
+          "status": "Operational decision-making platform"
         },
         {
           "name": "SoilWise catalogue",
