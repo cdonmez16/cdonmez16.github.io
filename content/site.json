@@ -214,7 +214,7 @@
       "file": "consultancy.html",
       "eyebrow": "Prof.Dr. Cenk Dönmez",
       "title": "Scientific & geospatial consultancy",
-      "intro": "Applied GIS, GeoAI, environmental modelling and research data management for research institutions, public authorities and industry.",
+      "intro": "Applied GIS, GeoAI, environmental modelling, long-term field experiments and research/FAIR data management for research institutions, public authorities and industry.",
       "image": ""
     }
   },
@@ -2144,7 +2144,7 @@
       "intro": "Scientific and technical services tailored to environmental research and spatial decision-making.",
       "items": [
         {
-          "title": "Geospatial analytics & GeoAI",
+          "title": "Geospatial analytics & GeoAI/ML",
           "text": "GIS, Earth observation, machine learning, spatial analysis and automated analytical workflows.",
           "image": "",
           "attachments": [],
