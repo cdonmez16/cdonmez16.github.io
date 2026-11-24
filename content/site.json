@@ -257,39 +257,48 @@
       "items": [
         {
           "value": "{articles}",
-          "label": "peer-reviewed publications",
-          "text": "Plus {chapters} book chapters, spanning remote sensing, spatial modelling, landscape assessment, long-term experiments and data infrastructures.",
+          "label": "+20 years of research experience",
+          "text": "geospatial science, environmental modelling and landscape planning, combining methodological development, interdisciplinary research and practical applications.",
+          "buttons": [],
+          "image": ""
+        },
+        {
+          "value": "{conferences}",
+          "label": "50+ scientific presentations",
+          "text": "Presentations at international conferences and workshops since {firstconference}, including EGU, IUSS, AGU, EUROSOIL and ISPRS.",
+          "buttons": [],
+          "image": ""
+        },
+        {
+          "value": "Co-developer",
+          "label": "650+ long-term experiments mapped globally",
+          "text": "",
           "buttons": [
             {
-              "label": "Browse publications",
-              "url": "publications.html",
+              "label": "Open the map",
+              "url": "https://tools.bonares.de/ltfe/",
+              "style": "ghost"
+            },
+            {
+              "label": "Scientific publication",
+              "url": "https://www.sciencedirect.com/science/article/pii/S0168169926001298",
               "style": "ghost"
             }
           ],
           "image": ""
         },
         {
-          "value": "{conferences}",
-          "label": "conference contributions",
-          "text": "Presentations at international conferences and workshops since {firstconference}, including EGU, AGU, EUROSOIL and ISPRS.",
-          "buttons": []
-        },
-        {
-          "value": "Co-developer",
-          "label": "BonaRes LTE Overview Map",
-          "text": "Co-developed and coordinate the open-access map of long-term field experiments; first and corresponding author of the platform paper (2026).",
-          "buttons": [
-            {
-              "label": "Open the map",
-              "url": "https://tools.bonares.de/ltfe/",
-              "style": "ghost"
-            }
-          ]
-        },
-        {
           "value": "Coordinator",
-          "label": "SOILTE.ai Horizon Europe proposal",
-          "text": "Scientific coordination of an international proposal linking long-term experiments, AI-ready data and soil-health decision support (2026). Submission does not imply funding.",
+          "label": "22 Partners in coordinated Horizon Europe proposal",
+          "text": "",
+          "buttons": [],
+          "image": ""
+        },
+        {
+          "value": "",
+          "label": "50+ peer reviewed publications",
+          "text": "spanning geospatial science, remote sensing, environmental modelling, soil and agricultural systems, and sustainable landscape management.",
+          "image": "",
           "buttons": []
         }
       ]
