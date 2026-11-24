@@ -984,7 +984,7 @@
           "category": "Geospatial modelling, GeoAI & analytical workflows"
         },
         {
-          "name": "UAV-based precision agriculture & automated tree mapping",
+          "name": "UAV-based precision agriculture & AI-computer vision tree mapping",
           "role": "Research methodology & image analysis",
           "text": "Computer vision and centimetre-scale multispectral UAV imagery for automated citrus tree detection and orchard inventory mapping. Detection recall reached approximately 97%, with precision above 95%.",
           "tags": [
@@ -1016,7 +1016,7 @@
             "Climate adaptation"
           ],
           "status": "Published methodology",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-11-46-21.png",
           "featured": false,
           "attachments": [],
           "buttons": [
@@ -1039,10 +1039,16 @@
             "GIS"
           ],
           "status": "Applied research methodology",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-11-47-28.png",
           "featured": false,
           "attachments": [],
-          "buttons": [],
+          "buttons": [
+            {
+              "label": "Scientific publication",
+              "url": "https://www.mdpi.com/2073-4441/12/12/3479?utm_source=researchgate.net&utm_medium=article",
+              "style": "ghost"
+            }
+          ],
           "category": "Geospatial modelling, GeoAI & analytical workflows"
         },
         {
@@ -1056,10 +1062,16 @@
             "Landscape planning"
           ],
           "status": "Applied analytical framework",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-11-50-13.png",
           "featured": false,
           "attachments": [],
-          "buttons": [],
+          "buttons": [
+            {
+              "label": "Scientific publication",
+              "url": "linkinghub.elsevier.com/retrieve/pii/S0301479724032390",
+              "style": "ghost"
+            }
+          ],
           "category": "Geospatial modelling, GeoAI & analytical workflows"
         },
         {
