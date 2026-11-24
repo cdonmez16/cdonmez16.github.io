@@ -712,7 +712,7 @@
       "visible": true,
       "eyebrow": "",
       "title": "Scientific tools, methods & decision-making platforms",
-      "intro": "Operational platforms, reusable analytical methods and emerging research concepts.",
+      "intro": "Scientific platforms, GIS and remote sensing technologies, AI-enabled analytical workflows and data management approaches that I develop and use for environmental modelling, spatial analysis and scientific data reuse.",
       "image": "",
       "attachments": [],
       "buttons": [],
@@ -845,8 +845,8 @@
         },
         {
           "name": "Environmental representativeness & research gaps",
-          "category": "Analytical methods",
-          "status": "Geospatial assessment",
+          "category": "Analytical methods - GIS Pipelines",
+          "status": "AI/ML & spatial modelling",
           "role": "Spatial research methods",
           "text": "Multivariate spatial comparison of experimental sites and agricultural landscapes to identify environmental coverage, representativeness and research gaps.",
           "tags": [
@@ -861,8 +861,8 @@
         },
         {
           "name": "Climate-sensitive suitability & vulnerability",
-          "category": "Analytical methods",
-          "status": "GeoAI & spatial modelling",
+          "category": "Analytical methods - GIS Pipelines",
+          "status": "AI/ML & spatial modelling",
           "role": "Spatial modelling research",
           "text": "Machine-learning and spatial modelling workflows for evaluating agroenvironmental conditions and future climate-related changes.",
           "tags": [
