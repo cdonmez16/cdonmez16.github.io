@@ -317,7 +317,7 @@
       "items": [
         {
           "theme": "geoai",
-          "title": "Geospatial Analytics & AI/ML",
+          "title": "Geospatial Methods & AI/ML",
           "text": "Integrating GIS, remote sensing, machine learning and spatial modelling to understand environmental processes, map landscape dynamics and support spatial decision-making.",
           "methods": [
             "GIS",
