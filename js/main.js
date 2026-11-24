@@ -422,6 +422,15 @@
     document.getElementById('main').innerHTML = sections.map(function (s) { return (R[s.type] || R.cards)(s); }).join('') ||
       '<div class="wrap" style="padding:80px 0"><p class="empty">This page has no visible sections yet.</p></div>';
 
+    if (PAGE === 'tools') {
+      var toolNav = slot('tools.buttons');
+      if (toolNav) {
+        var toolButtons = Array.isArray(pageInfo.buttons) ? pageInfo.buttons : [{"label": "Research infrastructures ↓", "url": "#infrastructure", "style": "ghost"}, {"label": "Geospatial modelling ↓", "url": "#geospatial-workflows", "style": "ghost"}, {"label": "Software & technologies ↓", "url": "#software-technologies", "style": "ghost"}];
+        toolNav.innerHTML = toolButtons.filter(function(b) { return b && (!String(b.url || '').startsWith('#') || document.getElementById(String(b.url).slice(1))); }).map(function(b) { return button(b); }).join('');
+        toolNav.parentElement.hidden = !toolNav.innerHTML;
+      }
+    }
+
     // contact band (every page)
     var c = data.contact || {}, cEl = document.getElementById('contact');
     if (cEl) {
