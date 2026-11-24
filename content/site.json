@@ -50,7 +50,7 @@
     {
       "label": "About & CV",
       "url": "about.html",
-      "style": "ghost"
+      "style": "primary"
     }
   ],
   "hero": {
@@ -64,7 +64,7 @@
       {
         "label": "Explore my research",
         "url": "#research",
-        "style": "primary"
+        "style": "ghost"
       },
       {
         "label": "Publications",
