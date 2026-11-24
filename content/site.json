@@ -247,7 +247,7 @@
       "id": "achievements",
       "page": "home",
       "type": "achievements",
-      "visible": false,
+      "visible": true,
       "eyebrow": "Selected achievements",
       "title": "Research record at a glance",
       "intro": "",
@@ -265,7 +265,8 @@
               "url": "publications.html",
               "style": "ghost"
             }
-          ]
+          ],
+          "image": ""
         },
         {
           "value": "{conferences}",
