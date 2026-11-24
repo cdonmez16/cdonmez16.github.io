@@ -61,7 +61,7 @@
   "hero": {
     "eyebrow": "Prof.Dr. Cenk Dönmez",
     "title": "Geospatial science for sustainable landscapes, soils and agricultural systems",
-    "text": "I am a natural scientist bridging geospatial science, artificial intelligence and environmental modelling with experimental evidence and participatory approaches to advance sustainable landscape management and data-driven decision-making.",
+    "text": "",
     "affiliation": "Senior Scientist I Professor I Scientific Consultant\nLeibniz Centre for Agricultural Landscape Research (ZALF), Germany",
     "portrait": "assets/uploads/2026/professioneller-business-portrat-im-grunen.png",
     "portraitCaption": "",
@@ -153,7 +153,7 @@
       "file": "about.html",
       "eyebrow": "Prof.Dr. Cenk Dönmez",
       "title": "Geospatial science for sustainable landscapes, soils and agricultural systems",
-      "intro": "Senior Scientist I Professor I Scientific Consultant",
+      "intro": "I am a natural scientist bridging geospatial science, artificial intelligence and environmental modelling with experimental evidence and participatory approaches to advance sustainable landscape management and data-driven decision-making.\n\nSenior Scientist I Professor I Scientific Consultant",
       "image": "assets/uploads/2026/professioneller-business-portrat-im-grunen-mwou9vwq.png"
     },
     "publications": {
