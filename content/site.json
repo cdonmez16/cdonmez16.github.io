@@ -711,7 +711,7 @@
       "type": "tools",
       "visible": true,
       "eyebrow": "",
-      "title": "Scientific tools, methods & infrastructures",
+      "title": "Scientific tools, methods & decision-making platforms",
       "intro": "Operational platforms, reusable analytical methods and emerging research concepts.",
       "image": "",
       "attachments": [],
@@ -834,6 +834,11 @@
             {
               "label": "Related Paper - 2",
               "url": "https://bsssjournals.onlinelibrary.wiley.com/doi/full/10.1111/sum.12978",
+              "style": "ghost"
+            },
+            {
+              "label": "Harmonized Metadata Schema",
+              "url": "https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=f5ad7822-0b5f-4f74-9d87-b965dea4936c",
               "style": "ghost"
             }
           ]
