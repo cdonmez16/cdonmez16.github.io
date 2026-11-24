@@ -1089,6 +1089,38 @@
             }
           ],
           "category": "Geospatial modelling, GeoAI & analytical workflows"
+        },
+        {
+          "category": "Geospatial modelling, GeoAI & analytical workflows",
+          "status": "",
+          "name": "Integrated Soil Threat Mapping & Spatial Risk Assessment",
+          "role": "Geospatial methodology development, spatial modelling & environmental risk assessment",
+          "text": "Integrated geospatial analytical workflows for identifying, mapping and assessing soil threats across agricultural and natural landscapes. Combining environmental indicators, Earth observation, soil datasets and spatial modelling, these approaches enable the identification of vulnerable areas, the assessment of soil degradation patterns and the spatial prioritisation of land-management interventions.",
+          "tags": [
+            "Soil Threats",
+            "Spatial Risk Modelling",
+            "Soil Degradation",
+            "Geospatial Analytics",
+            "Environmental Indicators",
+            "Soil Health",
+            "Land Degradation",
+            "Spatial Prioritisation"
+          ],
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-12-17-23.png",
+          "featured": false,
+          "attachments": [],
+          "buttons": [
+            {
+              "label": "Scientific Publication -1 ",
+              "url": "https://www.mdpi.com/1660-4601/19/14/8794",
+              "style": "ghost"
+            },
+            {
+              "label": "Scientific Publication -1 ",
+              "url": "https://link.springer.com/article/10.1007/s10661-020-08429-5",
+              "style": "ghost"
+            }
+          ]
         }
       ]
     },
