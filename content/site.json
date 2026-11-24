@@ -1925,6 +1925,42 @@
           "buttons": []
         },
         {
+          "title": "INVITED TALK: Simulating the productivity of agricultural LTEs through the interactive BonaRes platform and biogeochemical modelling",
+          "event": "European Union Carbon Farming Summit",
+          "place": "Valencia, Spain",
+          "date": "06 March 2024",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-10-00-49.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "KEYNOTE TALK: Long-term field experiments (meta)data platform: challenges and opportunities for networking and data reuse",
+          "event": "Centennial Meeting for Agricultural Experimentation in Poland",
+          "place": "Warsaw, Poland",
+          "date": "26 June 2026",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-31-29.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "HIGHLIGHT TALK: An open-access (meta)data platform for Long-Term Field Experiments to support soil monitoring and assessment",
+          "event": "EU-Soils for Europe Conference",
+          "place": "Coimbra, Portugal",
+          "date": "10 September 2026",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-36-14.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "INVITED TALK: From Long-Term Field Experimentst o Reusable Knowledge: Connecting Data, Infrastructure and Analysis",
+          "event": "Morrow Plots 150th-year Conference",
+          "place": "University of Illinois Urbana-Champaign, USA",
+          "date": "October 2026",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-24-02.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
           "title": "Assessing Long-Term Field Experiments of Europe through a geospatial data infrastructure",
           "event": "EGU 2022",
           "place": "Vienna, Austria",
@@ -1957,15 +1993,6 @@
           "place": "Leipzig, Germany",
           "date": "07 June 2022",
           "image": "assets/uploads/2026/photo-2022-06-24-13-32-45.jpg",
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "title": "INVITED TALK: Simulating the productivity of agricultural LTEs through the interactive BonaRes platform and biogeochemical modelling",
-          "event": "European Union Carbon Farming Summit",
-          "place": "Valencia, Spain",
-          "date": "06 March 2024",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-10-00-49.png",
           "attachments": [],
           "buttons": []
         },
@@ -2011,33 +2038,6 @@
           "place": "Florence, Italy",
           "date": "20 May 2026",
           "image": "assets/uploads/2026/photo-florence1.png",
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "title": "KEYNOTE TALK: Long-term field experiments (meta)data platform: challenges and opportunities for networking and data reuse",
-          "event": "Centennial Meeting for Agricultural Experimentation in Poland",
-          "place": "Warsaw, Poland",
-          "date": "26 June 2026",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-31-29.png",
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "title": "HIGHLIGHT TALK: An open-access (meta)data platform for Long-Term Field Experiments to support soil monitoring and assessment",
-          "event": "EU-Soils for Europe Conference",
-          "place": "Coimbra, Portugal",
-          "date": "10 September 2026",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-36-14.png",
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "title": "INVITED TALK: From Long-Term Field Experimentst o Reusable Knowledge: Connecting Data, Infrastructure and Analysis",
-          "event": "Morrow Plots 150th-year Conference",
-          "place": "University of Illinois Urbana-Champaign, USA",
-          "date": "October 2026",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-24-02.png",
           "attachments": [],
           "buttons": []
         },
