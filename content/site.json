@@ -8,14 +8,14 @@
   },
   "nav": [
     {
-      "label": "Research",
-      "url": "index.html#research",
+      "label": "About",
+      "url": "about.html",
       "style": "ghost"
     },
     {
-      "label": "About",
-      "url": "about.html",
-      "style": "primary"
+      "label": "Research",
+      "url": "index.html#research",
+      "style": "ghost"
     },
     {
       "label": "Publications",
