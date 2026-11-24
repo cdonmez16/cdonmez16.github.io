@@ -29,11 +29,13 @@
     <div class="wrap pagehead__inner" data-slot="pagehead"></div>
   </section>
 
-  <nav class="wrap btn-row" aria-label="Tools sections" style="padding-top:24px;padding-bottom:8px">
-    <a class="btn btn--ghost" href="#infrastructure">Research infrastructures ↓</a>
-    <a class="btn btn--ghost" href="#geospatial-workflows">Geospatial modelling ↓</a>
-    <a class="btn btn--ghost" href="#software-technologies">Software &amp; technologies ↓</a>
-  </nav>
+  <div class="wrap" style="padding-top:24px;padding-bottom:8px">
+    <div role="navigation" aria-label="Tools sections" data-slot="tools.buttons" class="btn-row">
+      <a class="btn btn--ghost" href="#infrastructure">Research infrastructures ↓</a>
+      <a class="btn btn--ghost" href="#geospatial-workflows">Geospatial modelling ↓</a>
+      <a class="btn btn--ghost" href="#software-technologies">Software &amp; technologies ↓</a>
+    </div>
+  </div>
   <main id="main"></main>
 
   <section class="contact dark" id="contact" aria-label="Contact"></section>
@@ -53,6 +55,6 @@
 
   <noscript><p class="wrap" style="padding:40px 0">This site needs JavaScript to load its content.</p></noscript>
   <script src="js/hero.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=tools-buttons-20261124" defer></script>
 </body>
 </html>
