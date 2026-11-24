@@ -1599,13 +1599,6 @@
       "buttons": [],
       "items": [
         {
-          "title": "Best Publication Award",
-          "text": "Japanese Society of Irrigation, Drainage and Rural Engineering (JSIDRE), 2020.",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-24-47-mwts08wm.png",
-          "attachments": [],
-          "buttons": []
-        },
-        {
           "title": "Environmental Systems Research Institute, Project Award",
           "text": "As a dedicated member of the Citrus Information System project in the Eastern Mediterranean",
           "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-25-11-mwtrz4ai.png",
@@ -1613,9 +1606,16 @@
           "buttons": []
         },
         {
-          "title": "Best Proceedings Award",
-          "text": "VI Remote Sensing Conference of Türkiye, 2014.",
-          "image": "",
+          "title": "DAAD Doctoral Scholarship",
+          "text": "Awarded a research scholarship by the German Academic Exchange Service (DAAD) to conduct doctoral research in geoinformatics and spatial modelling at Friedrich Schiller University Jena, Germany.",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-16-20-44.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Best Publication Award",
+          "text": "Japanese Society of Irrigation, Drainage and Rural Engineering (JSIDRE), 2020.",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-24-47-mwts08wm.png",
           "attachments": [],
           "buttons": []
         },
@@ -1634,9 +1634,9 @@
           "buttons": []
         },
         {
-          "title": "DAAD Doctoral Scholarship",
-          "text": "Awarded a research scholarship by the German Academic Exchange Service (DAAD) to conduct doctoral research in geoinformatics and spatial modelling at Friedrich Schiller University Jena, Germany.",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-16-20-44.png",
+          "title": "Best Proceedings Award",
+          "text": "VI Remote Sensing Conference of Türkiye, 2014.",
+          "image": "",
           "attachments": [],
           "buttons": []
         }
