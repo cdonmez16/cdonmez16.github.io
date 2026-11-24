@@ -1723,22 +1723,22 @@
           "buttons": []
         },
         {
-          "course": "Geographic Information Systems in Municipal Environmental Planning",
-          "institution": "Brandenburg University of Technology Cottbus–Senftenberg",
-          "period": "October 2023",
-          "level": "Invited Academic Lecture",
-          "text": "Academic lecture delivered as part of a W2 professorial appointment procedure, introducing the principles and practical applications of GIS in municipal environmental planning. ",
-          "image": "",
-          "attachments": [],
-          "buttons": []
-        },
-        {
           "course": "GIS in Sustainable Land Use Planning: Connecting Spatial Thinking and Stakeholder-Informed Decisions",
           "institution": "Leibniz University Hannover",
           "period": "April 2025",
           "level": "Invited Academic Lecture",
           "text": "Academic lecture delivered as part of a W2 professorial appointment procedure, exploring the integration of GIS, spatial modelling and participatory approaches in sustainable land use planning.",
-          "image": "",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-20-55-42-mwv4z0cx.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "course": "Geographic Information Systems in Municipal Environmental Planning",
+          "institution": "Brandenburg University of Technology Cottbus–Senftenberg",
+          "period": "October 2023",
+          "level": "Invited Academic Lecture",
+          "text": "Academic lecture delivered as part of a W2 professorial appointment procedure, introducing the principles and practical applications of GIS in municipal environmental planning. ",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-20-57-11-mwv4yv2g.png",
           "attachments": [],
           "buttons": []
         },
