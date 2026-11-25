@@ -1995,20 +1995,11 @@
       ],
       "items": [
         {
-          "title": "KEYNOTE TALK: Towards a sustainable transformation of agricultural landscapes",
-          "event": "IDUSPAD Conference-2024",
-          "place": "İzmir, Turkiye",
-          "date": "26 November 2024",
-          "image": "",
-          "attachments": [],
-          "buttons": []
-        },
-        {
-          "title": "INVITED TALK: Simulating the productivity of agricultural LTEs through the interactive BonaRes platform and biogeochemical modelling",
-          "event": "European Union Carbon Farming Summit",
-          "place": "Valencia, Spain",
-          "date": "06 March 2024",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-10-00-49.png",
+          "title": "INVITED TALK: From Long-Term Field Experimentst o Reusable Knowledge: Connecting Data, Infrastructure and Analysis",
+          "event": "Morrow Plots 150th-year Conference",
+          "place": "University of Illinois Urbana-Champaign, USA",
+          "date": "October 2026",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-24-02.png",
           "attachments": [],
           "buttons": []
         },
@@ -2031,11 +2022,20 @@
           "buttons": []
         },
         {
-          "title": "INVITED TALK: From Long-Term Field Experimentst o Reusable Knowledge: Connecting Data, Infrastructure and Analysis",
-          "event": "Morrow Plots 150th-year Conference",
-          "place": "University of Illinois Urbana-Champaign, USA",
-          "date": "October 2026",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-09-24-02.png",
+          "title": "INVITED TALK: Simulating the productivity of agricultural LTEs through the interactive BonaRes platform and biogeochemical modelling",
+          "event": "European Union Carbon Farming Summit",
+          "place": "Valencia, Spain",
+          "date": "06 March 2024",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-10-00-49.png",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "KEYNOTE TALK: Towards a sustainable transformation of agricultural landscapes",
+          "event": "IDUSPAD Conference-2024",
+          "place": "İzmir, Turkiye",
+          "date": "26 November 2024",
+          "image": "",
           "attachments": [],
           "buttons": []
         },
