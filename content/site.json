@@ -188,6 +188,13 @@
         "url": "https://tudi-project.org/",
         "relationship": "",
         "visible": true
+      },
+      {
+        "name": "CIMMYT-CGIAR",
+        "logo": "assets/uploads/2026/ekran-resmi-2026-11-25-11-12-13.png",
+        "url": "https://www.cimmyt.org/",
+        "relationship": "",
+        "visible": true
       }
     ],
     "networksHeading": ""
