@@ -41,6 +41,11 @@
     return String(s || '').split(/\n\s*\n/).filter(function (p) { return p.trim(); })
       .map(function (p) { return '<p>' + inline(p).replace(/\n/g, '<br>') + '</p>'; }).join('');
   }
+  function networkItems(hero) {
+    return Array.isArray(hero.networkItems) ? hero.networkItems : (Array.isArray(hero.networks) ? hero.networks : []).map(function (name) {
+      return { name: String(name), logo: '', url: '', relationship: '', visible: true };
+    });
+  }
   function list(a) { return Array.isArray(a) ? a : []; }
   function has(s) { return s != null && String(s).trim() !== ''; }
   function themeLabel(id) { var t = list(DATA.themes).filter(function (x) { return x.id === id; })[0]; return t ? t.label : id; }
@@ -406,10 +411,23 @@
           '<g fill="none" stroke="#3E6E5F">' + [1, 2, 3, 4, 5, 6, 7, 8].map(function (k) { return '<ellipse cx="160" cy="200" rx="' + (k * 22) + '" ry="' + (k * 28) + '"/>'; }).join('') + '</g>' +
           '<text x="160" y="214" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="56" fill="#9CCBB9">' + esc(initials) + '</text></svg>') +
         '</div>' + (has(hero.portraitCaption) ? '<figcaption class="portrait__caption">' + esc(hero.portraitCaption) + '</figcaption>' : '') + '</div>');
-      var nets = list(hero.networks);
-      setSlot('hero.networks', nets.length ? '<span class="networks__label">' + esc(hero.networksLabel) + '</span><div class="networks__list">' +
-        nets.map(function (n) { return '<span>' + esc(n) + '</span>'; }).join('') + '</div>' : '');
-      if (!nets.length && slot('hero.networks') && slot('hero.networks').parentElement) slot('hero.networks').parentElement.hidden = true;
+      var nets = networkItems(hero).filter(function(n) { return n && n.visible !== false && has(n.name); });
+      var networkHeading = hero.networksHeading == null ? 'Connecting research across institutions and borders' : hero.networksHeading;
+      setSlot('hero.networks', nets.length ? '<div class="networks__heading"><span class="networks__label">' + esc(hero.networksLabel || 'Research networks & initiatives') + '</span>' + (has(networkHeading) ? '<h2>' + esc(networkHeading) + '</h2>' : '') + '</div><div class="networks__list">' +
+        nets.map(function(n) {
+          var name = esc(n.name), tip = esc(n.relationship || n.name);
+          var content = (has(n.logo) ? '<img src="' + esc(safeUrl(n.logo)) + '" alt="' + name + '" loading="lazy" decoding="async">' : '') + '<span class="networks__name"' + (has(n.logo) ? ' hidden' : '') + '>' + name + '</span>';
+          return has(n.url) ? '<a class="networks__item" title="' + tip + '" ' + linkAttrs(n.url) + '>' + content + '</a>' : '<div class="networks__item" title="' + tip + '">' + content + '</div>';
+        }).join('') + '</div>' : '');
+      var networkSlot = slot('hero.networks');
+      if (networkSlot) {
+        networkSlot.parentElement.hidden = !nets.length;
+        networkSlot.querySelectorAll('img').forEach(function(img) {
+          function fallback() { img.hidden = true; img.nextElementSibling.hidden = false; }
+          img.addEventListener('error', fallback);
+          if (img.complete && !img.naturalWidth) fallback();
+        });
+      }
     } else {
       var ph = slot('pagehead');
       if (ph) ph.innerHTML = '<div class="pagehead__text">' + (has(pageInfo.eyebrow) ? '<p class="eyebrow eyebrow--light">' + esc(pageInfo.eyebrow) + '</p>' : '') +
