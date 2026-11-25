@@ -125,12 +125,19 @@ a:hover { color: var(--accent-dark); }
 .btn--small { min-height: 36px; padding: 7px 14px; font-size: 13px; }
 
 /* ---------- networks strip ---------- */
-.networks { background: var(--surface); border-bottom: 1px solid var(--line); }
-.networks__inner { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 40px; padding-top: 26px; padding-bottom: 26px; }
-.networks__label { font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-.networks__list { display: flex; flex-wrap: wrap; gap: 10px 34px; }
-.networks__list span { font-family: var(--serif); font-size: 19px; color: var(--ink-2); transition: transform .35s var(--ease), color .25s; display: inline-block; }
-.networks__list span:hover { transform: scale(1.12); color: var(--accent); }
+ .networks { background: var(--surface); border-bottom: 1px solid var(--line); }
+.networks[hidden], .networks [hidden] { display: none !important; }
+.networks__inner { display: flex; flex-direction: column; align-items: flex-start; gap: 15px; padding-top: 20px; padding-bottom: 22px; }
+.networks__heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 20px; }
+.networks__label { font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.networks__heading h2 { font-family: var(--serif); font-size: clamp(17px, 2vw, 23px); font-weight: 500; line-height: 1.25; margin: 0; color: var(--ink-2); }
+.networks__list { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 25px; width: 100%; }
+.networks__item { display: inline-flex; align-items: center; justify-content: center; min-height: 34px; max-width: 160px; color: var(--ink-2); text-decoration: none; }
+.networks__item img { display: block; width: auto; height: 32px; max-width: 108px; object-fit: contain; }
+.networks__name { font-family: var(--serif); font-size: 15px; line-height: 1.2; }
+.networks__item:hover { color: var(--accent); }
+@media (max-width: 600px) { .networks__list { gap: 10px 18px; } .networks__item img { height: 27px; max-width: 90px; } .networks__inner { gap: 12px; } }
+
 
 /* ---------- lift (hover enlarge) ---------- */
 .lift {
