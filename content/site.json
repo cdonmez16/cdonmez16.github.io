@@ -181,6 +181,13 @@
         "url": "https://esdac.jrc.ec.europa.eu/euso",
         "relationship": "",
         "visible": true
+      },
+      {
+        "name": "TUdi Project",
+        "logo": "assets/uploads/2026/ekran-resmi-2026-11-25-11-11-29.png",
+        "url": "https://tudi-project.org/",
+        "relationship": "",
+        "visible": true
       }
     ],
     "networksHeading": ""
