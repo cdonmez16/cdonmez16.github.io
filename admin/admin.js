@@ -208,7 +208,7 @@
     name: 'Name', title: 'Title', description: 'Description (search engines)', footerNote: 'Footer note', copyright: 'Copyright line',
     cvButton: 'CV button in the menu', eyebrow: 'Small label above the title', text: 'Text', affiliation: 'Position & affiliation',
     portrait: 'Portrait photo', portraitCaption: 'Caption under portrait', buttons: 'Buttons', links: 'Profile links',
-    networksLabel: 'Networks label', networks: 'Networks (one per line)', nav: 'Menu label', visible: 'Show on website',
+    networksHeading: 'Network strip heading', networkItems: 'Organisations and logos', logo: 'Logo', relationship: 'Relationship / hover text', networksLabel: 'Networks label', networks: 'Networks (one per line)', nav: 'Menu label', visible: 'Show on website',
     intro: 'Introduction', body: 'Text', image: 'Image', attachments: 'Files (PDF, slides, images, links)', items: 'Items',
     role: 'Role', tags: 'Tags (one per line)', featured: 'Feature as large card', category: 'Category', period: 'Period',
     allLabel: '“All” filter label', doiLabel: 'DOI button label', year: 'Year', authors: 'Authors', venue: 'Journal / venue',
@@ -227,7 +227,7 @@
   var BUTTONLIST = ['buttons', 'links'];
   var PUB_TYPES = ['Article', 'Review', 'Dataset', 'Report', 'Chapter', 'Book', 'Preprint', 'Software', 'Conference paper', 'Policy brief'];
   var SECTION_TYPES = { achievements:'Achievements', areas:'Research areas', features:'Featured contributions', practice:'Research to practice', selectedPubs:'Selected publications', timeline:'Timeline', text:'Text', about: 'About text', cards: 'Cards / supervision & mentoring', tools: 'Tools & platforms', projects: 'Projects', publications: 'Publications', teaching: 'Teaching', talks: 'Talks', news: 'News', contact: 'Contact' };
-  var TEMPLATES = { navigation:{label:'',url:'',style:'ghost'}, themes:{id:'',label:''}, achievements:{value:'',label:'',text:'',image:'',buttons:[]}, areas:{theme:'',title:'',text:'',methods:'',image:'',attachments:[],buttons:[]}, features:{title:'',category:'',featured:false,myRole:'',context:'',tags:[],image:'',attachments:[],buttons:[]}, practice:{icon:'',title:'',text:'',evidence:'',image:''}, timeline:{period:'',title:'',organization:'',text:'',image:'',attachments:[]},
+  var TEMPLATES = { networkItems: {name:'',logo:'',url:'',relationship:'',visible:true}, navigation:{label:'',url:'',style:'ghost'}, themes:{id:'',label:''}, achievements:{value:'',label:'',text:'',image:'',buttons:[]}, areas:{theme:'',title:'',text:'',methods:'',image:'',attachments:[],buttons:[]}, features:{title:'',category:'',featured:false,myRole:'',context:'',tags:[],image:'',attachments:[],buttons:[]}, practice:{icon:'',title:'',text:'',evidence:'',image:''}, timeline:{period:'',title:'',organization:'',text:'',image:'',attachments:[]},
     cards: { title: '', text: '', image: '', attachments: [], buttons: [] },
     tools: { category: 'Research platforms', status: '', name: '', role: '', text: '', tags: [], image: '', featured: false, attachments: [], buttons: [] },
     projects: { title: '', category: '', period: '', role: '', text: '', image: '', attachments: [], buttons: [] },
@@ -237,6 +237,11 @@
     news: { date: '', text: '', image: '', attachments: [], buttons: [] }
   };
   var NEWEST_FIRST = ['publications', 'talks', 'news'];
+  function networkItems(hero) {
+    return Array.isArray(hero.networkItems) ? hero.networkItems : (Array.isArray(hero.networks) ? hero.networks : []).map(function (name) {
+      return { name: String(name), logo: '', url: '', relationship: '', visible: true };
+    });
+  }
   function blankLike(o) {
     if (Array.isArray(o)) return [];
     if (o && typeof o === 'object') { var r = {}; Object.keys(o).forEach(function (k) { r[k] = blankLike(o[k]); }); return r; }
@@ -455,6 +460,7 @@
       else if (key === 'attachments') rest.appendChild(attachmentsField(obj));
       else if (BUTTONLIST.indexOf(key) >= 0) rest.appendChild(buttonListField(obj, key));
       else if (STRINGLIST.indexOf(key) >= 0 && Array.isArray(v)) grid.appendChild(stringListField(obj, key));
+      else if (key === 'networkItems' && Array.isArray(v)) rest.appendChild(h('div', { class: 'field field--full' }, [h('span', { class: 'field__label', text: labelFor(key) }), itemsField(obj, key, 'networkItems')]));
       else if (key === 'items' && Array.isArray(v)) { /* rendered by the section view */ }
       else if (Array.isArray(v)) rest.appendChild(h('div', { class: 'field field--full' }, [h('span', { class: 'field__label', text: labelFor(key) }), itemsField(obj, key, null)]));
       else if (v && typeof v === 'object') {
@@ -519,7 +525,12 @@
       return;
     }
     if (S.view === 'site') { header('General', 'Site & menu'); v.appendChild(panel('Site settings', 'Name, browser title, footer and the CV button in the top menu.', objectEditor(S.data.site))); v.appendChild(panel('Navigation & CV', 'Edit labels, links and order.', itemsField(S.data,'nav','navigation'))); return; }
-    if (S.view === 'hero') { header('General', 'Hero'); v.appendChild(panel('Top of the homepage', 'Headline, introduction, portrait, buttons, profile links and partner networks.', objectEditor(S.data.hero))); return; }
+    if (S.view === 'hero') { header('General', 'Hero'); var hero = S.data.hero;
+      if (!Array.isArray(hero.networkItems)) hero.networkItems = networkItems(hero);
+      if (hero.networksHeading == null) hero.networksHeading = 'Connecting research across institutions and borders';
+      v.appendChild(panel('Top of the homepage', 'Headline, introduction, portrait, buttons and profile links.', objectEditor(hero, {skip:['networks','networksLabel','networksHeading','networkItems']})));
+      v.appendChild(panel('Research networks & initiatives', 'Edit the compact homepage strip. Upload a logo or leave it blank to show the organisation name. Add, remove, reorder or hide entries.', objectEditor(hero, {skip:Object.keys(hero).filter(function(k){return ['networksLabel','networksHeading','networkItems'].indexOf(k)<0;})})));
+      return; }
     if (S.view === 'contact') { header('General','Contact & collaboration'); v.appendChild(panel('Shared contact section',null,objectEditor(S.data.contact || (S.data.contact={eyebrow:'',title:'',text:'',email:'',address:'',buttons:[],attachments:[]})))); return; }
     if (S.view === 'themes') { header('General','Research themes'); v.appendChild(panel('Publication filters', 'Keep theme IDs consistent with publication records.',itemsField(S.data,'themes','themes'))); return; }
     if (S.view === 'publications') { header('Publications','All publications'); v.appendChild(panel('Publication records', 'Add, edit, duplicate or remove records.',itemsField(S.data,'publications','publications'))); return; }
