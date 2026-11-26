@@ -855,7 +855,7 @@
         },
         {
           "name": "SoilWise catalogue",
-          "role": "Role: Contributor (knowledge management, BonaRes reuse)",
+          "role": "Role: Contributor (knowledge management, soil/geospatial data reuse uses)",
           "text": "SoilWise is a €6 million Horizon Europe initiative bringing together 15 European partner organisations to develop an integrated infrastructure for soil data and knowledge. The platform connects existing repositories, research networks and knowledge resources, making soil information more accessible, interoperable and reusable for researchers, practitioners and policymakers.",
           "tags": [
             "Horizon Europe · EU Mission Soil · FAIR Data · Knowledge Management · Metadata Interoperability · Data Integration"
@@ -907,7 +907,7 @@
           "category": "Research platforms & data infrastructures",
           "status": "",
           "role": "Leading metadata schema development, harmonisation & scientific data reuse",
-          "text": "An integrated metadata harmonisation framework connecting BonaRes and EJP SOIL long-term experiment inventories. It combines standardised descriptions of experimental design, agricultural management, soil properties and environmental conditions to facilitate cross-network data discovery and reuse. ",
+          "text": "An integrated metadata harmonisation framework connecting BonaRes and EJP SOIL long-term field experiment inventories. It combines standardised descriptions of experimental design, agricultural management, soil properties and environmental conditions to facilitate cross-network data discovery and reuse connected to spatial data. ",
           "tags": [
             "Metadata Harmonisation",
             "EJP SOIL",
@@ -961,7 +961,7 @@
           "category": "Research platforms & data infrastructures",
           "status": "",
           "name": "GeoParticipate — Spatial Stakeholder Engagement Tool",
-          "role": "Participatory GIS workflow design & application development",
+          "role": "Participatory GIS workflow design & application (under development)",
           "text": "A spatial stakeholder engagement application developed using ArcGIS Survey123 and integrated with Web GIS dashboards. The workflow enables stakeholders to provide geographically referenced feedback, evaluate proposed development locations, identify environmental concerns and express preferences regarding planning alternatives.",
           "tags": [
             "ArcGIS Survey123",
