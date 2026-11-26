@@ -1599,6 +1599,22 @@
           "image": "assets/uploads/2026/ekran-resmi-2026-11-23-22-52-40-mwxa0y4m.png",
           "attachments": [],
           "buttons": []
+        },
+        {
+          "title": "The Landscape Atlas for Buyuk Menderes Basin",
+          "category": "",
+          "period": "2018-2022",
+          "role": "My role: Geospatial Research and Landscape Assessment",
+          "text": "Development of a GIS-based landscape atlas for the Büyük Menderes Basin, Türkiye, integrating environmental, ecological and socioeconomic spatial data to support sustainable landscape management and regional planning. The project combines landscape characterisation, spatial modelling, multi-criteria assessment and cartographic visualisation to identify landscape potentials, environmental constraints and land-use suitability, providing a scientific basis for spatial planning and evidence-based decision-making.",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-26-11-21-39.png",
+          "attachments": [],
+          "buttons": [
+            {
+              "label": "Project intro video",
+              "url": "https://www.youtube.com/watch?v=V13DKtOpEI8",
+              "style": "ghost"
+            }
+          ]
         }
       ]
     },
