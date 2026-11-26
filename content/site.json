@@ -1008,7 +1008,7 @@
       "buttons": [],
       "items": [
         {
-          "name": "GeoAI-based agricultural suitability & vulnerability modelling",
+          "name": "GeoAI/ML-based agricultural/land suitability modelling",
           "role": "Methodology development & spatial modelling",
           "text": "Multi-criteria spatial suitability assessment combined with Random Forest machine learning to identify priority locations for agricultural experiments under current and future climates.",
           "tags": [
