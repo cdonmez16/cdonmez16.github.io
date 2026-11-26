@@ -1710,13 +1710,6 @@
           "buttons": []
         },
         {
-          "title": "Certified Professional Scrum Product Owner (PSPO-I) ",
-          "text": "Combining agile product management with scientific expertise to support user-centred research infrastructures, digital platforms and geospatial applications. Particular emphasis on translating scientific and stakeholder requirements into functional, reusable research tools.",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-17-02-10.png",
-          "attachments": [],
-          "buttons": []
-        },
-        {
           "title": "Environmental Systems Research Institute, Project Award",
           "text": "As a dedicated member of the Citrus Information System project in the Eastern Mediterranean",
           "image": "assets/uploads/2026/ekran-resmi-2026-11-23-15-25-11-mwtrz4ai.png",
@@ -1733,6 +1726,13 @@
               "file": "https://www.youtube.com/watch?v=V13DKtOpEI8"
             }
           ],
+          "buttons": []
+        },
+        {
+          "title": "Certified Professional Scrum Product Owner (PSPO-I) ",
+          "text": "Combining agile product management with scientific expertise to support user-centred research infrastructures, digital platforms and geospatial applications. Particular emphasis on translating scientific and stakeholder requirements into functional, reusable research tools.",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-24-17-02-10.png",
+          "attachments": [],
           "buttons": []
         },
         {
