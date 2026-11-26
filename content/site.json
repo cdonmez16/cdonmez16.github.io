@@ -1148,8 +1148,13 @@
           "attachments": [],
           "buttons": [
             {
-              "label": "Scientific publication",
+              "label": "Scientific publication - 1",
               "url": "https://doi.org/10.1016/j.agsy.2022.103578",
+              "style": "ghost"
+            },
+            {
+              "label": "Scientific Publication - 2",
+              "url": "https://www.tandfonline.com/doi/pdf/10.1080/19475705.2015.1084541",
               "style": "ghost"
             }
           ],
@@ -1227,7 +1232,7 @@
               "style": "ghost"
             },
             {
-              "label": "Scientific Publication -1 ",
+              "label": "Scientific Publication -2",
               "url": "https://link.springer.com/article/10.1007/s10661-020-08429-5",
               "style": "ghost"
             }
