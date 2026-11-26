@@ -1531,16 +1531,6 @@
           "buttons": []
         },
         {
-          "title": "Geospatial Agricultural Decision Support System",
-          "category": "TÜBİTAK",
-          "period": "2013–2016",
-          "role": "Researcher",
-          "text": "Contributed to the development of a GIS-based decision-support system for agricultural planning and management.",
-          "image": "",
-          "attachments": [],
-          "buttons": []
-        },
-        {
           "title": "Web-Based Citrus Information System — Lower Seyhan Basin",
           "category": "Eastern Mediterranean Development Agency",
           "period": "2013–2015",
@@ -1551,12 +1541,38 @@
           "buttons": []
         },
         {
+          "title": "The Landscape Atlas for Buyuk Menderes Basin",
+          "category": "",
+          "period": "2018-2022",
+          "role": "My role: Geospatial Research and Landscape Assessment",
+          "text": "Development of a GIS-based landscape atlas for the Büyük Menderes Basin, Türkiye, integrating environmental, ecological and socioeconomic spatial data to support sustainable landscape management and regional planning. The project combines landscape characterisation, spatial modelling, multi-criteria assessment and cartographic visualisation to identify landscape potentials, environmental constraints and land-use suitability, providing a scientific basis for spatial planning and evidence-based decision-making.",
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-26-11-21-39.png",
+          "attachments": [],
+          "buttons": [
+            {
+              "label": "Project intro video",
+              "url": "https://www.youtube.com/watch?v=V13DKtOpEI8",
+              "style": "ghost"
+            }
+          ]
+        },
+        {
           "title": "Local Frameworks for Integrated Water Resources Management",
           "category": "Research Institute for Humanity and Nature · Japan",
           "period": "2011–2015",
           "role": "Researcher",
           "text": "Participated in interdisciplinary research on locally relevant frameworks for integrated water-resources management.",
           "image": "assets/uploads/2026/img-6975-mwusjsrq.jpg",
+          "attachments": [],
+          "buttons": []
+        },
+        {
+          "title": "Geospatial Agricultural Decision Support System",
+          "category": "TÜBİTAK",
+          "period": "2013–2016",
+          "role": "Researcher",
+          "text": "Contributed to the development of a GIS-based decision-support system for agricultural planning and management.",
+          "image": "",
           "attachments": [],
           "buttons": []
         },
@@ -1599,22 +1615,6 @@
           "image": "assets/uploads/2026/ekran-resmi-2026-11-23-22-52-40-mwxa0y4m.png",
           "attachments": [],
           "buttons": []
-        },
-        {
-          "title": "The Landscape Atlas for Buyuk Menderes Basin",
-          "category": "",
-          "period": "2018-2022",
-          "role": "My role: Geospatial Research and Landscape Assessment",
-          "text": "Development of a GIS-based landscape atlas for the Büyük Menderes Basin, Türkiye, integrating environmental, ecological and socioeconomic spatial data to support sustainable landscape management and regional planning. The project combines landscape characterisation, spatial modelling, multi-criteria assessment and cartographic visualisation to identify landscape potentials, environmental constraints and land-use suitability, providing a scientific basis for spatial planning and evidence-based decision-making.",
-          "image": "assets/uploads/2026/ekran-resmi-2026-11-26-11-21-39.png",
-          "attachments": [],
-          "buttons": [
-            {
-              "label": "Project intro video",
-              "url": "https://www.youtube.com/watch?v=V13DKtOpEI8",
-              "style": "ghost"
-            }
-          ]
         }
       ]
     },
