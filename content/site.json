@@ -2406,7 +2406,10 @@
       "corresponding": false,
       "url": "",
       "attachments": [],
-      "ref": "review-1"
+      "ref": "review-1",
+      "type": "Article",
+      "summary": "",
+      "image": ""
     },
     {
       "year": "2026",
@@ -2577,6 +2580,22 @@
       "url": "",
       "attachments": [],
       "ref": "journal-5"
+    },
+    {
+      "year": "2026",
+      "title": "Long-term monitoring data for Carbon Farming",
+      "authors": "Xu Hui, Donmez C., et al.",
+      "venue": "Report in Zenodo",
+      "type": "Article",
+      "doi": "https://doi.org/10.5281/zenodo.18653024",
+      "summary": "This report aims to provide clear guidance on how long‑term monitoring (LTM) sites can improve the FAIRification (Findable, Accessible, Interoperable, and Reusable) of their data to support emerging data needs in the context of Carbon Farming (CF).",
+      "image": "",
+      "attachments": [
+        {
+          "label": "Link",
+          "file": "https://zenodo.org/records/18653024"
+        }
+      ]
     },
     {
       "year": "2025",
