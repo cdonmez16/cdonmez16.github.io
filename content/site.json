@@ -2102,6 +2102,21 @@
       ],
       "items": [
         {
+          "title": "Overview of an Agricultural Experiments Data Platform",
+          "event": "BonaRes Long-Term Field Experiments Workshop",
+          "place": "Müncheberg, Germany",
+          "date": "11 November 2022",
+          "image": "assets/uploads/2026/p1100436.jpg",
+          "attachments": [],
+          "buttons": [
+            {
+              "label": "Scientific Publications",
+              "url": "https://tools.bonares.de/media/bonares_series/Bonares_Series_2023_1_7ss0-zm41_V1.1.pdf",
+              "style": "ghost"
+            }
+          ]
+        },
+        {
           "title": "INVITED TALK: From Long-Term Field Experimentst o Reusable Knowledge: Connecting Data, Infrastructure and Analysis",
           "event": "Morrow Plots 150th-year Conference",
           "place": "University of Illinois Urbana-Champaign, USA",
