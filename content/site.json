@@ -2426,6 +2426,17 @@
   "publications": [
     {
       "year": "2026",
+      "title": "Building a ‘time machine’ for carbon farming: the role of long-term monitoring data for Monitoring, Reporting and Verification (MRV) ",
+      "authors": "Xu Hui, Donmez C., et al.",
+      "venue": "Environmental Science and Policy",
+      "type": "Article",
+      "doi": "In preparation",
+      "summary": "",
+      "image": "",
+      "attachments": []
+    },
+    {
+      "year": "2026",
       "authors": "Borelli P., Donmez C., et al.",
       "title": "Global observations reveal patterns in soil degradation across agricultural landscapes",
       "venue": "Nature Communications",
@@ -2462,7 +2473,10 @@
       "corresponding": false,
       "url": "",
       "attachments": [],
-      "ref": "review-2"
+      "ref": "review-2",
+      "type": "Article",
+      "summary": "",
+      "image": ""
     },
     {
       "year": "2026",
