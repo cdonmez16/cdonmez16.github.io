@@ -2426,17 +2426,6 @@
   "publications": [
     {
       "year": "2026",
-      "title": "Building a ‘time machine’ for carbon farming: the role of long-term monitoring data for Monitoring, Reporting and Verification (MRV) ",
-      "authors": "Xu Hui, Donmez C., et al.",
-      "venue": "Environmental Science and Policy",
-      "type": "Article",
-      "doi": "In preparation",
-      "summary": "",
-      "image": "",
-      "attachments": []
-    },
-    {
-      "year": "2026",
       "authors": "Borelli P., Donmez C., et al.",
       "title": "Global observations reveal patterns in soil degradation across agricultural landscapes",
       "venue": "Nature Communications",
@@ -2494,7 +2483,10 @@
       "corresponding": false,
       "url": "",
       "attachments": [],
-      "ref": "review-3"
+      "ref": "review-3",
+      "type": "Article",
+      "summary": "",
+      "image": ""
     },
     {
       "year": "2026",
@@ -2514,6 +2506,28 @@
       "url": "",
       "attachments": [],
       "ref": "review-4"
+    },
+    {
+      "year": "2026",
+      "authors": "Xu Hui, Donmez C., et al.",
+      "title": "Building a ‘time machine’ for carbon farming: the role of long-term monitoring data for Monitoring, Reporting and Verification (MRV) ",
+      "venue": "Environmental Science and Policy",
+      "details": "",
+      "doi": "",
+      "category": "Peer-reviewed publication",
+      "status": "In preparation",
+      "themes": [
+        "long-term monitoring data",
+        "carbon farming"
+      ],
+      "featured": false,
+      "corresponding": false,
+      "url": "",
+      "attachments": [],
+      "ref": "review-2",
+      "type": "Article",
+      "summary": "",
+      "image": ""
     },
     {
       "year": "2026",
@@ -4920,7 +4934,10 @@
       "corresponding": false,
       "url": "",
       "attachments": [],
-      "ref": "conference-73"
+      "ref": "conference-73",
+      "type": "Article",
+      "summary": "",
+      "image": ""
     },
     {
       "year": "2005",
