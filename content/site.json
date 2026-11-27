@@ -2447,6 +2447,27 @@
     },
     {
       "year": "2026",
+      "authors": "Borelli P., Donmez C., et al.",
+      "title": "A global referenced inventory of gully erosion in agricultural landscapes",
+      "venue": "Nature Scientific Data",
+      "details": "",
+      "doi": "",
+      "category": "Peer-reviewed publication",
+      "status": "Under review",
+      "themes": [
+        "landscape"
+      ],
+      "featured": false,
+      "corresponding": false,
+      "url": "",
+      "attachments": [],
+      "ref": "review-3",
+      "type": "Article",
+      "summary": "",
+      "image": ""
+    },
+    {
+      "year": "2026",
       "authors": "Donmez C., et al.",
       "title": "Long-term field experiments and living labs need a shared knowledge pathway",
       "venue": "Nature Sustainability",
@@ -2463,27 +2484,6 @@
       "url": "",
       "attachments": [],
       "ref": "review-2",
-      "type": "Article",
-      "summary": "",
-      "image": ""
-    },
-    {
-      "year": "2026",
-      "authors": "Borelli P., Donmez C., et al.",
-      "title": "A global referenced inventory of gully erosion in agricultural landscapes",
-      "venue": "Nature Scientific Data",
-      "details": "",
-      "doi": "",
-      "category": "Peer-reviewed publication",
-      "status": "Under review",
-      "themes": [
-        "landscape"
-      ],
-      "featured": false,
-      "corresponding": false,
-      "url": "",
-      "attachments": [],
-      "ref": "review-3",
       "type": "Article",
       "summary": "",
       "image": ""
@@ -2509,6 +2509,28 @@
     },
     {
       "year": "2026",
+      "authors": "Neware R., Lischeid G., Donmez C.",
+      "title": "Hybrid QVIT Architecture for Apple Disease Classification: A Dual-Phase Quantum-Classical Vision Transformer with Variational Quantum Eigensolver Pre-Training",
+      "venue": "Nature Scientific Reports",
+      "details": "",
+      "doi": "",
+      "category": "Peer-reviewed publication",
+      "status": "Under review",
+      "themes": [
+        "geoai",
+        "geospatial data"
+      ],
+      "featured": false,
+      "corresponding": false,
+      "url": "",
+      "attachments": [],
+      "ref": "review-5",
+      "type": "Article",
+      "summary": "",
+      "image": ""
+    },
+    {
+      "year": "2026",
       "authors": "Xu Hui, Donmez C., et al.",
       "title": "Building a ‘time machine’ for carbon farming: the role of long-term monitoring data for Monitoring, Reporting and Verification (MRV) ",
       "venue": "Environmental Science and Policy",
@@ -2528,24 +2550,6 @@
       "type": "Article",
       "summary": "",
       "image": ""
-    },
-    {
-      "year": "2026",
-      "authors": "Neware R., Lischeid G., Donmez C.",
-      "title": "Hybrid QVIT Architecture for Apple Disease Classification: A Dual-Phase Quantum-Classical Vision Transformer with Variational Quantum Eigensolver Pre-Training",
-      "venue": "Nature Scientific Reports",
-      "details": "",
-      "doi": "",
-      "category": "Peer-reviewed publication",
-      "status": "Under review",
-      "themes": [
-        "geoai"
-      ],
-      "featured": false,
-      "corresponding": false,
-      "url": "",
-      "attachments": [],
-      "ref": "review-5"
     },
     {
       "year": "2026",
