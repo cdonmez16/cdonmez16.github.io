@@ -993,6 +993,24 @@
           "featured": false,
           "attachments": [],
           "buttons": []
+        },
+        {
+          "category": "Research platforms",
+          "status": "",
+          "name": "SuitLTE-AI - identify research suitable areas for long-term field experiments",
+          "role": "Concept and development",
+          "text": "An interactive geospatial modelling tool integrating participatory multi-criteria decision analysis (MCDA), machine learning and agentic GIS to identify research priority areas for long-term field experiments under current and future environmental conditions. The code can be shared upon request.",
+          "tags": [
+            "Agentic GIS",
+            "Multi-criteria assessment",
+            "Machine learning",
+            "AI",
+            "Random forest"
+          ],
+          "image": "assets/uploads/2026/ekran-resmi-2026-11-28-15-18-32.png",
+          "featured": false,
+          "attachments": [],
+          "buttons": []
         }
       ]
     },
